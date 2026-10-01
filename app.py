@@ -271,9 +271,10 @@ def _selection():
     )
 
 
-def _planned(year: int, category: str, region: str, show_all: bool):
-    # The calendar year, including ranges that began the year before (e.g. the school Christmas break).
-    year_view = LIBRARY.window(date(year, 1, 1), 12, region)
+def _planned(year: int, category: str, region: str, show_all: bool, *, spillover: bool = False):
+    # With spillover, the calendar year also shows ranges that began the year before (the school Christmas
+    # break running into January). Exports leave them out, so a year's file holds only that year's plans.
+    year_view = LIBRARY.window(date(year, 1, 1), 12, region) if spillover else LIBRARY.occurrences(year, region)
     occurrences = select_occurrences(LIBRARY, year_view, category, include_all=show_all)
     return plan_moments(LIBRARY, occurrences, _store().lead_times, category)
 
@@ -462,7 +463,7 @@ def page_planner() -> None:
         " (public holidays always shown for context). Click a bar or diamond to see its plan-back milestones. "
         "⇢ marks a range that varies by kommune.",
     )
-    planned = _planned(year, category, region, show_all)
+    planned = _planned(year, category, region, show_all, spillover=True)
     frame = moments_frame(LIBRARY, planned, TODAY)
     upcoming = frame[frame["Start"] > TODAY]
     cols = st.columns(4)
