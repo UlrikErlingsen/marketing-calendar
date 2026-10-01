@@ -37,13 +37,13 @@ def test_every_page_renders_with_fictional_demo(page):
     assert "norwegian marketing calendar" in " ".join(str(c.value).lower() for c in app.sidebar.caption)
 
 
-@pytest.mark.parametrize("year", [2025, 2030, 2035])
+@pytest.mark.parametrize("year,region", [(2025, "oslo"), (2030, "bergen"), (2035, "trondheim")])
 @pytest.mark.parametrize("page", ["1 · Planner", "5 · Export"])
-def test_year_selector_and_region(page, year):
+def test_year_selector_and_region(page, year, region):
     app = _app()
     app.sidebar.radio[0].set_value(page).run()
     app.sidebar.selectbox(key="year").set_value(year).run()
-    app.sidebar.selectbox(key="region").set_value("oslo").run()
+    app.sidebar.selectbox(key="region").set_value(region).run()
     app.sidebar.checkbox(key="show_all").check().run()
     assert not app.exception, [error.value for error in app.exception]
     assert not app.error, [error.value for error in app.error]

@@ -9,7 +9,7 @@ First version of **SeasonSignal**, the Norwegian marketing calendar in the Signa
 - 39 Norwegian moments in `src/seasonsignal/moments/no.yaml`, each with nb + en names, a date rule, category tags, notes, a basis (official / tradition / observed / convention) and a source URL. Rules and links reviewed on 1 October 2026.
 - Computed public holidays, including Easter-based skjærtorsdag, langfredag, påske, Kristi himmelfart and pinse (Lovdata), plus 1. and 17. mai.
 - Retail moments: Black Friday, Black Week (Monday → Cyber Monday), Cyber Monday, Singles' Day, Valentine's, morsdag (2nd Sunday of February), farsdag (2nd Sunday of November), Halloween, first Sunday of Advent, julehandel, romjul/mellomjulssalg, feriepenger.
-- Seasons: vinterferie, påskeferie, russetid, skoleslutt, fellesferie, skolestart, høstferie, juleferie and julebord. School breaks that vary by kommune are shown as national ranges; Oslo has verified regional rules.
+- Seasons: vinterferie, påskeferie, russetid, skoleslutt, fellesferie, skolestart, høstferie, juleferie and julebord. School breaks that vary by kommune are shown as national ranges; Oslo, Bergen and Trondheim have verified regional rules (two school years each).
 
 ### Planning
 

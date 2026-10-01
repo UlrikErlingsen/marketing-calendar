@@ -13,7 +13,7 @@
 # A moment has either `date` (one day) or `start` + `end` (an inclusive range).
 # `varies` marks moments that are set by kommune/fylke: the national entry is then a RANGE covering the
 # common local choices, and `variants` gives verified per-region rules.
-# Last full review of rules and URLs: 2026-10-01.
+# Last full review of rules and URLs: 2026-10-01 (Bergen and Trondheim school rules added the same day).
 
 version: 1
 country: NO
@@ -23,6 +23,10 @@ regions:
     name: Hele landet
   - id: oslo
     name: Oslo kommune
+  - id: bergen
+    name: Bergen kommune
+  - id: trondheim
+    name: Trondheim kommune
 
 categories:
   retail: {nb: Handel, en: Retail}
@@ -371,6 +375,16 @@ moments:
         end: {rule: iso_week, week: 8, weekday: fri}
         source: https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/
         verified: 2026/27, 2027/28
+      - region: bergen
+        start: {rule: iso_week, week: 9, weekday: mon}
+        end: {rule: iso_week, week: 9, weekday: fri}
+        source: https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager
+        verified: 2026/27, 2027/28 (veiledende skolerute)
+      - region: trondheim
+        start: {rule: iso_week, week: 8, weekday: mon}
+        end: {rule: iso_week, week: 8, weekday: fri}
+        source: https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/
+        verified: 2026/27, 2027/28
 
   - id: paskeferie
     name: {nb: Påskeferie, en: Easter school break}
@@ -389,6 +403,16 @@ moments:
         start: {rule: easter, offset: -6}
         end: {rule: easter, offset: 2}
         source: https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/
+        verified: 2026/27, 2027/28
+      - region: bergen
+        start: {rule: easter, offset: -6}
+        end: {rule: easter, offset: 1}
+        source: https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager
+        verified: 2026/27, 2027/28 (veiledende skolerute)
+      - region: trondheim
+        start: {rule: easter, offset: -6}
+        end: {rule: easter, offset: 1}
+        source: https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/
         verified: 2026/27, 2027/28
 
   - id: russetid
@@ -441,13 +465,18 @@ moments:
     basis: observed
     source: https://lovdata.no/dokument/NL/lov/2023-06-09-30
     notes: >-
-      First school day is set locally, usually mid-August (ISO week 33 or 34). Back-to-school is also
+      First school day is set locally, usually mid-August (ISO week 33 or 34) — Bergen even varies the weekday
+      (Fri 14 Aug 2026, Mon 16 Aug 2027), so it keeps the national range. Back-to-school is also
       "høstoppstart" for B2B: offices fill up again after fellesferie.
     variants:
       - region: oslo
         date: {rule: nth_weekday, month: 8, weekday: mon, n: 3}
         source: https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/
         verified: 2026/27, 2027/28, 2028/29 (17 Aug 2026, 16 Aug 2027, 21 Aug 2028)
+      - region: trondheim
+        date: {rule: iso_week, week: 34, weekday: mon}
+        source: https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/
+        verified: 2026/27, 2027/28 (17 Aug 2026, 23 Aug 2027)
 
   - id: hostferie
     name: {nb: Høstferie, en: Autumn school break}
@@ -466,6 +495,16 @@ moments:
         start: {rule: iso_week, week: 40, weekday: mon}
         end: {rule: iso_week, week: 40, weekday: fri}
         source: https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/
+        verified: 2026/27, 2027/28
+      - region: bergen
+        start: {rule: iso_week, week: 41, weekday: mon}
+        end: {rule: iso_week, week: 41, weekday: fri}
+        source: https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager
+        verified: 2026/27, 2027/28 (veiledende skolerute)
+      - region: trondheim
+        start: {rule: iso_week, week: 41, weekday: mon}
+        end: {rule: iso_week, week: 41, weekday: fri}
+        source: https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/
         verified: 2026/27, 2027/28
 
   - id: juleferie

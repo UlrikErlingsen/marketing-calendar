@@ -323,9 +323,10 @@ UID:moment-skolestart-2026-all@seasonsignal.local
 CATEGORIES:Moment
 DESCRIPTION:Dates vary by kommune — this is the national range. Check th
  e local skolerute.\n\nBack to school\n\nFirst school day is set locally\, 
- usually mid-August (ISO week 33 or 34). Back-to-school is also "høstoppst
- art" for B2B: offices fill up again after fellesferie.\n\nSource: https://
- lovdata.no/dokument/NL/lov/2023-06-09-30
+ usually mid-August (ISO week 33 or 34) — Bergen even varies the weekday 
+ (Fri 14 Aug 2026\, Mon 16 Aug 2027)\, so it keeps the national range. Back
+ -to-school is also "høstoppstart" for B2B: offices fill up again after fe
+ llesferie.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06-09-30
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
 END:VEVENT

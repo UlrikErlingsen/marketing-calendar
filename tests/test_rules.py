@@ -178,3 +178,36 @@ def test_year_range_is_enforced():
         LIB.resolve("syttende_mai", 2024)
     with pytest.raises(PlanProblem):
         LIB.resolve("syttende_mai", 2036)
+
+
+@pytest.mark.parametrize(
+    "region,moment_id,year,start,end",
+    [
+        # Bergen kommune, veiledende skolerute 2026/27 and 2027/28
+        ("bergen", "hostferie", 2026, date(2026, 10, 5), date(2026, 10, 9)),
+        ("bergen", "hostferie", 2027, date(2027, 10, 11), date(2027, 10, 15)),
+        ("bergen", "vinterferie", 2027, date(2027, 3, 1), date(2027, 3, 5)),
+        ("bergen", "vinterferie", 2028, date(2028, 2, 28), date(2028, 3, 3)),
+        ("bergen", "paskeferie", 2027, date(2027, 3, 22), date(2027, 3, 29)),
+        ("bergen", "paskeferie", 2028, date(2028, 4, 10), date(2028, 4, 17)),
+        # Trondheim kommune skoleruta 2026/27 and 2027/28
+        ("trondheim", "skolestart", 2026, date(2026, 8, 17), date(2026, 8, 17)),
+        ("trondheim", "skolestart", 2027, date(2027, 8, 23), date(2027, 8, 23)),
+        ("trondheim", "hostferie", 2026, date(2026, 10, 5), date(2026, 10, 9)),
+        ("trondheim", "hostferie", 2027, date(2027, 10, 11), date(2027, 10, 15)),
+        ("trondheim", "vinterferie", 2027, date(2027, 2, 22), date(2027, 2, 26)),
+        ("trondheim", "vinterferie", 2028, date(2028, 2, 21), date(2028, 2, 25)),
+        ("trondheim", "paskeferie", 2027, date(2027, 3, 22), date(2027, 3, 29)),
+        ("trondheim", "paskeferie", 2028, date(2028, 4, 10), date(2028, 4, 17)),
+    ],
+)
+def test_bergen_and_trondheim_rules_reproduce_published_skolerute(region, moment_id, year, start, end):
+    occ = LIB.resolve(moment_id, year, region)
+    assert (occ.start, occ.end) == (start, end)
+    assert occ.regional
+
+
+def test_bergen_skolestart_falls_back_to_the_national_range():
+    occ = LIB.resolve("skolestart", 2026, "bergen")
+    assert not occ.regional and occ.varies_here
+    assert occ.start <= date(2026, 8, 14) <= occ.end  # Bergen's Friday 14 Aug 2026 lies inside the range

@@ -20,7 +20,7 @@ Everything runs locally with open-source Python packages. There is no account, t
 
 - **Every date is computed from a rule** — Easter, "2nd Sunday of February", ISO week 28 — for any year from 2025 to 2035. Nothing is typed in per year.
 - **Every rule is sourced or honestly labelled.** Holidays cite Lovdata; traditions such as morsdag and farsdag cite Store norske leksikon; Black Week, julebord and russetid are marked as *conventions* with a note explaining why.
-- **School breaks vary by kommune**, so the national entry is a **range** (vinterferie = ISO week 8 *or* 9), never a guessed date. Regional rules — Oslo today — reproduce the kommune's published skolerute and say which school years were checked.
+- **School breaks vary by kommune**, so the national entry is a **range** (vinterferie = ISO week 8 *or* 9), never a guessed date. Regional rules for **Oslo, Bergen and Trondheim** reproduce each kommune's published skolerute and say which school years were checked (Oslo vinterferie is week 8, Bergen week 9 — exactly why a national date would be wrong).
 - **Lead times are planning conventions**, not research. The defaults (e.g. food: concept −16 weeks, creative −10, media booking −6, live −1) are a starting point; edit them.
 - Russetid is changing (vg3 exams are spread around 17. mai from 2026) and school routes change every year. Re-check before you commit budget.
 
@@ -125,7 +125,7 @@ python -m build
 
 `scripts/generate_examples.py` rebuilds the files in `examples/` (a test fails if the committed calendars are stale) and `scripts/take_screenshots.py` recaptures the README screenshots from a running app (needs `pip install playwright` and Microsoft Edge).
 
-The suite checks Easter-based holidays for several known years, morsdag and farsdag rules, Black Friday, Black Week and Advent, ISO-week ranges (including 53-week years), Oslo's published school dates, the library contract (every moment sourced or explained), lead-time maths with weekend and holiday adjustment, local storage, `.ics` structure and validity, XLSX formula-injection safety, the rule that nothing under `src/` imports streamlit, and every Streamlit page for several years and regions.
+The suite checks Easter-based holidays for several known years, morsdag and farsdag rules, Black Friday, Black Week and Advent, ISO-week ranges (including 53-week years), Oslo, Bergen and Trondheim's published school dates, the library contract (every moment sourced or explained), lead-time maths with weekend and holiday adjustment, local storage, `.ics` structure and validity, XLSX formula-injection safety, the rule that nothing under `src/` imports streamlit, and every Streamlit page for several years and regions.
 
 ## Relationship to the Signal suite
 
@@ -133,7 +133,7 @@ SeasonSignal is part of the [Signal suite](https://ulrikerlingsen.com/): local-f
 
 ## Sources
 
-Date rules are verified against [Lovdata](https://lovdata.no/) (helligdagsfredloven, the law on 1 and 17 May, ferieloven, opplæringslova), [Store norske leksikon](https://snl.no/), [Oslo kommune's skolerute](https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/), [Virke](https://www.virke.no/analyse/julehandel/) and [regjeringen.no](https://www.regjeringen.no/no/aktuelt/regjeringen-skal-endre-russetiden/id3030864/). Each moment's own link is in the library.
+Date rules are verified against [Lovdata](https://lovdata.no/) (helligdagsfredloven, the law on 1 and 17 May, ferieloven, opplæringslova), [Store norske leksikon](https://snl.no/), the skolerute of [Oslo](https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/), [Bergen](https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager) and [Trondheim](https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/), [Virke](https://www.virke.no/analyse/julehandel/) and [regjeringen.no](https://www.regjeringen.no/no/aktuelt/regjeringen-skal-endre-russetiden/id3030864/). Each moment's own link is in the library.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md).
 

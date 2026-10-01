@@ -70,7 +70,7 @@ def _with(change):
         lambda d: d["moments"][0].update(basis="vibes"),
         lambda d: d["moments"][1].update(id=d["moments"][0]["id"]),  # duplicate id
         lambda d: d["moments"].append({**d["moments"][0], "id": "x", "start": d["moments"][0]["date"]}),
-        lambda d: next(m for m in d["moments"] if m["id"] == "vinterferie")["variants"][0].update(region="bergen"),
+        lambda d: next(m for m in d["moments"] if m["id"] == "vinterferie")["variants"][0].update(region="stavanger"),
         lambda d: next(m for m in d["moments"] if m["id"] == "cyber_monday")["date"].update(to="nope"),
     ],
 )
