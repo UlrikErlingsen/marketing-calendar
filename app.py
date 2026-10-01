@@ -38,6 +38,7 @@ from seasonsignal import (
     friendly_message,
     lead_times_frame,
     load_library,
+    default_store_path,
     load_store,
     milestones_frame,
     moment_items,
@@ -45,8 +46,8 @@ from seasonsignal import (
     plan_campaign,
     plan_moments,
     planning_status,
-    save_store,
     select_occurrences,
+    update_store,
     validate_campaign,
     validate_lead_times,
 )
@@ -187,17 +188,33 @@ def _default_year() -> int:
 
 
 def _ensure_state() -> None:
-    if "store" not in st.session_state:
+    # Read the (small) file on every run, so a second browser tab never works from a stale copy.
+    try:
         st.session_state["store"] = load_store(demo_year=_default_year())
+    except PlanProblem as exc:
+        show_error(exc)
+        st.caption(f"Saved plans live in {default_store_path()}. Fix or move that file, then reload the page.")
+        st.stop()
 
 
 def _store():
     return st.session_state["store"]
 
 
-def _persist(message: str) -> None:
-    path = save_store(_store())
-    st.toast(f"{message} Saved to {path.name}.")
+def _persist(message: str, change) -> None:
+    """Apply ``change`` to the freshly re-read store and save it (see storage.update_store)."""
+    store = update_store(change, demo_year=_default_year())
+    st.session_state["store"] = store
+    st.toast(f"{message} Saved to {store.path.name}.")
+
+
+def _form_key(name: str) -> str:
+    # Forms keep their input when validation fails; a new key after a successful submit clears them.
+    return f"{name}-{st.session_state.get('form_version', 0)}"
+
+
+def _form_done() -> None:
+    st.session_state["form_version"] = st.session_state.get("form_version", 0) + 1
 
 
 def show_error(exc: Exception) -> None:
@@ -255,7 +272,9 @@ def _selection():
 
 
 def _planned(year: int, category: str, region: str, show_all: bool):
-    occurrences = select_occurrences(LIBRARY, LIBRARY.occurrences(year, region), category, include_all=show_all)
+    # The calendar year, including ranges that began the year before (e.g. the school Christmas break).
+    year_view = LIBRARY.window(date(year, 1, 1), 12, region)
+    occurrences = select_occurrences(LIBRARY, year_view, category, include_all=show_all)
     return plan_moments(LIBRARY, occurrences, _store().lead_times, category)
 
 
@@ -348,7 +367,8 @@ def moment_details(moment_id: str, year: int, category: str, region: str) -> Non
     item = plan_moments(LIBRARY, [occ], _store().lead_times, category)[0]
     moment = occ.moment
     with st.container(border=True):
-        st.markdown(f"### {moment.name_nb} · <span class='small-note'>{moment.name_en}</span>", unsafe_allow_html=True)
+        st.markdown(f"### {moment.name_nb}")
+        st.caption(moment.name_en)
         left, right = st.columns([1.1, 1])
         with left:
             st.markdown(f"**When:** {_span(occ.start, occ.end)}")
@@ -369,16 +389,20 @@ def moment_details(moment_id: str, year: int, category: str, region: str) -> Non
             st.dataframe(_milestone_table(item.milestones), hide_index=True, use_container_width=True)
             st.caption("Milestones landing on a weekend or public holiday move to the previous working day.")
         with st.expander("Add a campaign for this moment"):
-            with st.form(f"quick-campaign-{moment_id}-{year}", clear_on_submit=True):
+            with st.form(_form_key(f"quick-campaign-{moment_id}-{year}")):
                 name = st.text_input("Campaign name")
                 brand = st.text_input("Brand")
                 if st.form_submit_button("Add to My campaigns"):
-                    campaign = validate_campaign(
-                        Campaign(name=name, brand=brand, moment_id=moment_id, year=year, category=category, region=region),
-                        LIBRARY,
-                    )
-                    _store().campaigns.append(campaign)
-                    _persist(f"Added “{campaign.name}”.")
+                    try:
+                        campaign = validate_campaign(
+                            Campaign(name=name, brand=brand, moment_id=moment_id, year=year, category=category,
+                                     region=region),
+                            LIBRARY,
+                        )
+                        _persist(f"Added “{campaign.name}”.", lambda store: store.campaigns.append(campaign))
+                        _form_done()
+                    except PlanProblem as exc:
+                        st.error(friendly_message(exc))
 
 
 def page_welcome() -> None:
@@ -458,7 +482,7 @@ def page_planner() -> None:
     points = getattr(getattr(event, "selection", None), "points", None) or []
     if points and points[0].get("customdata"):
         clicked = points[0]["customdata"][0]
-    ids = frame["id"].tolist()
+    ids = list(dict.fromkeys(frame["id"]))  # a range crossing New Year can appear twice in one year
     names = dict(zip(frame["id"], frame["Moment"]))
     if not ids:
         st.info("No moments match this filter.")
@@ -552,7 +576,7 @@ def page_campaigns() -> None:
 
     st.markdown("### Add a campaign")
     moment_ids = list(LIBRARY.moments)
-    with st.form("add-campaign", clear_on_submit=True):
+    with st.form(_form_key("add-campaign")):
         c1, c2 = st.columns(2)
         name = c1.text_input("Campaign name")
         brand = c2.text_input("Brand")
@@ -564,14 +588,18 @@ def page_campaigns() -> None:
         camp_region = c2.selectbox("Region", REGION_KEYS, index=REGION_KEYS.index(region), format_func=LIBRARY.regions.get)
         notes = st.text_area("Notes", height=80)
         if st.form_submit_button("Add campaign"):
-            campaign = validate_campaign(
-                Campaign(name=name, brand=brand, moment_id=moment_id, year=int(camp_year), category=camp_category,
-                         region=camp_region, notes=notes),
-                LIBRARY,
-            )
-            store.campaigns.append(campaign)
-            _persist(f"Added “{campaign.name}”.")
-            st.rerun()
+            try:
+                campaign = validate_campaign(
+                    Campaign(name=name, brand=brand, moment_id=moment_id, year=int(camp_year),
+                             category=camp_category, region=camp_region, notes=notes),
+                    LIBRARY,
+                )
+            except PlanProblem as exc:
+                st.error(friendly_message(exc))
+            else:
+                _persist(f"Added “{campaign.name}”.", lambda store: store.campaigns.append(campaign))
+                _form_done()
+                st.rerun()
 
     if store.campaigns:
         st.markdown("### Remove")
@@ -579,12 +607,16 @@ def page_campaigns() -> None:
         names = {c.id: f"{c.name} ({c.year})" for c in store.campaigns}
         to_remove = c1.selectbox("Campaign", list(names), format_func=names.get)
         if c1.button("Remove campaign"):
-            store.campaigns = [c for c in store.campaigns if c.id != to_remove]
-            _persist("Campaign removed.")
+            def remove(saved):
+                saved.campaigns = [c for c in saved.campaigns if c.id != to_remove]
+
+            _persist("Campaign removed.", remove)
             st.rerun()
         if any(c.fictional for c in store.campaigns) and c2.button("Remove fictional demo campaigns"):
-            store.campaigns = [c for c in store.campaigns if not c.fictional]
-            _persist("Demo campaigns removed.")
+            def remove_demo(saved):
+                saved.campaigns = [c for c in saved.campaigns if not c.fictional]
+
+            _persist("Demo campaigns removed.", remove_demo)
             st.rerun()
     st.caption(f"File: {store.path}")
 
@@ -612,11 +644,13 @@ def page_lead_times() -> None:
     c1, c2 = st.columns([1, 1])
     if c1.button("Save lead times", type="primary"):
         table = {row["key"]: {key: row[label] for key, label in MILESTONES} for _, row in edited.iterrows()}
-        store.lead_times = validate_lead_times(table)
-        _persist("Lead times updated.")
+        clean = validate_lead_times(table)
+        _persist("Lead times updated.", lambda saved: saved.lead_times.update(clean))
     if c2.button("Reset to defaults"):
-        store.lead_times = validate_lead_times(DEFAULT_LEAD_TIMES)
-        _persist("Lead times reset.")
+        defaults = validate_lead_times(DEFAULT_LEAD_TIMES)
+        _persist("Lead times reset.", lambda saved: setattr(saved, "lead_times", defaults))
+        # The editor re-applies its stored edits on top of new data; drop them so it shows the defaults.
+        st.session_state.pop("lead-time-editor", None)
         st.rerun()
     st.markdown(
         '<div class="boundary"><strong>Rules:</strong> whole weeks from 0 to 52, in order concept ≥ creative ≥ media '
@@ -642,7 +676,7 @@ def page_export() -> None:
     with_campaigns = c3.checkbox(f"My campaigns ({len(plans)} in {year})", value=True)
     items = []
     if with_moments or with_milestones:
-        items = moment_items(planned, milestones=with_milestones)
+        items = moment_items(planned, milestones=with_milestones, category=category)
         if not with_moments:
             items = [item for item in items if item.category != "Moment"]
     if with_campaigns:
@@ -667,8 +701,10 @@ def page_export() -> None:
         "then *Settings → Import & export → Import* and pick that calendar. Deleting the calendar removes everything.\n"
         "- **Outlook:** *Add calendar → Upload from file*.\n"
         "- **Apple Calendar:** *File → Import*, then choose a new calendar.\n\n"
-        "All events are all-day and marked *free*, so they never block meetings. Re-importing updates events "
-        "with the same ID rather than duplicating them in most calendar apps."
+        "All events are all-day and marked *free*, so they never block meetings.\n\n"
+        "**Updating later:** calendar apps differ in whether a re-import updates events they already have "
+        "(Google Calendar usually keeps the old copy). The reliable way to refresh a plan is to delete the "
+        "SeasonSignal calendar you created and import the new file into a fresh one."
     )
 
 

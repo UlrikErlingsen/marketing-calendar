@@ -16,6 +16,7 @@ from .planner import PlannedMoment
 
 PRODID = f"-//Signal suite//SeasonSignal {__version__}//EN"
 UID_DOMAIN = "seasonsignal.local"
+SEQUENCE_EPOCH = datetime(2025, 1, 1, tzinfo=timezone.utc)
 _FORMULA_START = ("=", "+", "-", "@", "\t", "\r")
 _CONTROL = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
@@ -36,7 +37,12 @@ def _uid(*parts: object) -> str:
     return f"{slug}@{UID_DOMAIN}"
 
 
-def moment_items(planned: list[PlannedMoment], *, milestones: bool = True) -> list[CalendarItem]:
+def moment_items(planned: list[PlannedMoment], *, milestones: bool = True, category: str = "") -> list[CalendarItem]:
+    """Calendar items for moments and (optionally) their milestones.
+
+    Milestone dates depend on the planning category's lead times, so ``category`` is part of their UID: a Food
+    plan and a Retail plan are different events, not two versions of one.
+    """
     items = []
     for item in planned:
         occ, moment = item.occurrence, item.occurrence.moment
@@ -59,7 +65,7 @@ def moment_items(planned: list[PlannedMoment], *, milestones: bool = True) -> li
             for milestone in item.milestones:
                 items.append(
                     CalendarItem(
-                        uid=_uid("milestone", moment.id, occ.year, occ.region, milestone.key),
+                        uid=_uid("milestone", moment.id, occ.year, occ.region, category or "plan", milestone.key),
                         summary=f"{milestone.label}: {moment.name_nb}",
                         start=milestone.due,
                         end=milestone.due,
@@ -96,8 +102,13 @@ def campaign_items(plans: list[CampaignPlan]) -> list[CalendarItem]:
 
 
 def build_ics(items: list[CalendarItem], name: str = "SeasonSignal", *, stamp: datetime | None = None) -> bytes:
-    """All-day events (DTEND exclusive, per RFC 5545), transparent so they never block busy time."""
+    """All-day events (DTEND exclusive, per RFC 5545), transparent so they never block busy time.
+
+    Every event carries LAST-MODIFIED and a SEQUENCE that grows with the export time (minutes since 2025), so a
+    calendar that honours them treats a newer export as an update of the same UID.
+    """
     stamp = stamp or datetime.now(timezone.utc).replace(microsecond=0)
+    sequence = max(0, int((stamp - SEQUENCE_EPOCH).total_seconds() // 60))
     cal = Calendar()
     cal.add("prodid", PRODID)
     cal.add("version", "2.0")
@@ -113,6 +124,8 @@ def build_ics(items: list[CalendarItem], name: str = "SeasonSignal", *, stamp: d
         event = Event()
         event.add("uid", item.uid)
         event.add("dtstamp", stamp)
+        event.add("last-modified", stamp)
+        event.add("sequence", sequence)
         event.add("summary", item.summary)
         event.add("dtstart", item.start)
         event.add("dtend", item.end + timedelta(days=1))

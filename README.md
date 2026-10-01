@@ -59,7 +59,7 @@ Categories: Retail, Food & drink, Fashion, Travel, B2B, Alcohol-free, Kids & fam
 
 ## Exports
 
-- **`.ics`** (RFC 5545): all-day events, marked *free* so they never block meetings, with stable UIDs so a re-import updates instead of duplicating. Moments that vary locally are labelled "(varierer lokalt)" and carry the source link. In Google Calendar, create a separate calendar first, then *Settings → Import & export → Import* into it.
+- **`.ics`** (RFC 5545): all-day events, marked *free* so they never block meetings, with stable UIDs plus SEQUENCE/LAST-MODIFIED. Moments that vary locally are labelled "(varierer lokalt)" and carry the source link. In Google Calendar, create a separate calendar first, then *Settings → Import & export → Import* into it. Calendar apps differ in whether a re-import updates existing events (Google usually keeps the old copy), so to refresh a plan, delete that calendar and import the new file into a fresh one.
 - **XLSX plan**: moments, milestones, campaigns, lead times and an About sheet. All cells are sanitised against spreadsheet formula injection.
 
 ## Run locally

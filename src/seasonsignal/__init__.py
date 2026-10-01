@@ -41,7 +41,7 @@ from .planner import (  # noqa: E402
     select_occurrences,
 )
 from .rules import easter_sunday, evaluate, iso_week_day, nth_weekday  # noqa: E402
-from .storage import Store, default_store_path, load_store, save_store  # noqa: E402
+from .storage import Store, default_store_path, load_store, save_store, update_store  # noqa: E402
 
 __all__ = [
     "__version__",
@@ -87,6 +87,7 @@ __all__ = [
     "safe_cell",
     "save_store",
     "select_occurrences",
+    "update_store",
     "validate_campaign",
     "validate_lead_times",
 ]

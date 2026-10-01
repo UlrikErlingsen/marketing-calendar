@@ -34,7 +34,8 @@ def _planned(year=2026, region="all"):
 
 def _ics():
     plans = [plan_campaign(c, LIB, LEAD) for c in demo_campaigns(2026)]
-    return build_ics(moment_items(_planned()) + campaign_items(plans), "SeasonSignal test", stamp=STAMP)
+    return build_ics(moment_items(_planned(), category="food") + campaign_items(plans), "SeasonSignal test",
+                     stamp=STAMP)
 
 
 def test_ics_is_valid_rfc5545_structure():
@@ -50,7 +51,7 @@ def test_ics_is_valid_rfc5545_structure():
     uids = [str(e["UID"]) for e in events]
     assert len(uids) == len(set(uids))
     for event in events:
-        for prop in ("UID", "DTSTAMP", "DTSTART", "DTEND", "SUMMARY"):
+        for prop in ("UID", "DTSTAMP", "DTSTART", "DTEND", "SUMMARY", "SEQUENCE", "LAST-MODIFIED"):
             assert prop in event, prop
         start, end = event.decoded("DTSTART"), event.decoded("DTEND")
         assert type(start) is date and type(end) is date  # all-day
@@ -63,7 +64,7 @@ def test_ics_ranges_and_milestones():
     by_uid = {str(e["UID"]): e for e in cal.walk("VEVENT")}
     week = by_uid["moment-black-week-2026-all@seasonsignal.local"]
     assert week.decoded("DTSTART") == date(2026, 11, 23) and week.decoded("DTEND") == date(2026, 12, 1)
-    concept = by_uid["milestone-black-week-2026-all-concept@seasonsignal.local"]
+    concept = by_uid["milestone-black-week-2026-all-food-concept@seasonsignal.local"]
     assert concept.decoded("DTSTART") == date(2026, 8, 3)
     vinter = by_uid["moment-vinterferie-2026-all@seasonsignal.local"]
     assert "varierer lokalt" in str(vinter["SUMMARY"])
@@ -107,3 +108,16 @@ def test_committed_example_calendars_match_the_generator():
         if name.endswith(".ics"):
             committed = (root / "examples" / name).read_bytes()
             assert committed == payload, f"examples/{name} is stale — run scripts/generate_examples.py"
+
+
+def test_newer_export_has_higher_sequence_and_category_specific_milestones():
+    planned = _planned()
+    old = Calendar.from_ical(build_ics(moment_items(planned, category="food"), stamp=STAMP))
+    new = Calendar.from_ical(build_ics(moment_items(planned, category="retail"),
+                                       stamp=STAMP.replace(day=2)))
+    old_seq = {int(e["SEQUENCE"]) for e in old.walk("VEVENT")}
+    new_seq = {int(e["SEQUENCE"]) for e in new.walk("VEVENT")}
+    assert max(old_seq) < min(new_seq)
+    old_milestones = {str(e["UID"]) for e in old.walk("VEVENT") if str(e["UID"]).startswith("milestone-")}
+    new_milestones = {str(e["UID"]) for e in new.walk("VEVENT") if str(e["UID"]).startswith("milestone-")}
+    assert old_milestones and not old_milestones & new_milestones  # different plans never share a UID

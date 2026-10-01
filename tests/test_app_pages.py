@@ -93,3 +93,59 @@ def test_campaign_for_unknown_moment_does_not_break_pages(isolated_store):
         if page == "3 · My campaigns":
             assert any("Renamed moment" in str(w.value) for w in app.warning)
             assert any(b.label == "Remove campaign" for b in app.button)  # it can still be removed
+
+
+def test_planner_year_includes_christmas_break_tail_and_bad_files_are_reported(isolated_store):
+    app = AppTest.from_file(APP, default_timeout=120)
+    app.query_params["page"] = "planner"
+    app.run()
+    app.sidebar.selectbox(key="year").set_value(2027).run()
+    app.sidebar.checkbox(key="show_all").check().run()
+    assert not app.exception, [error.value for error in app.exception]
+
+    (isolated_store / "seasonsignal.json").write_text('{"version": 1, "campaigns": [{"name": "x"}]}', encoding="utf-8")
+    broken = _app()
+    assert not broken.exception, [error.value for error in broken.exception]
+    assert any("malformed" in str(e.value) for e in broken.error)
+
+
+def test_older_file_missing_a_milestone_still_loads(isolated_store):
+    (isolated_store / "seasonsignal.json").write_text(
+        '{"version": 1, "lead_times": {"food": {"concept": 20}}, "campaigns": []}', encoding="utf-8"
+    )
+    app = _app()
+    app.sidebar.radio[0].set_value("4 · Lead times").run()
+    assert not app.exception and not app.error
+    assert app.session_state["store"].lead_times["food"] == {"concept": 20, "creative": 10, "media": 6, "live": 1}
+
+
+def test_failed_campaign_form_keeps_page_and_input():
+    app = _app()
+    app.sidebar.radio[0].set_value("3 · My campaigns").run()
+    next(b for b in app.button if b.label == "Add campaign").click().run()  # empty name
+    assert any("name" in str(e.value).lower() for e in app.error)
+    assert any(b.label == "Remove campaign" for b in app.button)  # rest of the page still renders
+
+
+def test_two_sessions_do_not_overwrite_each_other(isolated_store):
+    first, second = _app(), _app()
+    for app, name in ((first, "From tab one"), (second, "From tab two")):
+        app.sidebar.radio[0].set_value("3 · My campaigns").run()
+        app.text_input[0].input(name).run()
+        next(b for b in app.button if b.label == "Add campaign").click().run()
+        assert not app.exception, [error.value for error in app.exception]
+    saved = (isolated_store / "seasonsignal.json").read_text(encoding="utf-8")
+    assert "From tab one" in saved and "From tab two" in saved
+
+
+def test_reset_lead_times_resets_the_editor(isolated_store):
+    (isolated_store / "seasonsignal.json").write_text(
+        '{"version": 1, "lead_times": {"food": {"concept": 30, "creative": 10, "media": 6, "live": 1}}, '
+        '"campaigns": []}', encoding="utf-8"
+    )
+    app = _app()
+    app.sidebar.radio[0].set_value("4 · Lead times").run()
+    next(b for b in app.button if b.label == "Reset to defaults").click().run()
+    assert not app.exception
+    assert app.session_state["store"].lead_times["food"]["concept"] == 16
+    assert not app.session_state["lead-time-editor"]["edited_rows"]  # no stale edits re-applied
