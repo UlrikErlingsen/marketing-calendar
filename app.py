@@ -1,4 +1,4 @@
-"""SeasonSignal Streamlit application."""
+"""Season Signal Streamlit application."""
 
 from __future__ import annotations
 
@@ -7,7 +7,6 @@ import os
 # Keep Arrow serialization stable on macOS. This must be set before Streamlit imports Arrow.
 os.environ.setdefault("ARROW_DEFAULT_MEMORY_POOL", "system")
 
-import base64
 import sys
 import traceback
 from datetime import date, datetime, time
@@ -51,13 +50,13 @@ from seasonsignal import (
     validate_campaign,
     validate_lead_times,
 )
+from seasonsignal.ui import signal_theme as sig
 
-KIND_COLORS = {
-    "Public holiday": "#173C3A",
-    "Retail moment": "#D95B40",
-    "Season & holidays": "#83D2B4",
-    "Cultural moment": "#F2C66D",
-}
+THEME = "season"
+# Categorical series: the Signal colorway, Season Signal's own Market green first.
+KIND_COLORS = dict(
+    zip(("Public holiday", "Retail moment", "Season & holidays", "Cultural moment"), sig.colorway(THEME))
+)
 STATUS_ICONS = {
     "on track": "🟢 on track",
     "start soon": "🟡 start soon",
@@ -66,115 +65,11 @@ STATUS_ICONS = {
     "happening now": "🔵 happening now",
     "passed": "⚪ passed",
 }
-mark_path = ROOT / "assets" / "seasonsignal-mark.svg"
-MARK_URI = (
-    "data:image/svg+xml;base64," + base64.b64encode(mark_path.read_bytes()).decode("ascii")
-    if mark_path.exists()
-    else ""
-)
 
 
-st.set_page_config(page_title="SeasonSignal | Norwegian marketing calendar", page_icon="◉", layout="wide")
+st.set_page_config(**sig.page_config(THEME, "Norwegian marketing calendar"))
 
-st.markdown(
-    """
-    <style>
-    :root {
-        --ps-ink:#17322e; --ps-deep:#102c2a; --ps-teal:#173c3a;
-        --ps-coral:#d95b40; --ps-mint:#83d2b4; --ps-gold:#f2c66d;
-        --ps-paper:#f8f5ed; --ps-line:rgba(23,50,46,.14);
-    }
-    [data-testid="stAppViewContainer"] {
-        background:radial-gradient(circle at 94% 2%,rgba(131,210,180,.17),transparent 28rem),
-                   radial-gradient(circle at 3% 93%,rgba(242,198,109,.14),transparent 25rem),
-                   linear-gradient(180deg,#fbf9f3 0%,var(--ps-paper) 100%);
-    }
-    [data-testid="stHeader"] { background:rgba(248,245,237,.78); }
-    [data-testid="stSidebar"] { background:linear-gradient(165deg,#173c3a 0%,#102c2a 65%,#0c2422 100%); }
-    [data-testid="stSidebar"] h1,[data-testid="stSidebar"] h2,[data-testid="stSidebar"] h3,
-    [data-testid="stSidebar"] p,[data-testid="stSidebar"] label,[data-testid="stSidebar"] span { color:#f8f5ed; }
-    [data-testid="stSidebar"] [data-testid="stCaptionContainer"] p { color:#b9cbc5; }
-    [data-testid="stSidebar"] [data-baseweb="select"] span { color:#17322e; }
-    [data-testid="stSidebar"] button {
-        background:rgba(255,255,255,.08); color:#f8f5ed !important; border-color:rgba(255,255,255,.23);
-    }
-    [data-testid="stSidebar"] button:hover { background:rgba(242,198,109,.14); border-color:rgba(242,198,109,.48); }
-    [data-testid="stSidebar"] button * { color:#f8f5ed !important; }
-    .block-container { max-width:1240px; padding-top:4.4rem; padding-bottom:4rem; }
-    h1,h2,h3 { color:var(--ps-ink); letter-spacing:-.025em; }
-    a { color:#9b3e2b; }
-    [data-testid="stMetric"] {
-        background:rgba(255,255,255,.75); border:1px solid var(--ps-line); border-radius:16px;
-        padding:1rem 1.05rem; box-shadow:0 8px 28px rgba(23,50,46,.045);
-    }
-    [data-testid="stMetricValue"] { color:var(--ps-ink); font-size:clamp(1.25rem,2.1vw,1.7rem); }
-    .stButton > button[kind="primary"], .stDownloadButton > button[kind="primary"],
-    [data-testid="stFormSubmitButton"] > button {
-        background:linear-gradient(135deg,#e26748,#c94c34); color:white; border:0;
-        box-shadow:0 8px 20px rgba(217,91,64,.22); font-weight:750;
-    }
-    .stButton > button[kind="primary"]:hover { background:linear-gradient(135deg,#c94c34,#b63f2b); color:white; }
-    button:focus-visible,a:focus-visible,input:focus-visible,[role="radio"]:focus-visible {
-        outline:3px solid #f2c66d !important; outline-offset:2px;
-    }
-    [data-testid="stExpander"],[data-testid="stAlert"],[data-testid="stVerticalBlockBorderWrapper"] { border-radius:14px; }
-    .ps-lockup { display:flex; align-items:center; gap:.65rem; }
-    .ps-mark { width:38px; height:38px; }
-    .ps-name { color:white; font-size:1.28rem; line-height:1; font-weight:850; letter-spacing:-.04em; }
-    .ps-name span { color:#f2c66d !important; }
-    .ps-tag { margin:.55rem 0 0 !important; color:#b9cbc5 !important; font-size:.77rem; line-height:1.4; }
-    .ps-masthead {
-        display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:.72rem 1rem .72rem .78rem;
-        margin-bottom:1.35rem; background:rgba(255,255,255,.65); border:1px solid var(--ps-line);
-        border-radius:18px; box-shadow:0 10px 36px rgba(23,50,46,.05);
-    }
-    .ps-masthead .ps-mark { width:48px; height:48px; }
-    .ps-wordmark { color:var(--ps-ink); font-weight:850; letter-spacing:-.045em; font-size:1.55rem; line-height:1; }
-    .ps-wordmark span { color:var(--ps-coral); }
-    .ps-kicker { margin-top:.32rem; color:#59716c; font-size:.67rem; font-weight:800; letter-spacing:.13em; }
-    .ps-promise { color:#47645e; font-size:.78rem; font-weight:700; white-space:nowrap; }
-    .ps-promise span { color:var(--ps-coral); padding:0 .3rem; }
-    .ps-hero {
-        position:relative; overflow:hidden; padding:clamp(1.7rem,4vw,3.4rem); margin-bottom:1.3rem;
-        background:linear-gradient(135deg,#173c3a 0%,#102c2a 75%); border-radius:26px;
-        box-shadow:0 18px 50px rgba(23,50,46,.17);
-    }
-    .ps-hero:after {
-        content:""; position:absolute; width:330px; height:330px; right:-105px; top:-148px;
-        border-radius:50%; border:56px solid rgba(131,210,180,.12);
-    }
-    .ps-eyebrow { color:#83d2b4; font-size:.72rem; font-weight:850; letter-spacing:.16em; }
-    .ps-hero h1 { color:white; font-size:clamp(2.1rem,4.6vw,4.3rem); line-height:.98; margin:.75rem 0 1rem; max-width:980px; }
-    .ps-hero h1 em { color:#f2c66d; font-style:normal; }
-    .ps-hero p { color:#d7e3df; font-size:1.06rem; line-height:1.6; max-width:820px; }
-    .ps-pills { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:1.15rem; }
-    .ps-pill {
-        padding:.4rem .72rem; border:1px solid rgba(255,255,255,.16); border-radius:999px;
-        color:#f8f5ed; font-size:.78rem; font-weight:700; background:rgba(255,255,255,.055);
-    }
-    .ps-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:1.2rem 0 1.5rem; }
-    .ps-card {
-        height:100%; padding:1.2rem 1.2rem 1rem; background:rgba(255,255,255,.68);
-        border:1px solid var(--ps-line); border-radius:18px;
-    }
-    .ps-card b { color:var(--ps-coral); font-size:.72rem; letter-spacing:.12em; }
-    .ps-card h3 { margin:.4rem 0 .5rem; }
-    .ps-card p { color:#59716c; font-size:.9rem; line-height:1.55; }
-    .pulse-kicker {font-size:.72rem;font-weight:800;letter-spacing:.14em;color:var(--ps-coral);text-transform:uppercase;}
-    .pulse-title {font-size:2.15rem;line-height:1.08;font-weight:850;color:var(--ps-ink);margin:.2rem 0 .6rem;}
-    .pulse-subtitle {font-size:1.02rem;color:#526a65;max-width:850px;margin-bottom:1.2rem;line-height:1.55;}
-    .boundary {border-left:4px solid var(--ps-mint);background:rgba(255,255,255,.62);border-radius:0 14px 14px 0;padding:1rem 1.1rem;color:#47645e;}
-    .warning-box {border-left:4px solid var(--ps-gold);background:rgba(242,198,109,.17);border-radius:0 14px 14px 0;padding:1rem 1.1rem;color:#604b1f;}
-    .small-note {font-size:.86rem;color:#617670;}
-    .ps-footer { margin-top:3.2rem; padding-top:1rem; border-top:1px solid var(--ps-line); color:#617670; font-size:.76rem; text-align:center; }
-    .ps-footer span { color:var(--ps-coral); padding:0 .38rem; }
-    @media (max-width:1050px) { .ps-grid{grid-template-columns:1fr} }
-    @media (max-width:760px) { .ps-promise{display:none}.ps-hero{border-radius:20px}.block-container{padding-top:3.5rem} }
-    @media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto !important; transition:none !important; } }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+sig.apply(THEME)
 
 
 LIBRARY = load_library()
@@ -226,31 +121,11 @@ def show_error(exc: Exception) -> None:
 
 
 def masthead() -> None:
-    mark = f'<img class="ps-mark" src="{MARK_URI}" alt="">' if MARK_URI else ""
-    st.markdown(
-        f"""
-        <div class="ps-masthead">
-          <div class="ps-lockup">{mark}<div><div class="ps-wordmark">Season<span>Signal</span></div>
-          <div class="ps-kicker">MOMENTS → DEADLINES → CALENDAR</div></div></div>
-          <div class="ps-promise">Computed dates <span>◆</span> Sourced rules <span>◆</span> Local plans</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    sig.masthead(THEME, ["Computed dates", "Sourced rules", "Local plans"], "MOMENTS → DEADLINES → CALENDAR")
 
 
 def footer() -> None:
-    st.markdown(
-        f'<div class="ps-footer">SeasonSignal v{__version__} <span>◆</span> dates computed, sources cited '
-        '<span>◆</span> Part of the Signal suite <span>◆</span> AGPL-3.0-or-later</div>',
-        unsafe_allow_html=True,
-    )
-
-
-def _header(kicker: str, title: str, subtitle: str) -> None:
-    st.markdown(f'<div class="pulse-kicker">{kicker}</div>', unsafe_allow_html=True)
-    st.markdown(f'<div class="pulse-title">{title}</div>', unsafe_allow_html=True)
-    st.markdown(f'<div class="pulse-subtitle">{subtitle}</div>', unsafe_allow_html=True)
+    sig.footer(THEME, __version__, "dates computed, sources cited")
 
 
 def _fmt(day: date) -> str:
@@ -333,7 +208,7 @@ def timeline_figure(frame: pd.DataFrame, year: int) -> go.Figure:
                 name=kind, legendgroup=kind, orientation="h", y=ranges["label"],
                 base=pd.to_datetime(ranges["Start"]),
                 x=[((end - start).days + 1) * 86_400_000 for start, end in zip(ranges["Start"], ranges["End"])],
-                marker=dict(color=color, line=dict(color="rgba(23,50,46,.35)", width=1)),
+                marker=dict(color=color, line=dict(color=sig.CORE["line"], width=1)),
                 customdata=ranges[["id"]].to_numpy(),
                 text=[_span(a, b) for a, b in zip(ranges["Start"], ranges["End"])],
                 textposition="none", hovertemplate="<b>%{y}</b><br>%{text}<extra>" + kind + "</extra>",
@@ -342,23 +217,25 @@ def timeline_figure(frame: pd.DataFrame, year: int) -> go.Figure:
             fig.add_trace(go.Scatter(
                 name=kind, legendgroup=kind, showlegend=ranges.empty, mode="markers", y=days["label"],
                 x=[datetime.combine(d, time(12)) for d in days["Start"]],
-                marker=dict(symbol="diamond", size=12, color=color, line=dict(color="rgba(23,50,46,.5)", width=1)),
+                marker=dict(symbol="diamond", size=12, color=color, line=dict(color=sig.CORE["muted"], width=1)),
                 customdata=days[["id"]].to_numpy(), text=[_fmt(d) for d in days["Start"]],
                 hovertemplate="<b>%{y}</b><br>%{text}<extra>" + kind + "</extra>",
             ))
     fig.update_yaxes(categoryorder="array", categoryarray=list(reversed(frame["label"])), title=None)
     fig.update_xaxes(
         type="date", range=[f"{year - 1}-12-27", f"{year + 1}-01-08"], dtick="M1", tickformat="%b", title=None,
-        showgrid=True, gridcolor="rgba(23,50,46,.08)",
+        showgrid=True,
     )
     if date(year, 1, 1) <= TODAY <= date(year, 12, 31):
-        fig.add_vline(x=pd.Timestamp(TODAY).value / 1e6, line=dict(color="#D95B40", width=2, dash="dot"))
+        # A reference line, not a series: the neutral zero/reference colour keeps it apart from every kind.
+        reference = sig.roles(THEME)["zero"]
+        fig.add_vline(x=pd.Timestamp(TODAY).value / 1e6, line=dict(color=reference, width=2, dash="dot"))
         fig.add_annotation(x=pd.Timestamp(TODAY), y=1.02, yref="paper", text="today", showarrow=False,
-                           font=dict(color="#D95B40", size=11))
+                           font=dict(color=reference, size=11))
     fig.update_layout(
-        barmode="overlay", height=max(360, 24 * len(frame) + 110), margin=dict(l=10, r=10, t=30, b=10),
-        legend=dict(orientation="h", y=1.06, x=0, title=None), plot_bgcolor="rgba(255,255,255,.6)",
-        paper_bgcolor="rgba(0,0,0,0)", font=dict(color="#17322E"), bargap=0.25, clickmode="event+select",
+        template=sig.template(THEME), barmode="overlay", height=max(360, 24 * len(frame) + 110),
+        margin=dict(l=10, r=10, t=30, b=10), legend=dict(orientation="h", y=1.06, x=0, title=None), plot_bgcolor=sig.CORE["paper"],
+        bargap=0.25, clickmode="event+select",
     )
     return fig
 
@@ -374,11 +251,10 @@ def moment_details(moment_id: str, year: int, category: str, region: str) -> Non
         with left:
             st.markdown(f"**When:** {_span(occ.start, occ.end)}")
             if occ.varies_here:
-                st.markdown(
-                    '<div class="warning-box">Set locally by each kommune/fylkeskommune — this is the national '
-                    "<strong>range</strong>, not a date. Pick a region with a verified rule or check the local "
-                    "skolerute.</div>",
-                    unsafe_allow_html=True,
+                sig.note(
+                    "warn",
+                    "Set locally by each kommune/fylkeskommune — this is the national **range**, not a date. "
+                    "Pick a region with a verified rule or check the local skolerute.",
                 )
             elif occ.regional:
                 st.caption(f"Regional rule for {LIBRARY.regions[region]} (verified against the source below).")
@@ -407,38 +283,28 @@ def moment_details(moment_id: str, year: int, category: str, region: str) -> Non
 
 
 def page_welcome() -> None:
-    st.markdown(
-        """
-        <section class="ps-hero">
-          <div class="ps-eyebrow">NORWEGIAN MARKETING CALENDAR</div>
-          <h1>Which moments matter—and <em>when do you have to start?</em></h1>
-          <p>The commercial year in Norway, computed for any year from 2025 to 2035: helligdager, 17. mai, russetid,
-          Black Week, morsdag and farsdag, fellesferie, back-to-school and the school breaks—each worked backwards
-          into concept, creative, media and go-live deadlines.</p>
-          <div class="ps-pills"><span class="ps-pill">computed holidays</span><span class="ps-pill">Easter-based dates</span>
-          <span class="ps-pill">sourced date rules</span><span class="ps-pill">plan-back milestones</span>
-          <span class="ps-pill">local campaigns</span><span class="ps-pill">.ics export</span>
-          <span class="ps-pill">XLSX plan</span></div>
-        </section>
-        """,
-        unsafe_allow_html=True,
+    sig.hero(
+        THEME,
+        eyebrow="NORWEGIAN MARKETING CALENDAR",
+        title="Which moments matter—and",
+        em="when do you have to start?",
+        body="The commercial year in Norway, computed for any year from 2025 to 2035: helligdager, 17. mai, russetid, "
+        "Black Week, morsdag and farsdag, fellesferie, back-to-school and the school breaks—each worked backwards "
+        "into concept, creative, media and go-live deadlines.",
+        pills=["computed holidays", "Easter-based dates", "sourced date rules", "plan-back milestones",
+               "local campaigns", ".ics export", "XLSX plan"],
     )
-    st.markdown(
-        """
-        <div class="ps-grid">
-          <div class="ps-card"><b>01 · COMPUTE</b><h3>Every date from a rule</h3><p>Easter, the 2nd Sunday in
-          February, ISO week 28, the Friday after the 4th Thursday of November. Nothing is typed in per year, so the
-          calendar is right for 2025 and for 2035.</p></div>
-          <div class="ps-card"><b>02 · CITE</b><h3>Sources, or an honest “convention”</h3><p>Holidays cite Lovdata;
-          traditions cite SNL; school breaks that vary by kommune are shown as a range, not a guess. Black Week and
-          julebord are labelled as conventions.</p></div>
-          <div class="ps-card"><b>03 · PLAN BACK</b><h3>Deadlines you can import</h3><p>Lead times per category
-          turn each moment into concept, creative, media-booking and go-live dates, then export to Google, Outlook or
-          Apple Calendar.</p></div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    sig.cards([
+        ("01 · COMPUTE", "Every date from a rule",
+         "Easter, the 2nd Sunday in February, ISO week 28, the Friday after the 4th Thursday of November. Nothing is "
+         "typed in per year, so the calendar is right for 2025 and for 2035."),
+        ("02 · CITE", "Sources, or an honest “convention”",
+         "Holidays cite Lovdata; traditions cite SNL; school breaks that vary by kommune are shown as a range, not a "
+         "guess. Black Week and julebord are labelled as conventions."),
+        ("03 · PLAN BACK", "Deadlines you can import",
+         "Lead times per category turn each moment into concept, creative, media-booking and go-live dates, then "
+         "export to Google, Outlook or Apple Calendar."),
+    ])
     st.markdown("### Try the demo in two minutes")
     st.markdown(
         f"1. The sidebar is set to **{_default_year()}**, **Food & drink** and **Hele landet**.\n"
@@ -447,19 +313,19 @@ def page_welcome() -> None:
         "4. Open **My campaigns** to see the fictional brand *Fjellbrus* and its three campaigns.\n"
         "5. Open **Export** and download the `.ics` file for your calendar."
     )
-    st.markdown(
-        '<div class="boundary"><strong>Demo data:</strong> Fjellbrus is a fictional alcohol-free drinks brand '
-        "invented for this example. It represents no real company, and its campaigns are illustrations.</div>",
-        unsafe_allow_html=True,
+    sig.note(
+        "boundary",
+        "**Demo data:** Fjellbrus is a fictional alcohol-free drinks brand invented for this example. It represents "
+        "no real company, and its campaigns are illustrations.",
     )
 
 
 def page_planner() -> None:
     year, category, region, show_all = _selection()
-    _header(
+    sig.header(
         "Step 1",
         f"The {year} marketing year",
-        f"Moments for <strong>{LIBRARY.category_label(category)}</strong> in <strong>{LIBRARY.regions[region]}</strong>"
+        f"Moments for {LIBRARY.category_label(category)} in {LIBRARY.regions[region]}"
         " (public holidays always shown for context). Click a bar or diamond to see its plan-back milestones. "
         "⇢ marks a range that varies by kommune.",
     )
@@ -507,7 +373,7 @@ def page_planner() -> None:
 
 def page_coming_up() -> None:
     _, category, region, show_all = _selection()
-    _header(
+    sig.header(
         "Step 2",
         "Coming up — and when to start",
         "The next months from today, across the year boundary. For each moment: the concept deadline for your "
@@ -548,10 +414,10 @@ def page_coming_up() -> None:
 def page_campaigns() -> None:
     year, category, region, _ = _selection()
     store = _store()
-    _header(
+    sig.header(
         "Step 3",
         "My campaigns",
-        "Link your own campaigns to a moment; SeasonSignal works out the deadlines. Campaigns are saved to a local "
+        "Link your own campaigns to a moment; Season Signal works out the deadlines. Campaigns are saved to a local "
         "JSON file on this computer.",
     )
     if not store.saved:
@@ -624,7 +490,7 @@ def page_campaigns() -> None:
 
 def page_lead_times() -> None:
     store = _store()
-    _header(
+    sig.header(
         "Step 4",
         "Lead times",
         "Weeks before a moment starts. Defaults are planning conventions — grocery and travel partners plan earlier, "
@@ -653,17 +519,16 @@ def page_lead_times() -> None:
         # The editor re-applies its stored edits on top of new data; drop them so it shows the defaults.
         st.session_state.pop("lead-time-editor", None)
         st.rerun()
-    st.markdown(
-        '<div class="boundary"><strong>Rules:</strong> whole weeks from 0 to 52, in order concept ≥ creative ≥ media '
-        "booking ≥ live. Plan-back runs from the first day of a moment; for ranges that vary by kommune that is the "
-        "earliest local start.</div>",
-        unsafe_allow_html=True,
+    sig.note(
+        "boundary",
+        "**Rules:** whole weeks from 0 to 52, in order concept ≥ creative ≥ media booking ≥ live. Plan-back runs "
+        "from the first day of a moment; for ranges that vary by kommune that is the earliest local start.",
     )
 
 
 def page_export() -> None:
     year, category, region, show_all = _selection()
-    _header(
+    sig.header(
         "Step 5",
         "Export",
         "Download an .ics calendar (imports into Google, Outlook and Apple Calendar) or an XLSX plan. "
@@ -682,7 +547,7 @@ def page_export() -> None:
             items = [item for item in items if item.category != "Moment"]
     if with_campaigns:
         items += campaign_items(plans)
-    name = f"SeasonSignal {year} — {LIBRARY.category_label(category)}"
+    name = f"Season Signal {year} — {LIBRARY.category_label(category)}"
     slug = f"seasonsignal-{year}-{category}-{region}"
     d1, d2 = st.columns(2)
     d1.download_button(f"Download .ics ({len(items)} events)", build_ics(items, name), f"{slug}.ics",
@@ -705,12 +570,12 @@ def page_export() -> None:
         "All events are all-day and marked *free*, so they never block meetings.\n\n"
         "**Updating later:** calendar apps differ in whether a re-import updates events they already have "
         "(Google Calendar usually keeps the old copy). The reliable way to refresh a plan is to delete the "
-        "SeasonSignal calendar you created and import the new file into a fresh one."
+        "Season Signal calendar you created and import the new file into a fresh one."
     )
 
 
 def page_sources() -> None:
-    _header(
+    sig.header(
         "Reference",
         "Sources & method",
         "Every moment states its basis and its source. Where a date is set locally, the library says so and shows a "
@@ -768,13 +633,8 @@ PAGE_SLUGS = {
 
 _ensure_state()
 
+sig.sidebar_brand(THEME, "The Norwegian marketing year, worked backwards.")
 with st.sidebar:
-    mark = f'<img class="ps-mark" src="{MARK_URI}" alt="">' if MARK_URI else ""
-    st.markdown(
-        f'<div class="ps-lockup">{mark}<div class="ps-name">Season<span>Signal</span></div></div>'
-        '<p class="ps-tag">The Norwegian marketing year, worked backwards.</p>',
-        unsafe_allow_html=True,
-    )
     st.caption(f"Norwegian marketing calendar · v{__version__}")
     # Deep links such as ?page=planner&moment=black_week (bookmarks, screenshots).
     linked = PAGE_SLUGS.get(str(st.query_params.get("page", "")).lower(), "Welcome")

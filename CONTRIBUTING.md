@@ -9,7 +9,7 @@ When you add or change a moment in `src/seasonsignal/moments/no.yaml`:
 - If the date varies by kommune or fylke, set `varies` and give a range. Regional `variants` need their own source and the school years you checked in `verified`.
 - Add a test with known dates for at least two years.
 
-Keep the architecture rule for the future Signal Hub: logic, models and storage live in `src/seasonsignal/` and never import streamlit; Streamlit code lives in `app.py`; saved state goes through `storage.py` only.
+Keep the architecture rule for Signal Hub: logic, models and storage live in `src/seasonsignal/` and never import streamlit, except `src/seasonsignal/ui/` (the synced Signal theme and its marks); the app lives in `app.py`; saved state goes through `storage.py` only. Never edit the synced theme files (`src/seasonsignal/ui/signal_theme.py`, `src/seasonsignal/ui/assets/marks/*`, `.streamlit/config.toml`, `assets/seasonsignal-*.png|svg`); change them in Signal Hub's `signal-theme/` and re-sync.
 
 Before submitting a change:
 

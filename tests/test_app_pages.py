@@ -3,6 +3,8 @@ from pathlib import Path
 import pytest
 from streamlit.testing.v1 import AppTest
 
+from seasonsignal import __version__
+
 ROOT = Path(__file__).parents[1]
 APP = str(ROOT / "app.py")
 PAGES = [
@@ -55,6 +57,12 @@ def test_shell_demo_and_boundaries():
     assert "MOMENTS → DEADLINES → CALENDAR" in body
     assert "Part of the Signal suite" in body and "AGPL-3.0-or-later" in body
     assert "Fjellbrus is a fictional" in body
+    # The shared Signal shell: masthead, hero, cards, notes and footer come from signal_theme.
+    assert "sg-mast" in body and "sg-hero" in body and "sg-card" in body
+    assert "sg-note boundary" in body and "sg-foot" in body
+    assert f"Season Signal v{__version__}" in body
+    sidebar = "\n".join(str(item.value) for item in app.sidebar.markdown)
+    assert "sg-side" in sidebar and "The Norwegian marketing year, worked backwards." in sidebar
 
 
 def test_adding_a_campaign_saves_locally(isolated_store):

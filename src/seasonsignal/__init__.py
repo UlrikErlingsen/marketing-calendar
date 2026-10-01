@@ -1,7 +1,8 @@
 """SeasonSignal: the Norwegian marketing year, computed.
 
 Public API — import from here, not from submodules, so a future Signal Hub can depend on a stable surface.
-This package never imports streamlit; the UI lives in ``app.py``.
+The core never imports streamlit; only ``seasonsignal.ui`` (the synced Signal theme) does, and the app lives in
+``app.py``.
 """
 
 __version__ = "1.0.0"

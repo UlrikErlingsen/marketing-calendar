@@ -1,4 +1,5 @@
-"""Architecture rules for the future Signal Hub: the package is UI-free and storage sits behind one module."""
+"""Architecture rules for Signal Hub: the core package is UI-free (only ``seasonsignal/ui/`` may import
+Streamlit) and storage sits behind one module."""
 
 import ast
 from pathlib import Path
@@ -20,13 +21,21 @@ def _imports(path: Path) -> set[str]:
     return names
 
 
-def test_no_file_under_src_imports_streamlit():
+def test_no_file_under_src_imports_streamlit_except_ui():
+    ui = PACKAGE / "ui"
     offenders = [
         str(path.relative_to(SRC))
         for path in SRC.rglob("*.py")
-        if any(name == "streamlit" or name.startswith("streamlit.") for name in _imports(path))
+        if ui not in path.parents
+        and any(name == "streamlit" or name.startswith("streamlit.") for name in _imports(path))
     ]
-    assert not offenders, f"streamlit imported under src/: {offenders}"
+    assert not offenders, f"streamlit imported under src/ outside seasonsignal/ui/: {offenders}"
+
+
+def test_core_package_does_not_import_the_ui():
+    for path in PACKAGE.glob("*.py"):
+        assert not any(name.startswith("seasonsignal.ui") for name in _imports(path)), path.name
+        assert "from .ui" not in path.read_text(encoding="utf-8"), path.name
 
 
 def test_only_storage_module_touches_the_filesystem_for_state():
@@ -49,3 +58,5 @@ def test_moments_library_ships_with_the_package():
     assert (PACKAGE / "moments" / "no.yaml").exists()
     pyproject = (SRC.parent / "pyproject.toml").read_text(encoding="utf-8")
     assert 'seasonsignal = ["moments/*.yaml"]' in pyproject
+    assert '"seasonsignal.ui" = ["assets/marks/*"]' in pyproject
+    assert (PACKAGE / "ui" / "assets" / "marks" / "seasonsignal-mark-64.png").exists()

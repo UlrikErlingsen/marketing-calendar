@@ -56,7 +56,14 @@ with three example campaigns (påske, 17. mai, Black Week). Mark as fictional.
   `Dockerfile`, `run_app.bat` — mirror `brand-tracking`.
 - ruff (line length 120) + pytest. Tests: Easter-based holidays for several known years,
   Morsdag/Farsdag rules, ISO-week ranges, ICS validity, lead-time maths.
-- README in TrackSignal's structure; CHANGELOG, SECURITY, PRIVACY, CONTRIBUTING.
+- README follows the Signal README template (Signal Hub `signal-theme/README.template.md`); CHANGELOG, SECURITY, PRIVACY, CONTRIBUTING.
+- **Architecture rule:** no Streamlit import anywhere under `src/seasonsignal/` except `src/seasonsignal/ui/`
+  (the synced Signal theme). `tests/test_architecture.py` enforces it.
+- **Brand (2026-10-01):** display name **Season Signal** (with a space) in user-facing text; technical identifiers
+  stay `seasonsignal` / `SEASONSIGNAL_*`. The look comes from the synced Signal theme
+  (`from seasonsignal.ui import signal_theme as sig`, theme key `season`, family Market). Never edit the synced
+  files (`src/seasonsignal/ui/signal_theme.py`, `src/seasonsignal/ui/assets/marks/*`, `.streamlit/config.toml`,
+  `assets/seasonsignal-*.png|svg`); change them in Signal Hub's `signal-theme/` and re-sync.
 
 ## Definition of done for v1
 
