@@ -19,6 +19,12 @@ First version of **SeasonSignal**, the Norwegian marketing calendar in the Signa
 - Exports: RFC 5545 `.ics` (all-day, transparent events with stable UIDs) and an XLSX plan with formula-injection-safe cells.
 - Fictional demo brand Fjellbrus (Food & drink) with påske, 17. mai and Black Week campaigns.
 
+### Examples and docs
+
+- Committed example calendars in `examples/` (2026 moments; Fjellbrus demo with milestones) plus an XLSX plan, rebuilt by `scripts/generate_examples.py` and checked by a test. `.ics` files keep CRLF line endings via `.gitattributes`.
+- README screenshots captured with `scripts/take_screenshots.py`; deep links such as `?page=planner&moment=black_week`.
+- The example `.ics` files were cross-checked with a second parser (vobject).
+
 ### Architecture
 
 - UI-free, pip-installable package with a public API in `seasonsignal/__init__.py`; storage behind `storage.py`; a test fails if anything under `src/` imports streamlit.

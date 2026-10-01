@@ -24,6 +24,10 @@ Everything runs locally with open-source Python packages. There is no account, t
 - **Lead times are planning conventions**, not research. The defaults (e.g. food: concept −16 weeks, creative −10, media booking −6, live −1) are a starting point; edit them.
 - Russetid is changing (vg3 exams are spread around 17. mai from 2026) and school routes change every year. Re-check before you commit budget.
 
+<p align="center">
+  <img src="assets/screenshot-plan-back.png" alt="SeasonSignal planner: the 2026 timeline with Black Week selected and its plan-back milestones for Food & drink" width="100%">
+</p>
+
 ## Try the fictional demo in two minutes
 
 1. Start the app. It opens on the current year, category **Food & drink** and region **Hele landet**.
@@ -33,6 +37,14 @@ Everything runs locally with open-source Python packages. There is no account, t
 5. Open **Export** and download the `.ics` file and the XLSX plan.
 
 Fjellbrus is invented for this example and represents no real company.
+
+| Planner | Coming up |
+| --- | --- |
+| ![12-month timeline of Norwegian moments](assets/screenshot-planner.png) | ![Next 12 months with concept deadlines and status](assets/screenshot-coming-up.png) |
+| **My campaigns** | **Export** |
+| ![Fictional Fjellbrus campaigns with next milestones](assets/screenshot-campaigns.png) | ![.ics and XLSX export with import instructions](assets/screenshot-export.png) |
+
+No install? Import [`examples/seasonsignal-2026-moments.ics`](examples/seasonsignal-2026-moments.ics) (the 2026 Norwegian marketing year, 39 events) or the full [Fjellbrus demo calendar](examples/seasonsignal-2026-food-fjellbrus-demo.ics) with milestones straight into your calendar app.
 
 ## What's in the calendar
 
@@ -64,6 +76,8 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
+
+Pages can be linked directly, e.g. `http://127.0.0.1:8587/?page=planner&moment=black_week` (pages: `planner`, `coming-up`, `campaigns`, `lead-times`, `export`, `sources`).
 
 SeasonSignal uses local port `8587` (TrackSignal uses 8586). Set `SEASONSIGNAL_PORT` to choose another, `SEASONSIGNAL_DATA_DIR` to store campaigns elsewhere, or `SEASONSIGNAL_DEBUG=1` to reveal technical error details.
 
@@ -106,6 +120,8 @@ python -m pytest
 python -m ruff check .
 python -m build
 ```
+
+`scripts/generate_examples.py` rebuilds the files in `examples/` (a test fails if the committed calendars are stale) and `scripts/take_screenshots.py` recaptures the README screenshots from a running app (needs `pip install playwright` and Microsoft Edge).
 
 The suite checks Easter-based holidays for several known years, morsdag and farsdag rules, Black Friday, Black Week and Advent, ISO-week ranges (including 53-week years), Oslo's published school dates, the library contract (every moment sourced or explained), lead-time maths with weekend and holiday adjustment, local storage, `.ics` structure and validity, XLSX formula-injection safety, the rule that nothing under `src/` imports streamlit, and every Streamlit page for several years and regions.
 

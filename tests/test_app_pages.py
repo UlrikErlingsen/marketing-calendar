@@ -65,3 +65,13 @@ def test_adding_a_campaign_saves_locally(isolated_store):
     assert not app.exception, [error.value for error in app.exception]
     saved = (isolated_store / "seasonsignal.json").read_text(encoding="utf-8")
     assert "Russ-safe summer" in saved and "Fjellbrus" in saved
+
+
+def test_deep_link_opens_planner_on_a_moment():
+    app = AppTest.from_file(APP, default_timeout=120)
+    app.query_params["page"] = "planner"
+    app.query_params["moment"] = "black_week"
+    app.run()
+    assert not app.exception, [error.value for error in app.exception]
+    assert app.sidebar.radio[0].value == "1 · Planner"
+    assert any("Black Week" in str(item.value) for item in app.markdown if str(item.value).startswith("###"))

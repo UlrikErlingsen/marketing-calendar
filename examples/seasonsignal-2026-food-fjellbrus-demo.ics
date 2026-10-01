@@ -1,0 +1,2135 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Signal suite//SeasonSignal 1.0.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SeasonSignal 2026 — Food & drink (demo)
+X-WR-TIMEZONE:Europe/Oslo
+BEGIN:VEVENT
+SUMMARY:Nyttårsdag
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+DTSTAMP:20261001T080000Z
+UID:moment-nyttarsdag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:New Year's Day\n\nHelligdag under helligdagsfredloven § 2. "N
+ ew year\, new me" — health\, fitness and budgeting messages.\n\nSource: 
+ https://lovdata.no/dokument/NL/lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Nyttårsdag
+DTSTART;VALUE=DATE:20250911
+DTEND;VALUE=DATE:20250912
+DTSTAMP:20261001T080000Z
+UID:milestone-nyttarsdag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Nyttårsdag (01.01.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Nyttårsdag
+DTSTART;VALUE=DATE:20251023
+DTEND;VALUE=DATE:20251024
+DTSTAMP:20261001T080000Z
+UID:milestone-nyttarsdag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Nyttårsdag (01.01.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Nyttårsdag
+DTSTART;VALUE=DATE:20251120
+DTEND;VALUE=DATE:20251121
+DTSTAMP:20261001T080000Z
+UID:milestone-nyttarsdag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Nyttårsdag (01.01.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Nyttårsdag
+DTSTART;VALUE=DATE:20251224
+DTEND;VALUE=DATE:20251225
+DTSTAMP:20261001T080000Z
+UID:milestone-nyttarsdag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Nyttårsdag (01.01.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tørrlagt januar (Dry January)
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260201
+DTSTAMP:20261001T080000Z
+UID:moment-dry-january-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Dry January\n\nInternational campaign month\, widely picked up
+  in Norway. No Norwegian owner. Remember that alcohol advertising is banne
+ d in Norway (alkoholloven § 9-2)\; alcohol-free variants need care not to
+  promote the parent brand.\n\nSource: https://alcoholchange.org.uk/get-inv
+ olved/campaigns/dry-january
+TRANSP:TRANSPARENT
+URL:https://alcoholchange.org.uk/get-involved/campaigns/dry-january
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Tørrlagt januar (Dry January)
+DTSTART;VALUE=DATE:20250911
+DTEND;VALUE=DATE:20250912
+DTSTAMP:20261001T080000Z
+UID:milestone-dry-january-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Tørrlagt januar (Dry January) (01.01.2026). P
+ lanned with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Tørrlagt januar (Dry January)
+DTSTART;VALUE=DATE:20251023
+DTEND;VALUE=DATE:20251024
+DTSTAMP:20261001T080000Z
+UID:milestone-dry-january-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Tørrlagt januar (Dry January) (01.01.2026). P
+ lanned with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Tørrlagt januar (Dry January)
+DTSTART;VALUE=DATE:20251120
+DTEND;VALUE=DATE:20251121
+DTSTAMP:20261001T080000Z
+UID:milestone-dry-january-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Tørrlagt januar (Dry January) (01.01.2026). Pl
+ anned with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Tørrlagt januar (Dry January)
+DTSTART;VALUE=DATE:20251224
+DTEND;VALUE=DATE:20251225
+DTSTAMP:20261001T080000Z
+UID:milestone-dry-january-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Tørrlagt januar (Dry January) (01.01.2026). Pl
+ anned with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Morsdag
+DTSTART;VALUE=DATE:20260208
+DTEND;VALUE=DATE:20260209
+DTSTAMP:20261001T080000Z
+UID:moment-morsdag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Mother's Day (Norway)\n\nSecond Sunday in FEBRUARY in Norway (
+ not May as in the US/most of Europe). Flowers\, chocolate\, breakfast-in-b
+ ed. International brands regularly get this wrong.\n\nSource: https://snl.
+ no/morsdag
+TRANSP:TRANSPARENT
+URL:https://snl.no/morsdag
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Morsdag
+DTSTART;VALUE=DATE:20251017
+DTEND;VALUE=DATE:20251018
+DTSTAMP:20261001T080000Z
+UID:milestone-morsdag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Morsdag (08.02.2026). Planned with SeasonSigna
+ l lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Morsdag
+DTSTART;VALUE=DATE:20251128
+DTEND;VALUE=DATE:20251129
+DTSTAMP:20261001T080000Z
+UID:milestone-morsdag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Morsdag (08.02.2026). Planned with SeasonSigna
+ l lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Morsdag
+DTSTART;VALUE=DATE:20251224
+DTEND;VALUE=DATE:20251225
+DTSTAMP:20261001T080000Z
+UID:milestone-morsdag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Morsdag (08.02.2026). Planned with SeasonSignal
+  lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Morsdag
+DTSTART;VALUE=DATE:20260130
+DTEND;VALUE=DATE:20260131
+DTSTAMP:20261001T080000Z
+UID:milestone-morsdag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Morsdag (08.02.2026). Planned with SeasonSignal
+  lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Valentinsdagen
+DTSTART;VALUE=DATE:20260214
+DTEND;VALUE=DATE:20260215
+DTSTAMP:20261001T080000Z
+UID:moment-valentinsdag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Valentine's Day\n\nImported convention\; fixed date. Often wit
+ hin days of morsdag — plan the two together.\n\nSource: https://snl.no/v
+ alentinsdag
+TRANSP:TRANSPARENT
+URL:https://snl.no/valentinsdag
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Valentinsdagen
+DTSTART;VALUE=DATE:20251024
+DTEND;VALUE=DATE:20251025
+DTSTAMP:20261001T080000Z
+UID:milestone-valentinsdag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Valentinsdagen (14.02.2026). Planned with Seas
+ onSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Valentinsdagen
+DTSTART;VALUE=DATE:20251205
+DTEND;VALUE=DATE:20251206
+DTSTAMP:20261001T080000Z
+UID:milestone-valentinsdag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Valentinsdagen (14.02.2026). Planned with Seas
+ onSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Valentinsdagen
+DTSTART;VALUE=DATE:20260102
+DTEND;VALUE=DATE:20260103
+DTSTAMP:20261001T080000Z
+UID:milestone-valentinsdag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Valentinsdagen (14.02.2026). Planned with Seaso
+ nSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Valentinsdagen
+DTSTART;VALUE=DATE:20260206
+DTEND;VALUE=DATE:20260207
+DTSTAMP:20261001T080000Z
+UID:milestone-valentinsdag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Valentinsdagen (14.02.2026). Planned with Seaso
+ nSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fastelavnssøndag
+DTSTART;VALUE=DATE:20260215
+DTEND;VALUE=DATE:20260216
+DTSTAMP:20261001T080000Z
+UID:moment-fastelavn-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Shrovetide Sunday\n\nEaster Sunday − 49 days (falls 1 Feb 
+ – 7 Mar). Fastelavnsboller with cream\; fastelavnsris.\n\nSource: https:
+ //snl.no/fastelavn
+TRANSP:TRANSPARENT
+URL:https://snl.no/fastelavn
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Fastelavnssøndag
+DTSTART;VALUE=DATE:20251024
+DTEND;VALUE=DATE:20251025
+DTSTAMP:20261001T080000Z
+UID:milestone-fastelavn-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Fastelavnssøndag (15.02.2026). Planned with S
+ easonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Fastelavnssøndag
+DTSTART;VALUE=DATE:20251205
+DTEND;VALUE=DATE:20251206
+DTSTAMP:20261001T080000Z
+UID:milestone-fastelavn-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Fastelavnssøndag (15.02.2026). Planned with S
+ easonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Fastelavnssøndag
+DTSTART;VALUE=DATE:20260102
+DTEND;VALUE=DATE:20260103
+DTSTAMP:20261001T080000Z
+UID:milestone-fastelavn-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Fastelavnssøndag (15.02.2026). Planned with Se
+ asonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Fastelavnssøndag
+DTSTART;VALUE=DATE:20260206
+DTEND;VALUE=DATE:20260207
+DTSTAMP:20261001T080000Z
+UID:milestone-fastelavn-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Fastelavnssøndag (15.02.2026). Planned with Se
+ asonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Vinterferie (varierer lokalt)
+DTSTART;VALUE=DATE:20260216
+DTEND;VALUE=DATE:20260228
+DTSTAMP:20261001T080000Z
+UID:moment-vinterferie-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Dates vary by kommune — this is the national range. Check th
+ e local skolerute.\n\nWinter school break\n\nOne school week in ISO week 8
+  OR 9\, set locally (kommune for grunnskole\, fylkeskommune for vgs) under
+  opplæringslova § 14-1. The national entry spans both weeks — check th
+ e local skolerute.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06-0
+ 9-30
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Vinterferie
+DTSTART;VALUE=DATE:20251027
+DTEND;VALUE=DATE:20251028
+DTSTAMP:20261001T080000Z
+UID:milestone-vinterferie-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Vinterferie (16.02.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Vinterferie
+DTSTART;VALUE=DATE:20251208
+DTEND;VALUE=DATE:20251209
+DTSTAMP:20261001T080000Z
+UID:milestone-vinterferie-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Vinterferie (16.02.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Vinterferie
+DTSTART;VALUE=DATE:20260105
+DTEND;VALUE=DATE:20260106
+DTSTAMP:20261001T080000Z
+UID:milestone-vinterferie-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Vinterferie (16.02.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Vinterferie
+DTSTART;VALUE=DATE:20260209
+DTEND;VALUE=DATE:20260210
+DTSTAMP:20261001T080000Z
+UID:milestone-vinterferie-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Vinterferie (16.02.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Påskeferie (varierer lokalt)
+DTSTART;VALUE=DATE:20260328
+DTEND;VALUE=DATE:20260408
+DTSTAMP:20261001T080000Z
+UID:moment-paskeferie-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Dates vary by kommune — this is the national range. Check th
+ e local skolerute.\n\nEaster school break\n\nSchools close from the Monday
+  before skjærtorsdag through 2. påskedag\; some kommuner add the Tuesday
+ . Range shown: Saturday before palmesøndag to Easter Tuesday. Peak cabin 
+ and mountain season.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06
+ -09-30
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Påskeferie
+DTSTART;VALUE=DATE:20251205
+DTEND;VALUE=DATE:20251206
+DTSTAMP:20261001T080000Z
+UID:milestone-paskeferie-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Påskeferie (28.03.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Påskeferie
+DTSTART;VALUE=DATE:20260116
+DTEND;VALUE=DATE:20260117
+DTSTAMP:20261001T080000Z
+UID:milestone-paskeferie-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Påskeferie (28.03.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Påskeferie
+DTSTART;VALUE=DATE:20260213
+DTEND;VALUE=DATE:20260214
+DTSTAMP:20261001T080000Z
+UID:milestone-paskeferie-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Påskeferie (28.03.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Påskeferie
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260321
+DTSTAMP:20261001T080000Z
+UID:milestone-paskeferie-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Påskeferie (28.03.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Skjærtorsdag
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260403
+DTSTAMP:20261001T080000Z
+UID:moment-skjaertorsdag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Maundy Thursday\n\nHelligdag\; Easter Sunday − 3 days. Most 
+ shops closed — last grocery run is Wednesday.\n\nSource: https://lovdata
+ .no/dokument/NL/lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Skjærtorsdag
+DTSTART;VALUE=DATE:20251211
+DTEND;VALUE=DATE:20251212
+DTSTAMP:20261001T080000Z
+UID:milestone-skjaertorsdag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Skjærtorsdag (02.04.2026). Planned with Seaso
+ nSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Skjærtorsdag
+DTSTART;VALUE=DATE:20260122
+DTEND;VALUE=DATE:20260123
+DTSTAMP:20261001T080000Z
+UID:milestone-skjaertorsdag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Skjærtorsdag (02.04.2026). Planned with Seaso
+ nSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Skjærtorsdag
+DTSTART;VALUE=DATE:20260219
+DTEND;VALUE=DATE:20260220
+DTSTAMP:20261001T080000Z
+UID:milestone-skjaertorsdag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Skjærtorsdag (02.04.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Skjærtorsdag
+DTSTART;VALUE=DATE:20260326
+DTEND;VALUE=DATE:20260327
+DTSTAMP:20261001T080000Z
+UID:milestone-skjaertorsdag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Skjærtorsdag (02.04.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Langfredag
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+DTSTAMP:20261001T080000Z
+UID:moment-langfredag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Good Friday\n\nHelligdag\; Easter Sunday − 2 days.\n\nSource
+ : https://lovdata.no/dokument/NL/lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Langfredag
+DTSTART;VALUE=DATE:20251212
+DTEND;VALUE=DATE:20251213
+DTSTAMP:20261001T080000Z
+UID:milestone-langfredag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Langfredag (03.04.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Langfredag
+DTSTART;VALUE=DATE:20260123
+DTEND;VALUE=DATE:20260124
+DTSTAMP:20261001T080000Z
+UID:milestone-langfredag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Langfredag (03.04.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Langfredag
+DTSTART;VALUE=DATE:20260220
+DTEND;VALUE=DATE:20260221
+DTSTAMP:20261001T080000Z
+UID:milestone-langfredag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Langfredag (03.04.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Langfredag
+DTSTART;VALUE=DATE:20260327
+DTEND;VALUE=DATE:20260328
+DTSTAMP:20261001T080000Z
+UID:milestone-langfredag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Langfredag (03.04.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Påskedag
+DTSTART;VALUE=DATE:20260405
+DTEND;VALUE=DATE:20260406
+DTSTAMP:20261001T080000Z
+UID:moment-paskedag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Easter Sunday\n\nHelligdag\; Western Easter (first Sunday afte
+ r the first full moon on or after 21 March\, as defined in the law). Påsk
+ eegg\, påskekrim\, cabin trips.\n\nSource: https://lovdata.no/dokument/NL
+ /lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Påskedag
+DTSTART;VALUE=DATE:20251212
+DTEND;VALUE=DATE:20251213
+DTSTAMP:20261001T080000Z
+UID:milestone-paskedag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Påskedag (05.04.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Påskedag
+DTSTART;VALUE=DATE:20260123
+DTEND;VALUE=DATE:20260124
+DTSTAMP:20261001T080000Z
+UID:milestone-paskedag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Påskedag (05.04.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Påskedag
+DTSTART;VALUE=DATE:20260220
+DTEND;VALUE=DATE:20260221
+DTSTAMP:20261001T080000Z
+UID:milestone-paskedag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Påskedag (05.04.2026). Planned with SeasonSign
+ al lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Påskedag
+DTSTART;VALUE=DATE:20260327
+DTEND;VALUE=DATE:20260328
+DTSTAMP:20261001T080000Z
+UID:milestone-paskedag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Påskedag (05.04.2026). Planned with SeasonSign
+ al lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2. påskedag
+DTSTART;VALUE=DATE:20260406
+DTEND;VALUE=DATE:20260407
+DTSTAMP:20261001T080000Z
+UID:moment-andre-paskedag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Easter Monday\n\nHelligdag\; Easter Sunday + 1 day. Return-tra
+ ffic day from the cabin.\n\nSource: https://lovdata.no/dokument/NL/lov/199
+ 5-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: 2. påskedag
+DTSTART;VALUE=DATE:20251215
+DTEND;VALUE=DATE:20251216
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-paskedag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before 2. påskedag (06.04.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: 2. påskedag
+DTSTART;VALUE=DATE:20260126
+DTEND;VALUE=DATE:20260127
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-paskedag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before 2. påskedag (06.04.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: 2. påskedag
+DTSTART;VALUE=DATE:20260223
+DTEND;VALUE=DATE:20260224
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-paskedag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before 2. påskedag (06.04.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: 2. påskedag
+DTSTART;VALUE=DATE:20260330
+DTEND;VALUE=DATE:20260331
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-paskedag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before 2. påskedag (06.04.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Russetiden
+DTSTART;VALUE=DATE:20260420
+DTEND;VALUE=DATE:20260518
+DTSTAMP:20261001T080000Z
+UID:moment-russetid-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Russ celebration season\n\nTraditionally ~20 April to 17. mai 
+ for final-year upper-secondary students (russ). No legal dates. The Govern
+ ment aims to move the celebration after exams and from 2026 spreads vg3 wr
+ itten exams either side of 17. mai — expect this window to shift\; re-ch
+ eck each year. Marketing to russ involves minors: avoid alcohol and pressu
+ re tactics.\n\nSource: https://www.regjeringen.no/no/aktuelt/regjeringen-s
+ kal-endre-russetiden/id3030864/
+TRANSP:TRANSPARENT
+URL:https://www.regjeringen.no/no/aktuelt/regjeringen-skal-endre-russetide
+ n/id3030864/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Russetiden
+DTSTART;VALUE=DATE:20251229
+DTEND;VALUE=DATE:20251230
+DTSTAMP:20261001T080000Z
+UID:milestone-russetid-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Russetiden (20.04.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Russetiden
+DTSTART;VALUE=DATE:20260209
+DTEND;VALUE=DATE:20260210
+DTSTAMP:20261001T080000Z
+UID:milestone-russetid-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Russetiden (20.04.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Russetiden
+DTSTART;VALUE=DATE:20260309
+DTEND;VALUE=DATE:20260310
+DTSTAMP:20261001T080000Z
+UID:milestone-russetid-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Russetiden (20.04.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Russetiden
+DTSTART;VALUE=DATE:20260413
+DTEND;VALUE=DATE:20260414
+DTSTAMP:20261001T080000Z
+UID:milestone-russetid-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Russetiden (20.04.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1. mai — Arbeidernes dag
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+DTSTAMP:20261001T080000Z
+UID:moment-forste-mai-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:May Day\n\nOffentlig høytidsdag under lov om 1. og 17. mai so
+ m høgtidsdager.\n\nSource: https://lovdata.no/dokument/NL/lov/1947-04-26-
+ 1
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1947-04-26-1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: 1. mai — Arbeidernes dag
+DTSTART;VALUE=DATE:20260109
+DTEND;VALUE=DATE:20260110
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-mai-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before 1. mai — Arbeidernes dag (01.05.2026). Plann
+ ed with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: 1. mai — Arbeidernes dag
+DTSTART;VALUE=DATE:20260220
+DTEND;VALUE=DATE:20260221
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-mai-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before 1. mai — Arbeidernes dag (01.05.2026). Plann
+ ed with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: 1. mai — Arbeidernes dag
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260321
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-mai-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before 1. mai — Arbeidernes dag (01.05.2026). Planne
+ d with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: 1. mai — Arbeidernes dag
+DTSTART;VALUE=DATE:20260424
+DTEND;VALUE=DATE:20260425
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-mai-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before 1. mai — Arbeidernes dag (01.05.2026). Planne
+ d with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kristi himmelfartsdag
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260515
+DTSTAMP:20261001T080000Z
+UID:moment-kristi-himmelfart-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Ascension Day\n\nHelligdag\; Easter Sunday + 39 days (always a
+  Thursday). Many take Friday off — a long weekend.\n\nSource: https://lo
+ vdata.no/dokument/NL/lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Kristi himmelfartsdag
+DTSTART;VALUE=DATE:20260122
+DTEND;VALUE=DATE:20260123
+DTSTAMP:20261001T080000Z
+UID:milestone-kristi-himmelfart-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Kristi himmelfartsdag (14.05.2026). Planned wi
+ th SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Kristi himmelfartsdag
+DTSTART;VALUE=DATE:20260305
+DTEND;VALUE=DATE:20260306
+DTSTAMP:20261001T080000Z
+UID:milestone-kristi-himmelfart-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Kristi himmelfartsdag (14.05.2026). Planned wi
+ th SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Kristi himmelfartsdag
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+DTSTAMP:20261001T080000Z
+UID:milestone-kristi-himmelfart-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Kristi himmelfartsdag (14.05.2026). Planned wit
+ h SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Kristi himmelfartsdag
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260508
+DTSTAMP:20261001T080000Z
+UID:milestone-kristi-himmelfart-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Kristi himmelfartsdag (14.05.2026). Planned wit
+ h SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:17. mai — Grunnlovsdagen
+DTSTART;VALUE=DATE:20260517
+DTEND;VALUE=DATE:20260518
+DTSTAMP:20261001T080000Z
+UID:moment-syttende-mai-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Constitution Day\n\nOffentlig høytidsdag (lov om 1. og 17. ma
+ i som høgtidsdager). Norway's biggest food\, ice-cream\, sausage\, bunad 
+ and party-wear moment\; also the end of russetid.\n\nSource: https://lovda
+ ta.no/dokument/NL/lov/1947-04-26-1
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1947-04-26-1
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: 17. mai — Grunnlovsdagen
+DTSTART;VALUE=DATE:20260123
+DTEND;VALUE=DATE:20260124
+DTSTAMP:20261001T080000Z
+UID:milestone-syttende-mai-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before 17. mai — Grunnlovsdagen (17.05.2026). Plann
+ ed with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: 17. mai — Grunnlovsdagen
+DTSTART;VALUE=DATE:20260306
+DTEND;VALUE=DATE:20260307
+DTSTAMP:20261001T080000Z
+UID:milestone-syttende-mai-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before 17. mai — Grunnlovsdagen (17.05.2026). Plann
+ ed with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: 17. mai — Grunnlovsdagen
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+DTSTAMP:20261001T080000Z
+UID:milestone-syttende-mai-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before 17. mai — Grunnlovsdagen (17.05.2026). Planne
+ d with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: 17. mai — Grunnlovsdagen
+DTSTART;VALUE=DATE:20260508
+DTEND;VALUE=DATE:20260509
+DTSTAMP:20261001T080000Z
+UID:milestone-syttende-mai-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before 17. mai — Grunnlovsdagen (17.05.2026). Planne
+ d with SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pinsedag
+DTSTART;VALUE=DATE:20260524
+DTEND;VALUE=DATE:20260525
+DTSTAMP:20261001T080000Z
+UID:moment-pinsedag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Whit Sunday\n\nHelligdag\; Easter Sunday + 49 days.\n\nSource:
+  https://lovdata.no/dokument/NL/lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Pinsedag
+DTSTART;VALUE=DATE:20260130
+DTEND;VALUE=DATE:20260131
+DTSTAMP:20261001T080000Z
+UID:milestone-pinsedag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Pinsedag (24.05.2026). Planned with SeasonSign
+ al lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Pinsedag
+DTSTART;VALUE=DATE:20260313
+DTEND;VALUE=DATE:20260314
+DTSTAMP:20261001T080000Z
+UID:milestone-pinsedag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Pinsedag (24.05.2026). Planned with SeasonSign
+ al lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Pinsedag
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260411
+DTSTAMP:20261001T080000Z
+UID:milestone-pinsedag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Pinsedag (24.05.2026). Planned with SeasonSigna
+ l lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Pinsedag
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+DTSTAMP:20261001T080000Z
+UID:milestone-pinsedag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Pinsedag (24.05.2026). Planned with SeasonSigna
+ l lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2. pinsedag
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260526
+DTSTAMP:20261001T080000Z
+UID:moment-andre-pinsedag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Whit Monday\n\nHelligdag\; Easter Sunday + 50 days. Long weeke
+ nd\; often the first garden/grill weekend.\n\nSource: https://lovdata.no/d
+ okument/NL/lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: 2. pinsedag
+DTSTART;VALUE=DATE:20260202
+DTEND;VALUE=DATE:20260203
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-pinsedag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before 2. pinsedag (25.05.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: 2. pinsedag
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-pinsedag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before 2. pinsedag (25.05.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: 2. pinsedag
+DTSTART;VALUE=DATE:20260413
+DTEND;VALUE=DATE:20260414
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-pinsedag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before 2. pinsedag (25.05.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: 2. pinsedag
+DTSTART;VALUE=DATE:20260518
+DTEND;VALUE=DATE:20260519
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-pinsedag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before 2. pinsedag (25.05.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Skoleslutt (varierer lokalt)
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260625
+DTSTAMP:20261001T080000Z
+UID:moment-skoleslutt-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Dates vary by kommune — this is the national range. Check th
+ e local skolerute.\n\nLast day of school\n\nSet in each kommune's skolerut
+ e (opplæringslova § 14-1)\; usually a weekday between ~17 and 24 June. O
+ slo's last day was Fri 18 June 2027 and is Thu 22 June 2028 — no stable 
+ weekday rule\, so a range.\n\nSource: https://lovdata.no/dokument/NL/lov/2
+ 023-06-09-30
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Skoleslutt
+DTSTART;VALUE=DATE:20260225
+DTEND;VALUE=DATE:20260226
+DTSTAMP:20261001T080000Z
+UID:milestone-skoleslutt-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Skoleslutt (17.06.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Skoleslutt
+DTSTART;VALUE=DATE:20260408
+DTEND;VALUE=DATE:20260409
+DTSTAMP:20261001T080000Z
+UID:milestone-skoleslutt-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Skoleslutt (17.06.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Skoleslutt
+DTSTART;VALUE=DATE:20260506
+DTEND;VALUE=DATE:20260507
+DTSTAMP:20261001T080000Z
+UID:milestone-skoleslutt-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Skoleslutt (17.06.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Skoleslutt
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+DTSTAMP:20261001T080000Z
+UID:milestone-skoleslutt-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Skoleslutt (17.06.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sankthansaften
+DTSTART;VALUE=DATE:20260623
+DTEND;VALUE=DATE:20260624
+DTSTAMP:20261001T080000Z
+UID:moment-sankthansaften-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Midsummer Eve\n\nBonfires and grilling on 23 June\; not a publ
+ ic holiday (SNL).\n\nSource: https://snl.no/sankthans
+TRANSP:TRANSPARENT
+URL:https://snl.no/sankthans
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Sankthansaften
+DTSTART;VALUE=DATE:20260303
+DTEND;VALUE=DATE:20260304
+DTSTAMP:20261001T080000Z
+UID:milestone-sankthansaften-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Sankthansaften (23.06.2026). Planned with Seas
+ onSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Sankthansaften
+DTSTART;VALUE=DATE:20260414
+DTEND;VALUE=DATE:20260415
+DTSTAMP:20261001T080000Z
+UID:milestone-sankthansaften-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Sankthansaften (23.06.2026). Planned with Seas
+ onSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Sankthansaften
+DTSTART;VALUE=DATE:20260512
+DTEND;VALUE=DATE:20260513
+DTSTAMP:20261001T080000Z
+UID:milestone-sankthansaften-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Sankthansaften (23.06.2026). Planned with Seaso
+ nSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Sankthansaften
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260617
+DTSTAMP:20261001T080000Z
+UID:milestone-sankthansaften-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Sankthansaften (23.06.2026). Planned with Seaso
+ nSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fellesferie
+DTSTART;VALUE=DATE:20260706
+DTEND;VALUE=DATE:20260725
+DTSTAMP:20261001T080000Z
+UID:moment-fellesferie-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Collective summer holiday\n\nTraditionally ISO weeks 28–30 i
+ n July\, recommended by NHO and Fellesforbundet for industry (6–24 July 
+ in 2026). Ferieloven § 5 lets employees claim 3 weeks' main holiday betwe
+ en 1 June and 30 September (https://lovdata.no/dokument/NL/lov/1988-04-29-
+ 21). B2B goes quiet\; travel\, grilling and cabin peak.\n\nSource: https:/
+ /www.thelocal.no/20210702/fellesferie-everything-you-need-to-know-about-no
+ rways-collective-holiday-period
+TRANSP:TRANSPARENT
+URL:https://www.thelocal.no/20210702/fellesferie-everything-you-need-to-kn
+ ow-about-norways-collective-holiday-period
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Fellesferie
+DTSTART;VALUE=DATE:20260316
+DTEND;VALUE=DATE:20260317
+DTSTAMP:20261001T080000Z
+UID:milestone-fellesferie-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Fellesferie (06.07.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Fellesferie
+DTSTART;VALUE=DATE:20260427
+DTEND;VALUE=DATE:20260428
+DTSTAMP:20261001T080000Z
+UID:milestone-fellesferie-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Fellesferie (06.07.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Fellesferie
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260523
+DTSTAMP:20261001T080000Z
+UID:milestone-fellesferie-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Fellesferie (06.07.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Fellesferie
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260630
+DTSTAMP:20261001T080000Z
+UID:milestone-fellesferie-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Fellesferie (06.07.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Skolestart (varierer lokalt)
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260822
+DTSTAMP:20261001T080000Z
+UID:moment-skolestart-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Dates vary by kommune — this is the national range. Check th
+ e local skolerute.\n\nBack to school\n\nFirst school day is set locally\, 
+ usually mid-August (ISO week 33 or 34). Back-to-school is also "høstoppst
+ art" for B2B: offices fill up again after fellesferie.\n\nSource: https://
+ lovdata.no/dokument/NL/lov/2023-06-09-30
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Skolestart
+DTSTART;VALUE=DATE:20260420
+DTEND;VALUE=DATE:20260421
+DTSTAMP:20261001T080000Z
+UID:milestone-skolestart-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Skolestart (10.08.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Skolestart
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260602
+DTSTAMP:20261001T080000Z
+UID:milestone-skolestart-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Skolestart (10.08.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Skolestart
+DTSTART;VALUE=DATE:20260629
+DTEND;VALUE=DATE:20260630
+DTSTAMP:20261001T080000Z
+UID:milestone-skolestart-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Skolestart (10.08.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Skolestart
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20261001T080000Z
+UID:milestone-skolestart-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Skolestart (10.08.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Høstferie (varierer lokalt)
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261010
+DTSTAMP:20261001T080000Z
+UID:moment-hostferie-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Dates vary by kommune — this is the national range. Check th
+ e local skolerute.\n\nAutumn school break\n\nOne school week in ISO week 4
+ 0 or 41\, set locally (e.g. Oslo and Bærum week 40\; Trondheim\, Haugesun
+ d and Nord-Aurdal week 41 in 2026). The national entry spans both weeks.\n
+ \nSource: https://lovdata.no/dokument/NL/lov/2023-06-09-30
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Høstferie
+DTSTART;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20260609
+DTSTAMP:20261001T080000Z
+UID:milestone-hostferie-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Høstferie (28.09.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Høstferie
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260721
+DTSTAMP:20261001T080000Z
+UID:milestone-hostferie-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Høstferie (28.09.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Høstferie
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+DTSTAMP:20261001T080000Z
+UID:milestone-hostferie-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Høstferie (28.09.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Høstferie
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+DTSTAMP:20261001T080000Z
+UID:milestone-hostferie-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Høstferie (28.09.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Halloween
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+DTSTAMP:20261001T080000Z
+UID:moment-halloween-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Halloween\n\nImported convention\, now a significant sweets an
+ d costume moment. Fixed date.\n\nSource: https://snl.no/halloween
+TRANSP:TRANSPARENT
+URL:https://snl.no/halloween
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Halloween
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+DTSTAMP:20261001T080000Z
+UID:milestone-halloween-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Halloween (31.10.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Halloween
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+DTSTAMP:20261001T080000Z
+UID:milestone-halloween-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Halloween (31.10.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Halloween
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+DTSTAMP:20261001T080000Z
+UID:milestone-halloween-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Halloween (31.10.2026). Planned with SeasonSign
+ al lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Halloween
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+DTSTAMP:20261001T080000Z
+UID:milestone-halloween-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Halloween (31.10.2026). Planned with SeasonSign
+ al lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Farsdag
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+DTSTAMP:20261001T080000Z
+UID:moment-farsdag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Father's Day (Norway)\n\nSecond Sunday in NOVEMBER in Norway (
+ not June as in the US/UK). Lands just before Black Week.\n\nSource: https:
+ //snl.no/farsdag
+TRANSP:TRANSPARENT
+URL:https://snl.no/farsdag
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Farsdag
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+DTSTAMP:20261001T080000Z
+UID:milestone-farsdag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Farsdag (08.11.2026). Planned with SeasonSigna
+ l lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Farsdag
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+DTSTAMP:20261001T080000Z
+UID:milestone-farsdag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Farsdag (08.11.2026). Planned with SeasonSigna
+ l lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Farsdag
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+DTSTAMP:20261001T080000Z
+UID:milestone-farsdag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Farsdag (08.11.2026). Planned with SeasonSignal
+  lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Farsdag
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+DTSTAMP:20261001T080000Z
+UID:milestone-farsdag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Farsdag (08.11.2026). Planned with SeasonSignal
+  lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Julebordsesongen
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261220
+DTSTAMP:20261001T080000Z
+UID:moment-julebord-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Christmas-party season\n\nWorkplace Christmas parties cluster 
+ on Friday/Saturday evenings from mid-November to mid-December. No official
+  dates\; the range is a planning convention. Venues book up by early autum
+ n.\n\nSource: https://snl.no/julebord
+TRANSP:TRANSPARENT
+URL:https://snl.no/julebord
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Julebordsesongen
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+DTSTAMP:20261001T080000Z
+UID:milestone-julebord-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Julebordsesongen (13.11.2026). Planned with Se
+ asonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Julebordsesongen
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+DTSTAMP:20261001T080000Z
+UID:milestone-julebord-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Julebordsesongen (13.11.2026). Planned with Se
+ asonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Julebordsesongen
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+DTSTAMP:20261001T080000Z
+UID:milestone-julebord-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Julebordsesongen (13.11.2026). Planned with Sea
+ sonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Julebordsesongen
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+DTSTAMP:20261001T080000Z
+UID:milestone-julebord-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Julebordsesongen (13.11.2026). Planned with Sea
+ sonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Black Week
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261201
+DTSTAMP:20261001T080000Z
+UID:moment-black-week-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Black Week\n\nNorwegian retailers stretch Black Friday into a 
+ week — commonly Monday of Black Friday week through Cyber Monday. Many s
+ tart earlier ("Black November")\; treat the start as the latest safe go-li
+ ve.\n\nSource: https://www.bi.no/forskning/business-review/articles/2021/1
+ 1/gi-norske-forbrukere-en-gronnere-black-friday/
+TRANSP:TRANSPARENT
+URL:https://www.bi.no/forskning/business-review/articles/2021/11/gi-norske
+ -forbrukere-en-gronnere-black-friday/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Black Week
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20261001T080000Z
+UID:milestone-black-week-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Black Week (23.11.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Black Week
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+DTSTAMP:20261001T080000Z
+UID:milestone-black-week-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Black Week (23.11.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Black Week
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+DTSTAMP:20261001T080000Z
+UID:milestone-black-week-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Black Week (23.11.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Black Week
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+DTSTAMP:20261001T080000Z
+UID:milestone-black-week-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Black Week (23.11.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Julehandelen
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261225
+DTSTAMP:20261001T080000Z
+UID:moment-julehandel-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Christmas shopping season\n\nRetail's peak season. Now effecti
+ vely starts with Black Week and runs to julaften\; Virke reports November 
+ + December as the julehandel period.\n\nSource: https://www.virke.no/analy
+ se/julehandel/
+TRANSP:TRANSPARENT
+URL:https://www.virke.no/analyse/julehandel/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Julehandelen
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20261001T080000Z
+UID:milestone-julehandel-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Julehandelen (23.11.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Julehandelen
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+DTSTAMP:20261001T080000Z
+UID:milestone-julehandel-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Julehandelen (23.11.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Julehandelen
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+DTSTAMP:20261001T080000Z
+UID:milestone-julehandel-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Julehandelen (23.11.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Julehandelen
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+DTSTAMP:20261001T080000Z
+UID:milestone-julehandel-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Julehandelen (23.11.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Black Friday
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+DTSTAMP:20261001T080000Z
+UID:moment-black-friday-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Black Friday\n\nThe day after US Thanksgiving (4th Thursday of
+  November + 1). Imported convention\; Norway's single biggest online-retai
+ l day.\n\nSource: https://snl.no/Black_Friday
+TRANSP:TRANSPARENT
+URL:https://snl.no/Black_Friday
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Black Friday
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+DTSTAMP:20261001T080000Z
+UID:milestone-black-friday-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Black Friday (27.11.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Black Friday
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+DTSTAMP:20261001T080000Z
+UID:milestone-black-friday-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Black Friday (27.11.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Black Friday
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+DTSTAMP:20261001T080000Z
+UID:milestone-black-friday-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Black Friday (27.11.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Black Friday
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+DTSTAMP:20261001T080000Z
+UID:milestone-black-friday-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Black Friday (27.11.2026). Planned with SeasonS
+ ignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1. søndag i advent
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+DTSTAMP:20261001T080000Z
+UID:moment-forste-advent-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:First Sunday of Advent\n\nFour Sundays before Christmas Day\; 
+ always 27 Nov – 3 Dec. Advent calendars must be in store before.\n\nSour
+ ce: https://snl.no/advent
+TRANSP:TRANSPARENT
+URL:https://snl.no/advent
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: 1. søndag i advent
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-advent-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before 1. søndag i advent (29.11.2026). Planned with
+  SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: 1. søndag i advent
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-advent-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before 1. søndag i advent (29.11.2026). Planned with
+  SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: 1. søndag i advent
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-advent-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before 1. søndag i advent (29.11.2026). Planned with 
+ SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: 1. søndag i advent
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-advent-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before 1. søndag i advent (29.11.2026). Planned with 
+ SeasonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Juleferie (skole) (varierer lokalt)
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20270104
+DTSTAMP:20261001T080000Z
+UID:moment-juleferie-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Dates vary by kommune — this is the national range. Check th
+ e local skolerute.\n\nChristmas school break\n\nSet locally\; typically fr
+ om the weekend before Christmas to the first working days of January (Oslo
+ : 21 Dec 2026 – 1 Jan 2027\; 20 Dec 2027 – 3 Jan 2028). Shown as ~19 D
+ ec – ~3 Jan.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06-09-30
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Juleferie (skole)
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+DTSTAMP:20261001T080000Z
+UID:milestone-juleferie-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Juleferie (skole) (19.12.2026). Planned with S
+ easonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Juleferie (skole)
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+DTSTAMP:20261001T080000Z
+UID:milestone-juleferie-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Juleferie (skole) (19.12.2026). Planned with S
+ easonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Juleferie (skole)
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+DTSTAMP:20261001T080000Z
+UID:milestone-juleferie-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Juleferie (skole) (19.12.2026). Planned with Se
+ asonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Juleferie (skole)
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+DTSTAMP:20261001T080000Z
+UID:milestone-juleferie-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Juleferie (skole) (19.12.2026). Planned with Se
+ asonSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Julaften
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+DTSTAMP:20261001T080000Z
+UID:moment-julaften-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Christmas Eve\n\nThe main Norwegian Christmas celebration (rib
+ be/pinnekjøtt\, presents in the evening). Not a helligdag under helligdag
+ sfredloven § 2\, but shops close early.\n\nSource: https://snl.no/julafte
+ n
+TRANSP:TRANSPARENT
+URL:https://snl.no/julaften
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Julaften
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+DTSTAMP:20261001T080000Z
+UID:milestone-julaften-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Julaften (24.12.2026). Planned with SeasonSign
+ al lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Julaften
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+DTSTAMP:20261001T080000Z
+UID:milestone-julaften-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Julaften (24.12.2026). Planned with SeasonSign
+ al lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Julaften
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+DTSTAMP:20261001T080000Z
+UID:milestone-julaften-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Julaften (24.12.2026). Planned with SeasonSigna
+ l lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Julaften
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+DTSTAMP:20261001T080000Z
+UID:milestone-julaften-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Julaften (24.12.2026). Planned with SeasonSigna
+ l lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1. juledag
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+DTSTAMP:20261001T080000Z
+UID:moment-forste-juledag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Christmas Day\n\nHelligdag under helligdagsfredloven § 2.\n\n
+ Source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: 1. juledag
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-juledag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before 1. juledag (25.12.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: 1. juledag
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-juledag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before 1. juledag (25.12.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: 1. juledag
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-juledag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before 1. juledag (25.12.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: 1. juledag
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+DTSTAMP:20261001T080000Z
+UID:milestone-forste-juledag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before 1. juledag (25.12.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2. juledag
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+DTSTAMP:20261001T080000Z
+UID:moment-andre-juledag-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:Boxing Day\n\nHelligdag under helligdagsfredloven § 2.\n\nSou
+ rce: https://lovdata.no/dokument/NL/lov/1995-02-24-12
+TRANSP:TRANSPARENT
+URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: 2. juledag
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-juledag-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before 2. juledag (26.12.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: 2. juledag
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-juledag-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before 2. juledag (26.12.2026). Planned with SeasonSi
+ gnal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: 2. juledag
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-juledag-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before 2. juledag (26.12.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: 2. juledag
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+DTSTAMP:20261001T080000Z
+UID:milestone-andre-juledag-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before 2. juledag (26.12.2026). Planned with SeasonSig
+ nal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nyttårsaften
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+DTSTAMP:20261001T080000Z
+UID:moment-nyttarsaften-2026-all@seasonsignal.local
+CATEGORIES:Moment
+DESCRIPTION:New Year's Eve\n\nParty food\, fireworks\, party wear. Not a h
+ elligdag.\n\nSource: https://snl.no/nytt%C3%A5rsaften
+TRANSP:TRANSPARENT
+URL:https://snl.no/nytt%C3%A5rsaften
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Concept & brief: Nyttårsaften
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+DTSTAMP:20261001T080000Z
+UID:milestone-nyttarsaften-2026-all-concept@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:16 weeks before Nyttårsaften (31.12.2026). Planned with Seaso
+ nSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Creative production: Nyttårsaften
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+DTSTAMP:20261001T080000Z
+UID:milestone-nyttarsaften-2026-all-creative@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:10 weeks before Nyttårsaften (31.12.2026). Planned with Seaso
+ nSignal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Media booking: Nyttårsaften
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+DTSTAMP:20261001T080000Z
+UID:milestone-nyttarsaften-2026-all-media@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:6 weeks before Nyttårsaften (31.12.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Campaign live: Nyttårsaften
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+DTSTAMP:20261001T080000Z
+UID:milestone-nyttarsaften-2026-all-live@seasonsignal.local
+CATEGORIES:Milestone
+DESCRIPTION:1 weeks before Nyttårsaften (31.12.2026). Planned with Season
+ Signal lead times.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Concept & brief — Påskefjell — limited Easter flav
+ our
+DTSTART;VALUE=DATE:20251205
+DTEND;VALUE=DATE:20251206
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-paske-concept@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for Påskeferie (28.03.2026)\, 16 weeks before.\n\nIn
+ -store displays in mountain and cabin areas\; cabin-trip social content. F
+ ictional demo brand — Fjellbrus is invented for this example and represe
+ nts no real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Creative production — Påskefjell — limited Easter 
+ flavour
+DTSTART;VALUE=DATE:20260116
+DTEND;VALUE=DATE:20260117
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-paske-creative@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for Påskeferie (28.03.2026)\, 10 weeks before.\n\nIn
+ -store displays in mountain and cabin areas\; cabin-trip social content. F
+ ictional demo brand — Fjellbrus is invented for this example and represe
+ nts no real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Media booking — Påskefjell — limited Easter flavou
+ r
+DTSTART;VALUE=DATE:20260213
+DTEND;VALUE=DATE:20260214
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-paske-media@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for Påskeferie (28.03.2026)\, 6 weeks before.\n\nIn-
+ store displays in mountain and cabin areas\; cabin-trip social content. Fi
+ ctional demo brand — Fjellbrus is invented for this example and represen
+ ts no real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Campaign live — Påskefjell — limited Easter flavou
+ r
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260321
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-paske-live@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for Påskeferie (28.03.2026)\, 1 weeks before.\n\nIn-
+ store displays in mountain and cabin areas\; cabin-trip social content. Fi
+ ctional demo brand — Fjellbrus is invented for this example and represen
+ ts no real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Concept & brief — 17. mai — Fjellbrus for the whole
+  street party
+DTSTART;VALUE=DATE:20260123
+DTEND;VALUE=DATE:20260124
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-17mai-concept@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for 17. mai — Grunnlovsdagen (17.05.2026)\, 16 week
+ s before.\n\nFamily packs and russ-safe\, alcohol-free positioning. Fictio
+ nal demo brand — Fjellbrus is invented for this example and represents n
+ o real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Creative production — 17. mai — Fjellbrus for the w
+ hole street party
+DTSTART;VALUE=DATE:20260306
+DTEND;VALUE=DATE:20260307
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-17mai-creative@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for 17. mai — Grunnlovsdagen (17.05.2026)\, 10 week
+ s before.\n\nFamily packs and russ-safe\, alcohol-free positioning. Fictio
+ nal demo brand — Fjellbrus is invented for this example and represents n
+ o real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Media booking — 17. mai — Fjellbrus for the whole s
+ treet party
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-17mai-media@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for 17. mai — Grunnlovsdagen (17.05.2026)\, 6 weeks
+  before.\n\nFamily packs and russ-safe\, alcohol-free positioning. Fiction
+ al demo brand — Fjellbrus is invented for this example and represents no
+  real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Campaign live — 17. mai — Fjellbrus for the whole s
+ treet party
+DTSTART;VALUE=DATE:20260508
+DTEND;VALUE=DATE:20260509
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-17mai-live@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for 17. mai — Grunnlovsdagen (17.05.2026)\, 1 weeks
+  before.\n\nFamily packs and russ-safe\, alcohol-free positioning. Fiction
+ al demo brand — Fjellbrus is invented for this example and represents no
+  real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Concept & brief — Black Week — multipack offer
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-blackweek-concept@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for Black Week (23.11.2026)\, 16 weeks before.\n\nOnl
+ ine grocery and chain multipack deal. Fictional demo brand — Fjellbrus i
+ s invented for this example and represents no real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Creative production — Black Week — multipack offer
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-blackweek-creative@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for Black Week (23.11.2026)\, 10 weeks before.\n\nOnl
+ ine grocery and chain multipack deal. Fictional demo brand — Fjellbrus i
+ s invented for this example and represents no real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Media booking — Black Week — multipack offer
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-blackweek-media@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for Black Week (23.11.2026)\, 6 weeks before.\n\nOnli
+ ne grocery and chain multipack deal. Fictional demo brand — Fjellbrus is
+  invented for this example and represents no real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fjellbrus: Campaign live — Black Week — multipack offer
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+DTSTAMP:20261001T080000Z
+UID:campaign-demo-blackweek-live@seasonsignal.local
+CATEGORIES:Campaign
+DESCRIPTION:Campaign for Black Week (23.11.2026)\, 1 weeks before.\n\nOnli
+ ne grocery and chain multipack deal. Fictional demo brand — Fjellbrus is
+  invented for this example and represents no real company.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

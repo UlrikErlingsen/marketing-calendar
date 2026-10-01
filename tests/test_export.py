@@ -93,3 +93,17 @@ def test_xlsx_plan_has_sheets_and_dates():
     headers = [c.value for c in sheet[1]]
     assert "Concept & brief" in headers and "id" not in headers
     assert book["Campaigns"]["A2"].value == "'=1+1"
+
+
+def test_committed_example_calendars_match_the_generator():
+    import importlib.util
+    from pathlib import Path
+
+    root = Path(__file__).parents[1]
+    spec = importlib.util.spec_from_file_location("generate_examples", root / "scripts" / "generate_examples.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    for name, payload in module.build().items():
+        if name.endswith(".ics"):
+            committed = (root / "examples" / name).read_bytes()
+            assert committed == payload, f"examples/{name} is stale — run scripts/generate_examples.py"

@@ -264,19 +264,27 @@ def _campaign_plans(year: int | None = None):
     return [plan_campaign(c, LIBRARY, store.lead_times) for c in campaigns]
 
 
+DATE_COLUMNS = {
+    name: st.column_config.DateColumn(name, format="DD.MM.YYYY")
+    for name in ("Start", "End", *(label for _key, label in MILESTONES))
+}
+MILESTONE_ICONS = {"on track": "🟢 on track", "due soon": "🟡 due soon", "overdue": "🔴 overdue"}
+
+
 def _milestone_table(milestones) -> pd.DataFrame:
-    return pd.DataFrame(
+    frame = pd.DataFrame(
         [
             {
                 "Milestone": m.label,
-                "Weeks before": m.weeks_before,
-                "Due": _fmt(m.due),
-                "Note": f"moved from {_fmt(m.moved_from)} (weekend/holiday)" if m.moved_from else "",
-                "Status": m.status(TODAY),
+                "Weeks": f"−{m.weeks_before}",
+                "Due": f"{m.due:%a %d.%m.%y}",
+                "Status": MILESTONE_ICONS[m.status(TODAY)],
+                "Moved": f"from {m.moved_from:%d.%m} (weekend/holiday)" if m.moved_from else "",
             }
             for m in milestones
         ]
     )
+    return frame if frame["Moved"].any() else frame.drop(columns=["Moved"])
 
 
 def timeline_figure(frame: pd.DataFrame, year: int) -> go.Figure:
@@ -309,7 +317,7 @@ def timeline_figure(frame: pd.DataFrame, year: int) -> go.Figure:
             ))
     fig.update_yaxes(categoryorder="array", categoryarray=list(reversed(frame["label"])), title=None)
     fig.update_xaxes(
-        type="date", range=[f"{year}-01-01", f"{year + 1}-01-08"], dtick="M1", tickformat="%b", title=None,
+        type="date", range=[f"{year - 1}-12-27", f"{year + 1}-01-08"], dtick="M1", tickformat="%b", title=None,
         showgrid=True, gridcolor="rgba(23,50,46,.08)",
     )
     if date(year, 1, 1) <= TODAY <= date(year, 12, 31):
@@ -416,7 +424,7 @@ def page_planner() -> None:
         "Step 1",
         f"The {year} marketing year",
         f"Moments for <strong>{LIBRARY.category_label(category)}</strong> in <strong>{LIBRARY.regions[region]}</strong>"
-        " (public holidays always shown for context). Click a bar to see its plan-back milestones. "
+        " (public holidays always shown for context). Click a bar or diamond to see its plan-back milestones. "
         "⇢ marks a range that varies by kommune.",
     )
     planned = _planned(year, category, region, show_all)
@@ -445,7 +453,8 @@ def page_planner() -> None:
         st.info("No moments match this filter.")
         return
     first = upcoming.iloc[0]["id"] if not upcoming.empty else ids[0]
-    default = clicked if clicked in ids else st.session_state.get("moment_pick", first)
+    linked = st.query_params.get("moment")
+    default = clicked if clicked in ids else st.session_state.get("moment_pick", linked if linked in ids else first)
     chosen = st.selectbox(
         "Moment details", ids, index=ids.index(default) if default in ids else 0, format_func=names.get,
         key=f"moment-select-{clicked}",
@@ -457,7 +466,7 @@ def page_planner() -> None:
         view = frame.drop(columns=["id", "Notes", "Rule"]).copy()
         view["Status"] = view["Status"].map(STATUS_ICONS)
         st.dataframe(view, hide_index=True, use_container_width=True,
-                     column_config={"Source": st.column_config.LinkColumn("Source")})
+                     column_config={**DATE_COLUMNS, "Source": st.column_config.LinkColumn("Source")})
 
 
 def page_coming_up() -> None:
@@ -471,7 +480,9 @@ def page_coming_up() -> None:
     months = st.slider("Horizon (months from today)", 6, 12, 12)
     start = max(TODAY, date(MIN_YEAR, 1, 1))
     occurrences = [occ for occ in LIBRARY.window(start, months, region) if occ.start >= TODAY]
-    occurrences = select_occurrences(LIBRARY, occurrences, category, include_all=show_all)
+    occurrences = select_occurrences(
+        LIBRARY, occurrences, category, include_all=show_all, include_public_holidays=False
+    )
     planned = plan_moments(LIBRARY, occurrences, _store().lead_times, category)
     frame = moments_frame(LIBRARY, planned, TODAY)
     if frame.empty:
@@ -485,7 +496,7 @@ def page_coming_up() -> None:
     view = frame[["Moment", "Start", "End", "Varies locally", "Concept & brief", "Media booking", "Campaign live", "Status"]].copy()
     view["Days to concept"] = [(d - TODAY).days for d in frame["Concept & brief"]]
     view["Status"] = view["Status"].map(STATUS_ICONS)
-    st.dataframe(view, hide_index=True, use_container_width=True)
+    st.dataframe(view, hide_index=True, use_container_width=True, column_config=DATE_COLUMNS)
     st.caption(f"Lead times for {LIBRARY.category_label(category)}: " + ", ".join(
         f"{label.lower()} −{_store().lead_times[category][key]} wk" for key, label in MILESTONES
     ) + ". Change them under Lead times.")
@@ -508,7 +519,9 @@ def page_campaigns() -> None:
     if frame.empty:
         st.info("No campaigns yet — add one below.")
     else:
-        st.dataframe(frame.drop(columns=["id", "Notes"]), hide_index=True, use_container_width=True)
+        view = frame[["Campaign", "Brand", "Moment", "Moment start", "Next milestone", "Fictional"]].copy()
+        view["Moment start"] = [f"{d:%d.%m.%Y}" for d in view["Moment start"]]
+        st.dataframe(view, hide_index=True, use_container_width=True)
         for plan in plans:
             label = ("🧪 " if plan.campaign.fictional else "") + f"{plan.campaign.name} · {plan.occurrence.moment.name_nb} {plan.campaign.year}"
             with st.expander(label):
@@ -686,6 +699,16 @@ def page_sources() -> None:
     )
 
 
+PAGE_SLUGS = {
+    "welcome": "Welcome",
+    "planner": "1 · Planner",
+    "coming-up": "2 · Coming up",
+    "campaigns": "3 · My campaigns",
+    "lead-times": "4 · Lead times",
+    "export": "5 · Export",
+    "sources": "Sources & method",
+}
+
 _ensure_state()
 
 with st.sidebar:
@@ -696,11 +719,9 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
     st.caption(f"Norwegian marketing calendar · v{__version__}")
-    page = st.radio(
-        "Workflow",
-        ["Welcome", "1 · Planner", "2 · Coming up", "3 · My campaigns", "4 · Lead times", "5 · Export",
-         "Sources & method"],
-    )
+    # Deep links such as ?page=planner&moment=black_week (bookmarks, screenshots).
+    linked = PAGE_SLUGS.get(str(st.query_params.get("page", "")).lower(), "Welcome")
+    page = st.radio("Workflow", list(PAGE_SLUGS.values()), index=list(PAGE_SLUGS.values()).index(linked))
     st.markdown("---")
     years = list(range(MIN_YEAR, MAX_YEAR + 1))
     st.selectbox("Year", years, index=years.index(_default_year()), key="year")
