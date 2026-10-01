@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased]
+
+### Signal brand refresh
+
+- The app uses the shared Signal theme (`seasonsignal.ui.signal_theme`, Market family): cream ground, dark warm sidebar, Figtree, the Season Signal mark as favicon and in the sidebar and masthead. The pasted CSS, hand-made lockup, masthead, hero, cards, notes and footer are gone; the app's words and pages are unchanged.
+- The timeline uses the Signal Plotly template and colorway for the four moment kinds; the "today" line uses the neutral reference colour.
+- Display name **Season Signal** (with a space) in the app, exports (calendar name, milestone descriptions, XLSX About sheet), launchers and docs. Package, environment-variable and file names are unchanged. Example exports regenerated.
+- README follows the Signal README template: new banner (`assets/seasonsignal-banner.png`), family badges, Scope, Data contract, Methods, Planning statuses, "Where this fits in Signal" and the suite footer. The old `assets/seasonsignal-banner.svg` is removed.
+- Bug-report and feature-request issue templates.
+- The architecture rule now reads "no Streamlit under `src/seasonsignal/` except `src/seasonsignal/ui/`"; the guard test allows only `ui/`. The marks ship as package data.
+- `plotly` widened to `>=5.18,<8` so Season Signal installs next to the other Signal apps.
+
 ## 1.0.0 — unreleased
 
 First version of **SeasonSignal**, the Norwegian marketing calendar in the Signal suite.

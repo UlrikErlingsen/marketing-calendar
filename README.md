@@ -1,16 +1,18 @@
 <p align="center">
-  <img src="assets/seasonsignal-banner.svg" alt="SeasonSignal — the Norwegian marketing year, worked backwards" width="100%">
+  <img src="assets/seasonsignal-banner.png" alt="Season Signal: What does the Norwegian marketing year look like, worked backwards?" width="100%">
 </p>
 
 <p align="center">
-  <img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-173C3A?logo=python&logoColor=white">
-  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-app-D95B40?logo=streamlit&logoColor=white">
-  <a href="LICENSE"><img alt="License: AGPL-3.0-or-later" src="https://img.shields.io/badge/License-AGPL--3.0--or--later-36534E"></a>
+  <a href="https://github.com/UlrikErlingsen/marketing-calendar/actions"><img alt="Tests" src="https://github.com/UlrikErlingsen/marketing-calendar/actions/workflows/tests.yml/badge.svg"></a>
+  <a href="https://github.com/UlrikErlingsen/signal-hub"><img alt="Signal · Market" src="https://img.shields.io/badge/Signal-Market-728157?labelColor=2e2b25"></a>
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-2e2b25?logo=python&logoColor=f9f4ed">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-app-728157?logo=streamlit&logoColor=f9f4ed">
+  <a href="LICENSE"><img alt="License: AGPL-3.0-or-later" src="https://img.shields.io/badge/License-AGPL--3.0--or--later-645c50"></a>
 </p>
 
 <p align="center"><strong>An open Norwegian marketing calendar — the moments that matter, when to start, and an .ics for your calendar.</strong></p>
 
-**SeasonSignal** lists the commercial moments of the Norwegian year, works backwards from each to planning deadlines, and exports everything to Google, Outlook or Apple Calendar. It replaces the spreadsheet (or paid planning add-on) that small Norwegian marketing teams keep re-typing every January. It asks:
+**Season Signal** lists the commercial moments of the Norwegian year, works backwards from each to planning deadlines, and exports everything to Google, Outlook or Apple Calendar. It replaces the spreadsheet (or paid planning add-on) that small Norwegian marketing teams keep re-typing every January. It asks:
 
 > What are the Norwegian moments that matter for my category in the next 6–12 months, and when do I have to start each campaign to hit them?
 
@@ -25,10 +27,30 @@ Everything runs locally with open-source Python packages. There is no account, t
 - Russetid is changing (vg3 exams are spread around 17. mai from 2026) and school routes change every year. Re-check before you commit budget.
 
 <p align="center">
-  <img src="assets/screenshot-plan-back.png" alt="SeasonSignal planner: the 2026 timeline with Black Week selected and its plan-back milestones for Food & drink" width="100%">
+  <img src="assets/screenshot-plan-back.png" alt="Season Signal planner: the 2026 timeline with Black Week selected and its plan-back milestones for Food & drink" width="100%">
 </p>
 
-## Try the fictional demo in two minutes
+## Scope
+
+**Version 1.0 supports:**
+
+- 39 Norwegian moments, computed for any year from 2025 to 2035:
+
+  | Group | Moments |
+  | --- | --- |
+  | Public holidays (computed) | nyttårsdag, skjærtorsdag, langfredag, påskedag, 2. påskedag, 1. mai, 17. mai, Kristi himmelfartsdag, pinsedag, 2. pinsedag, 1. and 2. juledag |
+  | Retail | morsdag (2nd Sunday of **February**), Valentine's, Black Friday, Black Week (Monday → Cyber Monday), Cyber Monday, Singles' Day, Halloween, farsdag (2nd Sunday of **November**), julehandel, romjul/mellomjulssalg, feriepenger in June |
+  | Seasons | vinterferie, påskeferie, russetid, skoleslutt, fellesferie (ISO weeks 28–30), skolestart, høstferie, juleferie, julebord season |
+  | Cultural | Dry January, Samefolkets dag, fastelavn, sankthansaften, first Sunday of Advent, julaften, nyttårsaften |
+
+- Categories: Retail, Food & drink, Fashion, Travel, B2B, Alcohol-free, Kids & family. Regions: Hele landet, Oslo, Bergen and Trondheim kommune.
+- A 12-month planner, a "coming up" view across New Year, your own campaigns linked to a moment, editable lead times, and `.ics` and XLSX exports.
+
+The full list with rules, bases and links is on the app's **Sources & method** page and in [`no.yaml`](src/seasonsignal/moments/no.yaml).
+
+**It does not:** create accounts, sync, send reminders, scrape, forecast demand or measure campaign effects. Season Signal tells you *when* to act.
+
+## Try the demo in two minutes
 
 1. Start the app. It opens on the current year, category **Food & drink** and region **Hele landet**.
 2. Open **Planner** and click a bar or diamond — try *Black Week* or *17. mai* — to see concept, creative, media-booking and go-live dates.
@@ -44,31 +66,56 @@ Fjellbrus is invented for this example and represents no real company.
 | **My campaigns** | **Export** |
 | ![Fictional Fjellbrus campaigns with next milestones](assets/screenshot-campaigns.png) | ![.ics and XLSX export with import instructions](assets/screenshot-export.png) |
 
-No install? Import [`examples/seasonsignal-2026-moments.ics`](examples/seasonsignal-2026-moments.ics) (the 2026 Norwegian marketing year, 39 events) or the full [Fjellbrus demo calendar](examples/seasonsignal-2026-food-fjellbrus-demo.ics) with milestones straight into your calendar app.
+## Data contract
 
-## What's in the calendar
+Season Signal has two inputs, both plain files:
 
-| Group | Moments |
-| --- | --- |
-| Public holidays (computed) | nyttårsdag, skjærtorsdag, langfredag, påskedag, 2. påskedag, 1. mai, 17. mai, Kristi himmelfartsdag, pinsedag, 2. pinsedag, 1. and 2. juledag |
-| Retail | morsdag (2nd Sunday of **February**), Valentine's, Black Friday, Black Week (Monday → Cyber Monday), Cyber Monday, Singles' Day, Halloween, farsdag (2nd Sunday of **November**), julehandel, romjul/mellomjulssalg, feriepenger in June |
-| Seasons | vinterferie, påskeferie, russetid, skoleslutt, fellesferie (ISO weeks 28–30), skolestart, høstferie, juleferie, julebord season |
-| Cultural | Dry January, Samefolkets dag, fastelavn, sankthansaften, first Sunday of Advent, julaften, nyttårsaften |
+- **The moments library**, [`src/seasonsignal/moments/no.yaml`](src/seasonsignal/moments/no.yaml), ships with the app. Each moment has an id, a name in Norwegian and English, a kind, a date rule (one day, or a start and end for an inclusive range), category tags, a basis, a source URL and notes. Moments set by kommune or fylke carry `varies` and a national range; regional `variants` add a verified rule per region with the school years that were checked.
+- **Your saved plans**, `data/seasonsignal.json` (or the folder in `SEASONSIGNAL_DATA_DIR`), hold your campaigns and lead times. A file from another version, or one with a malformed campaign, is reported with its path instead of being overwritten; an older file missing a milestone gets the default for that milestone.
 
-Categories: Retail, Food & drink, Fashion, Travel, B2B, Alcohol-free, Kids & family. The full list with rules, bases and links is on the app's **Sources & method** page and in [`no.yaml`](src/seasonsignal/moments/no.yaml).
+| Basis | Meaning | Example |
+|---|---|---|
+| official | set by law or by the owning body | 17. mai, Kristi himmelfartsdag (Lovdata) |
+| tradition | a long-established date rule documented by an authoritative reference | morsdag, farsdag (SNL) |
+| observed | set locally; national range plus verified regional rules | vinterferie, høstferie |
+| convention | a commercial or cultural habit without an owner; the note says why | Black Week, julebord, russetid |
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add or change a moment.
+
+## Methods
+
+1. **Date rules.** Every date comes from a rule: `fixed`, `easter`, `nth_weekday`, `weekday_on_or_after`, `iso_week` or `relative`, each with an optional day offset. Easter follows the Western (Gregorian) computus (`dateutil.easter`), matching helligdagsfredloven. Week numbers are ISO 8601, as used in Norway, including 53-week years.
+2. **Region.** For a region with a verified rule the regional date replaces the national range; otherwise the national range is shown and labelled "varies locally".
+3. **Lead times.** Each category has default offsets in whole weeks for concept & brief, creative, media booking and campaign live (0–52 weeks, concept ≥ creative ≥ media ≥ live). They are editable and saved locally.
+4. **Plan-back.** Milestones are whole weeks before a moment's first day — for ranges that vary by kommune, the earliest local start — and move back to the previous working day when they land on a weekend or public holiday.
+
+The library was last reviewed on 1 October 2026.
+
+## Planning statuses
+
+Each moment is graded for a team starting today:
+
+- **ON TRACK**: the concept deadline is more than two weeks away.
+- **START SOON**: the concept deadline is within 14 days.
+- **LATE START**: the concept deadline has passed, but go-live is still ahead — plan a compressed timeline.
+- **MISSED GO-LIVE**: the go-live date has passed but the moment has not started; only a reactive presence is realistic.
+- **HAPPENING NOW**: the moment is under way.
+- **PASSED**: the moment is over.
+
+Single milestones are **on track**, **due soon** (within 14 days) or **overdue**.
 
 ## Exports
 
 - **`.ics`** (RFC 5545): all-day events, marked *free* so they never block meetings, with stable UIDs plus SEQUENCE/LAST-MODIFIED. Moments that vary locally are labelled "(varierer lokalt)" and carry the source link. In Google Calendar, create a separate calendar first, then *Settings → Import & export → Import* into it. Calendar apps differ in whether a re-import updates existing events (Google usually keeps the old copy), so to refresh a plan, delete that calendar and import the new file into a fresh one.
 - **XLSX plan**: moments, milestones, campaigns, lead times and an About sheet. All cells are sanitised against spreadsheet formula injection.
 
+Exports follow the year, category and region chosen in the sidebar.
+
 ## Run locally
 
 You need Python 3.10 or newer and a local copy of this folder.
 
-**macOS:** double-click `run_app.command`.
-
-**Windows:** double-click `run_app.bat`.
+**macOS:** double-click `run_app.command`. **Windows:** double-click `run_app.bat`.
 
 The first launch creates a private `.venv` and installs the open-source dependencies; later launches reuse it. Or use a terminal:
 
@@ -81,7 +128,7 @@ python -m streamlit run app.py
 
 Pages can be linked directly, e.g. `http://127.0.0.1:8587/?page=planner&moment=black_week` (pages: `planner`, `coming-up`, `campaigns`, `lead-times`, `export`, `sources`).
 
-SeasonSignal uses local port `8587` (TrackSignal uses 8586). Set `SEASONSIGNAL_PORT` to choose another, `SEASONSIGNAL_DATA_DIR` to store campaigns elsewhere, or `SEASONSIGNAL_DEBUG=1` to reveal technical error details.
+Season Signal uses local port `8587` (Track Signal uses 8586). Set `SEASONSIGNAL_PORT` to choose another, `SEASONSIGNAL_DATA_DIR` to store campaigns elsewhere, or `SEASONSIGNAL_DEBUG=1` to reveal technical error details.
 
 ### Docker
 
@@ -92,9 +139,9 @@ docker run --rm -p 8587:8587 seasonsignal
 
 Then open `http://127.0.0.1:8587`. The container runs as a non-root user and includes a health check.
 
-## Use it as a library
+### Use it as a library
 
-The package has no Streamlit dependency, so other Signal tools (or a future Signal Hub) can use it directly:
+The core package has no Streamlit dependency, so other Signal tools (or Signal Hub) can use it directly:
 
 ```bash
 python -m pip install .          # core: moments, plan-back, .ics, XLSX
@@ -114,7 +161,11 @@ open("black-week-2027.ics", "wb").write(build_ics(moment_items(planned)))
 
 Campaigns and lead times are saved to `data/seasonsignal.json` on your computer (git-ignored). Nothing is sent anywhere. Importing an `.ics` into a calendar provider shares its contents with that provider. See [PRIVACY.md](PRIVACY.md).
 
-## Development checks
+## No install? Import the example calendars
+
+Import [`examples/seasonsignal-2026-moments.ics`](examples/seasonsignal-2026-moments.ics) (the 2026 Norwegian marketing year, 39 events) or the full [Fjellbrus demo calendar](examples/seasonsignal-2026-food-fjellbrus-demo.ics) with milestones straight into your calendar app. The [XLSX plan](examples/seasonsignal-2026-food-fjellbrus-demo.xlsx) shows the same demo as a spreadsheet.
+
+## Development
 
 ```bash
 python -m pip install -e ".[test]"
@@ -125,20 +176,59 @@ python -m build
 
 `scripts/generate_examples.py` rebuilds the files in `examples/` (a test fails if the committed calendars are stale) and `scripts/take_screenshots.py` recaptures the README screenshots from a running app (needs `pip install playwright` and Microsoft Edge).
 
-The suite checks Easter-based holidays for several known years, morsdag and farsdag rules, Black Friday, Black Week and Advent, ISO-week ranges (including 53-week years), Oslo, Bergen and Trondheim's published school dates, the library contract (every moment sourced or explained), lead-time maths with weekend and holiday adjustment, local storage, `.ics` structure and validity, XLSX formula-injection safety, the rule that nothing under `src/` imports streamlit, and every Streamlit page for several years and regions.
-
-## Relationship to the Signal suite
-
-SeasonSignal is part of the [Signal suite](https://ulrikerlingsen.com/): local-first, explainable marketing tools with visible assumptions and auditable outputs. It shares the suite's look, fictional-demo rule and portable exports with tools such as **TrackSignal** (brand tracking). SeasonSignal tells you *when* to act; it does not forecast demand or measure campaign effects.
-
-## Sources
-
-Date rules are verified against [Lovdata](https://lovdata.no/) (helligdagsfredloven, the law on 1 and 17 May, ferieloven, opplæringslova), [Store norske leksikon](https://snl.no/), the skolerute of [Oslo](https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/), [Bergen](https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager) and [Trondheim](https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/), [Virke](https://www.virke.no/analyse/julehandel/) and [regjeringen.no](https://www.regjeringen.no/no/aktuelt/regjeringen-skal-endre-russetiden/id3030864/). Each moment's own link is in the library.
+The suite checks Easter-based holidays for several known years, morsdag and farsdag rules, Black Friday, Black Week and Advent, ISO-week ranges (including 53-week years), Oslo, Bergen and Trondheim's published school dates, the library contract (every moment sourced or explained), lead-time maths with weekend and holiday adjustment, local storage, `.ics` structure and validity, XLSX formula-injection safety, the rule that nothing under `src/` imports streamlit except the `seasonsignal.ui` theme, the shared Signal look, and every Streamlit page for several years and regions.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md).
 
-## License
+## Where this fits in Signal
+
+Season Signal is part of the Market family: it tells a team *when* to act in the Norwegian year. **Prospect Signal** finds the market, **Listen Signal** hears what media and social channels say, and **Influence Signal** checks creator campaigns; Season Signal works out when each campaign has to start. It shares the suite's look, fictional-demo rule and portable exports.
+
+| App | Asks |
+|---|---|
+| [Track Signal](https://github.com/UlrikErlingsen/brand-tracking) | Is the brand moving, or is the tracker just noisy? |
+| [Position Signal](https://github.com/UlrikErlingsen/brand-positioning) | Where do brands sit relative to competitors? |
+| [Prospect Signal](https://github.com/UlrikErlingsen/b2b-prospecting) | Which Norwegian companies fit the ideal customer? |
+| [Listen Signal](https://github.com/UlrikErlingsen/media-listening) | What are Norwegian media and social channels saying? |
+| [Influence Signal](https://github.com/UlrikErlingsen/influencer-campaigns) | Which creators delivered, and was every post labelled? |
+| [Season Signal](https://github.com/UlrikErlingsen/marketing-calendar) | What does the Norwegian marketing year look like, worked backwards? |
+| [Adopt Signal](https://github.com/UlrikErlingsen/adoption-forecasting) | When will a new product be adopted? |
+| [Worth Signal](https://github.com/UlrikErlingsen/customer-value-analytics) | What are customers and relationships worth? |
+| [Segment Signal](https://github.com/UlrikErlingsen/customer-segmentation) | Do customers form stable, useful groups? |
+| [Trace Signal](https://github.com/UlrikErlingsen/journey-path-analysis) | How do logged customer journeys actually unfold? |
+| [Recommend Signal](https://github.com/UlrikErlingsen/recommender-evaluation) | Which recommendation policy should be tested live? |
+| [Choice Signal](https://github.com/UlrikErlingsen/conjoint-analysis) | How do product attributes drive choice? |
+| [Driver Signal](https://github.com/UlrikErlingsen/survey-driver-analysis) | Which measured experiences move with satisfaction? |
+| [Measure Signal](https://github.com/UlrikErlingsen/measurement-validation) | Does a multi-item score have a defensible structure? |
+| [Text Signal](https://github.com/UlrikErlingsen/open-text-analysis) | What recurring patterns appear in open-ended responses? |
+| [Tag Signal](https://github.com/UlrikErlingsen/pricing-analysis) | What price range is supported, and how does profit move? |
+| [Experiment Signal](https://github.com/UlrikErlingsen/experiment-analysis) | Did the treatment cause a practically meaningful change? |
+| [Gate Signal](https://github.com/UlrikErlingsen/launch-decision-gate) | Does a concept deserve the next investment? |
+| [Alloc Signal](https://github.com/UlrikErlingsen/marketing-mix-allocation) | Where should the next marketing budget go? |
+
+The maintained public suite is listed at [ulrikerlingsen.com](https://ulrikerlingsen.com) and in [Signal Hub](https://github.com/UlrikErlingsen/signal-hub).
+
+## References
+
+Date rules are verified against these sources; each moment's own link is in the library.
+
+- [Lovdata](https://lovdata.no/): helligdagsfredloven, the law on 1 and 17 May, ferieloven, opplæringslova.
+- [Store norske leksikon](https://snl.no/): traditions such as morsdag, farsdag, advent, fastelavn and sankthans.
+- Skolerute of [Oslo](https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/), [Bergen](https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager) and [Trondheim](https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/) kommune.
+- [Virke](https://www.virke.no/analyse/julehandel/): julehandel.
+- [regjeringen.no](https://www.regjeringen.no/no/aktuelt/regjeringen-skal-endre-russetiden/id3030864/): the change to russetid.
+
+## Originality and license
+
+Season Signal is an independent implementation built from public sources (Norwegian law, reference works and kommune school calendars, listed above) and original fictional examples.
 
 The software and documentation are free under **AGPL-3.0-or-later**. See [LICENSE](LICENSE).
 
 This application was developed with AI coding assistance and checked through source review, date fixtures for known years, automated app tests and visual inspection. Verify dates that matter to your budget against the linked sources; no warranty is provided.
+
+---
+
+<p>
+  <img src="assets/seasonsignal-mark-64.png" width="20" height="20" alt="" align="absmiddle">
+  <strong>Season Signal</strong> is part of <a href="https://github.com/UlrikErlingsen/signal-hub"><strong>Signal</strong></a>, open marketing-evidence tools by <a href="https://ulrikerlingsen.com">Ulrik Erlingsen</a>.
+</p>

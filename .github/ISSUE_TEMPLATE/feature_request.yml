@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest a useful improvement, moment or date rule
+title: "[Idea]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should Season Signal solve?
+      description: Start with the marketer's planning decision, not the proposed UI.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would a useful outcome look like?
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Rule or source
+      description: For a new moment or date rule, link the official or authoritative source (Lovdata, SNL, the kommune's skolerute), or explain why it is only a convention.
+  - type: textarea
+    id: data
+    attributes:
+      label: Required input data
+      description: Describe campaigns, categories or regions using invented examples only.
