@@ -1,6 +1,6 @@
 """Date rules: turn a declarative rule from the moments library into a date for a given year.
 
-Every date in SeasonSignal is computed from a rule; nothing is hard-coded per year.
+Every date in Season Signal is computed from a rule; nothing is hard-coded per year.
 
 Supported rules (all accept an optional ``offset`` in days, and an optional ``year_offset`` for ranges that
 cross New Year, e.g. a school Christmas break ending 3 January of the following year):

@@ -1,6 +1,6 @@
 # Contributing
 
-SeasonSignal's central boundary: **every date is computed from a rule, and every rule is sourced or honestly labelled as a convention.**
+Season Signal's central boundary: **every date is computed from a rule, and every rule is sourced or honestly labelled as a convention.**
 
 When you add or change a moment in `src/seasonsignal/moments/no.yaml`:
 

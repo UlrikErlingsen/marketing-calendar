@@ -1,4 +1,4 @@
-"""Capture README screenshots of a running SeasonSignal app into assets/.
+"""Capture README screenshots of a running Season Signal app into assets/.
 
 Dev-only helper. Needs `pip install playwright` and an installed Microsoft Edge (or Chrome; set
 SEASONSIGNAL_SHOT_CHANNEL=chrome). Start the app first with an empty data folder so the fictional demo shows:

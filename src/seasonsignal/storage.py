@@ -65,7 +65,7 @@ def load_store(path: Path | None = None, *, demo_year: int | None = None) -> Sto
     except (OSError, json.JSONDecodeError) as exc:
         raise PlanProblem(f"Could not read {path.name}: {exc}. Move the file aside to start fresh.") from exc
     if not isinstance(raw, dict) or raw.get("version") != STORE_VERSION:
-        raise PlanProblem(f"{path.name} is not a SeasonSignal v{STORE_VERSION} file.")
+        raise PlanProblem(f"{path.name} is not a Season Signal v{STORE_VERSION} file.")
     # Merge per milestone, so a file written before a category or milestone existed still loads.
     stored = raw.get("lead_times") or {}
     if not isinstance(stored, dict):

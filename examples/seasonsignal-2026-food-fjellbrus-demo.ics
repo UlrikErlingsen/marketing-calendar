@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Signal suite//SeasonSignal 1.0.0//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:SeasonSignal 2026 — Food & drink (demo)
+X-WR-CALNAME:Season Signal 2026 — Food & drink (demo)
 X-WR-TIMEZONE:Europe/Oslo
 BEGIN:VEVENT
 SUMMARY:Nyttårsdag
@@ -28,8 +28,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-nyttarsdag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Nyttårsdag (01.01.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:16 weeks before Nyttårsdag (01.01.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -41,8 +41,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-nyttarsdag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Nyttårsdag (01.01.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:10 weeks before Nyttårsdag (01.01.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -54,8 +54,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-nyttarsdag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Nyttårsdag (01.01.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:6 weeks before Nyttårsdag (01.01.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -67,8 +67,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-nyttarsdag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Nyttårsdag (01.01.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:1 weeks before Nyttårsdag (01.01.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -98,7 +98,7 @@ UID:milestone-dry-january-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Tørrlagt januar (Dry January) (01.01.2026). P
- lanned with SeasonSignal lead times.
+ lanned with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -111,7 +111,7 @@ UID:milestone-dry-january-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Tørrlagt januar (Dry January) (01.01.2026). P
- lanned with SeasonSignal lead times.
+ lanned with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -124,7 +124,7 @@ UID:milestone-dry-january-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Tørrlagt januar (Dry January) (01.01.2026). Pl
- anned with SeasonSignal lead times.
+ anned with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -137,7 +137,7 @@ UID:milestone-dry-january-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Tørrlagt januar (Dry January) (01.01.2026). Pl
- anned with SeasonSignal lead times.
+ anned with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -165,8 +165,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-morsdag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Morsdag (08.02.2026). Planned with SeasonSigna
- l lead times.
+DESCRIPTION:16 weeks before Morsdag (08.02.2026). Planned with Season Sign
+ al lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -178,8 +178,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-morsdag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Morsdag (08.02.2026). Planned with SeasonSigna
- l lead times.
+DESCRIPTION:10 weeks before Morsdag (08.02.2026). Planned with Season Sign
+ al lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -191,8 +191,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-morsdag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Morsdag (08.02.2026). Planned with SeasonSignal
-  lead times.
+DESCRIPTION:6 weeks before Morsdag (08.02.2026). Planned with Season Signa
+ l lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -204,8 +204,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-morsdag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Morsdag (08.02.2026). Planned with SeasonSignal
-  lead times.
+DESCRIPTION:1 weeks before Morsdag (08.02.2026). Planned with Season Signa
+ l lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -233,7 +233,7 @@ UID:milestone-valentinsdag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Valentinsdagen (14.02.2026). Planned with Seas
- onSignal lead times.
+ on Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -246,7 +246,7 @@ UID:milestone-valentinsdag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Valentinsdagen (14.02.2026). Planned with Seas
- onSignal lead times.
+ on Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -259,7 +259,7 @@ UID:milestone-valentinsdag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Valentinsdagen (14.02.2026). Planned with Seaso
- nSignal lead times.
+ n Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -272,7 +272,7 @@ UID:milestone-valentinsdag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Valentinsdagen (14.02.2026). Planned with Seaso
- nSignal lead times.
+ n Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -300,7 +300,7 @@ UID:milestone-fastelavn-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Fastelavnssøndag (15.02.2026). Planned with S
- easonSignal lead times.
+ eason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -313,7 +313,7 @@ UID:milestone-fastelavn-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Fastelavnssøndag (15.02.2026). Planned with S
- easonSignal lead times.
+ eason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -326,7 +326,7 @@ UID:milestone-fastelavn-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Fastelavnssøndag (15.02.2026). Planned with Se
- asonSignal lead times.
+ ason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -339,7 +339,7 @@ UID:milestone-fastelavn-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Fastelavnssøndag (15.02.2026). Planned with Se
- asonSignal lead times.
+ ason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -369,8 +369,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-vinterferie-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Vinterferie (16.02.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:16 weeks before Vinterferie (16.02.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -382,8 +382,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-vinterferie-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Vinterferie (16.02.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:10 weeks before Vinterferie (16.02.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -395,8 +395,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-vinterferie-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Vinterferie (16.02.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:6 weeks before Vinterferie (16.02.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -408,8 +408,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-vinterferie-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Vinterferie (16.02.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:1 weeks before Vinterferie (16.02.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -439,8 +439,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-paskeferie-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Påskeferie (28.03.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:16 weeks before Påskeferie (28.03.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -452,8 +452,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-paskeferie-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Påskeferie (28.03.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:10 weeks before Påskeferie (28.03.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -465,8 +465,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-paskeferie-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Påskeferie (28.03.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:6 weeks before Påskeferie (28.03.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -478,8 +478,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-paskeferie-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Påskeferie (28.03.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:1 weeks before Påskeferie (28.03.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -507,7 +507,7 @@ UID:milestone-skjaertorsdag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Skjærtorsdag (02.04.2026). Planned with Seaso
- nSignal lead times.
+ n Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -520,7 +520,7 @@ UID:milestone-skjaertorsdag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Skjærtorsdag (02.04.2026). Planned with Seaso
- nSignal lead times.
+ n Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -533,7 +533,7 @@ UID:milestone-skjaertorsdag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Skjærtorsdag (02.04.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -546,7 +546,7 @@ UID:milestone-skjaertorsdag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Skjærtorsdag (02.04.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -572,8 +572,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-langfredag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Langfredag (03.04.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:16 weeks before Langfredag (03.04.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -585,8 +585,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-langfredag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Langfredag (03.04.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:10 weeks before Langfredag (03.04.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -598,8 +598,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-langfredag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Langfredag (03.04.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:6 weeks before Langfredag (03.04.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -611,8 +611,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-langfredag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Langfredag (03.04.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:1 weeks before Langfredag (03.04.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -640,8 +640,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-paskedag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Påskedag (05.04.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:16 weeks before Påskedag (05.04.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -653,8 +653,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-paskedag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Påskedag (05.04.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:10 weeks before Påskedag (05.04.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -666,8 +666,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-paskedag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Påskedag (05.04.2026). Planned with SeasonSign
- al lead times.
+DESCRIPTION:6 weeks before Påskedag (05.04.2026). Planned with Season Sig
+ nal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -679,8 +679,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-paskedag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Påskedag (05.04.2026). Planned with SeasonSign
- al lead times.
+DESCRIPTION:1 weeks before Påskedag (05.04.2026). Planned with Season Sig
+ nal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -708,7 +708,7 @@ UID:milestone-andre-paskedag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before 2. påskedag (06.04.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -721,7 +721,7 @@ UID:milestone-andre-paskedag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before 2. påskedag (06.04.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -733,8 +733,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-paskedag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before 2. påskedag (06.04.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:6 weeks before 2. påskedag (06.04.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -746,8 +746,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-paskedag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before 2. påskedag (06.04.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:1 weeks before 2. påskedag (06.04.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -779,8 +779,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-russetid-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Russetiden (20.04.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:16 weeks before Russetiden (20.04.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -792,8 +792,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-russetid-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Russetiden (20.04.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:10 weeks before Russetiden (20.04.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -805,8 +805,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-russetid-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Russetiden (20.04.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:6 weeks before Russetiden (20.04.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -818,8 +818,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-russetid-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Russetiden (20.04.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:1 weeks before Russetiden (20.04.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -847,7 +847,7 @@ UID:milestone-forste-mai-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before 1. mai — Arbeidernes dag (01.05.2026). Plann
- ed with SeasonSignal lead times.
+ ed with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -860,7 +860,7 @@ UID:milestone-forste-mai-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before 1. mai — Arbeidernes dag (01.05.2026). Plann
- ed with SeasonSignal lead times.
+ ed with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -873,7 +873,7 @@ UID:milestone-forste-mai-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before 1. mai — Arbeidernes dag (01.05.2026). Planne
- d with SeasonSignal lead times.
+ d with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -886,7 +886,7 @@ UID:milestone-forste-mai-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before 1. mai — Arbeidernes dag (01.05.2026). Planne
- d with SeasonSignal lead times.
+ d with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -914,7 +914,7 @@ UID:milestone-kristi-himmelfart-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Kristi himmelfartsdag (14.05.2026). Planned wi
- th SeasonSignal lead times.
+ th Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -927,7 +927,7 @@ UID:milestone-kristi-himmelfart-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Kristi himmelfartsdag (14.05.2026). Planned wi
- th SeasonSignal lead times.
+ th Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -940,7 +940,7 @@ UID:milestone-kristi-himmelfart-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Kristi himmelfartsdag (14.05.2026). Planned wit
- h SeasonSignal lead times.
+ h Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -953,7 +953,7 @@ UID:milestone-kristi-himmelfart-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Kristi himmelfartsdag (14.05.2026). Planned wit
- h SeasonSignal lead times.
+ h Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -982,7 +982,7 @@ UID:milestone-syttende-mai-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before 17. mai — Grunnlovsdagen (17.05.2026). Plann
- ed with SeasonSignal lead times.
+ ed with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -995,7 +995,7 @@ UID:milestone-syttende-mai-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before 17. mai — Grunnlovsdagen (17.05.2026). Plann
- ed with SeasonSignal lead times.
+ ed with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1008,7 +1008,7 @@ UID:milestone-syttende-mai-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before 17. mai — Grunnlovsdagen (17.05.2026). Planne
- d with SeasonSignal lead times.
+ d with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1021,7 +1021,7 @@ UID:milestone-syttende-mai-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before 17. mai — Grunnlovsdagen (17.05.2026). Planne
- d with SeasonSignal lead times.
+ d with Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1047,8 +1047,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-pinsedag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Pinsedag (24.05.2026). Planned with SeasonSign
- al lead times.
+DESCRIPTION:16 weeks before Pinsedag (24.05.2026). Planned with Season Sig
+ nal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1060,8 +1060,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-pinsedag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Pinsedag (24.05.2026). Planned with SeasonSign
- al lead times.
+DESCRIPTION:10 weeks before Pinsedag (24.05.2026). Planned with Season Sig
+ nal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1073,8 +1073,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-pinsedag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Pinsedag (24.05.2026). Planned with SeasonSigna
- l lead times.
+DESCRIPTION:6 weeks before Pinsedag (24.05.2026). Planned with Season Sign
+ al lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1086,8 +1086,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-pinsedag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Pinsedag (24.05.2026). Planned with SeasonSigna
- l lead times.
+DESCRIPTION:1 weeks before Pinsedag (24.05.2026). Planned with Season Sign
+ al lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1114,8 +1114,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-pinsedag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before 2. pinsedag (25.05.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:16 weeks before 2. pinsedag (25.05.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1127,8 +1127,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-pinsedag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before 2. pinsedag (25.05.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:10 weeks before 2. pinsedag (25.05.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1140,8 +1140,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-pinsedag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before 2. pinsedag (25.05.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:6 weeks before 2. pinsedag (25.05.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1153,8 +1153,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-pinsedag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before 2. pinsedag (25.05.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:1 weeks before 2. pinsedag (25.05.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1184,8 +1184,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-skoleslutt-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Skoleslutt (17.06.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:16 weeks before Skoleslutt (17.06.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1197,8 +1197,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-skoleslutt-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Skoleslutt (17.06.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:10 weeks before Skoleslutt (17.06.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1210,8 +1210,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-skoleslutt-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Skoleslutt (17.06.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:6 weeks before Skoleslutt (17.06.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1223,8 +1223,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-skoleslutt-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Skoleslutt (17.06.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:1 weeks before Skoleslutt (17.06.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1251,7 +1251,7 @@ UID:milestone-sankthansaften-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Sankthansaften (23.06.2026). Planned with Seas
- onSignal lead times.
+ on Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1264,7 +1264,7 @@ UID:milestone-sankthansaften-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Sankthansaften (23.06.2026). Planned with Seas
- onSignal lead times.
+ on Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1277,7 +1277,7 @@ UID:milestone-sankthansaften-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Sankthansaften (23.06.2026). Planned with Seaso
- nSignal lead times.
+ n Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1290,7 +1290,7 @@ UID:milestone-sankthansaften-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Sankthansaften (23.06.2026). Planned with Seaso
- nSignal lead times.
+ n Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1322,8 +1322,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-fellesferie-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Fellesferie (06.07.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:16 weeks before Fellesferie (06.07.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1335,8 +1335,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-fellesferie-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Fellesferie (06.07.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:10 weeks before Fellesferie (06.07.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1348,8 +1348,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-fellesferie-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Fellesferie (06.07.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:6 weeks before Fellesferie (06.07.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1361,8 +1361,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-fellesferie-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Fellesferie (06.07.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:1 weeks before Fellesferie (06.07.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1392,8 +1392,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-skolestart-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Skolestart (10.08.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:16 weeks before Skolestart (10.08.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1405,8 +1405,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-skolestart-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Skolestart (10.08.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:10 weeks before Skolestart (10.08.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1418,8 +1418,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-skolestart-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Skolestart (10.08.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:6 weeks before Skolestart (10.08.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1431,8 +1431,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-skolestart-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Skolestart (10.08.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:1 weeks before Skolestart (10.08.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1461,8 +1461,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-hostferie-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Høstferie (28.09.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:16 weeks before Høstferie (28.09.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1474,8 +1474,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-hostferie-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Høstferie (28.09.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:10 weeks before Høstferie (28.09.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1487,8 +1487,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-hostferie-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Høstferie (28.09.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:6 weeks before Høstferie (28.09.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1500,8 +1500,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-hostferie-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Høstferie (28.09.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:1 weeks before Høstferie (28.09.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1527,8 +1527,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-halloween-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Halloween (31.10.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:16 weeks before Halloween (31.10.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1540,8 +1540,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-halloween-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Halloween (31.10.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:10 weeks before Halloween (31.10.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1553,8 +1553,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-halloween-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Halloween (31.10.2026). Planned with SeasonSign
- al lead times.
+DESCRIPTION:6 weeks before Halloween (31.10.2026). Planned with Season Sig
+ nal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1566,8 +1566,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-halloween-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Halloween (31.10.2026). Planned with SeasonSign
- al lead times.
+DESCRIPTION:1 weeks before Halloween (31.10.2026). Planned with Season Sig
+ nal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1594,8 +1594,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-farsdag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Farsdag (08.11.2026). Planned with SeasonSigna
- l lead times.
+DESCRIPTION:16 weeks before Farsdag (08.11.2026). Planned with Season Sign
+ al lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1607,8 +1607,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-farsdag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Farsdag (08.11.2026). Planned with SeasonSigna
- l lead times.
+DESCRIPTION:10 weeks before Farsdag (08.11.2026). Planned with Season Sign
+ al lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1620,8 +1620,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-farsdag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Farsdag (08.11.2026). Planned with SeasonSignal
-  lead times.
+DESCRIPTION:6 weeks before Farsdag (08.11.2026). Planned with Season Signa
+ l lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1633,8 +1633,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-farsdag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Farsdag (08.11.2026). Planned with SeasonSignal
-  lead times.
+DESCRIPTION:1 weeks before Farsdag (08.11.2026). Planned with Season Signa
+ l lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1663,7 +1663,7 @@ UID:milestone-julebord-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Julebordsesongen (13.11.2026). Planned with Se
- asonSignal lead times.
+ ason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1676,7 +1676,7 @@ UID:milestone-julebord-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Julebordsesongen (13.11.2026). Planned with Se
- asonSignal lead times.
+ ason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1689,7 +1689,7 @@ UID:milestone-julebord-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Julebordsesongen (13.11.2026). Planned with Sea
- sonSignal lead times.
+ son Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1702,7 +1702,7 @@ UID:milestone-julebord-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Julebordsesongen (13.11.2026). Planned with Sea
- sonSignal lead times.
+ son Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1732,8 +1732,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-black-week-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Black Week (23.11.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:16 weeks before Black Week (23.11.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1745,8 +1745,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-black-week-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Black Week (23.11.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:10 weeks before Black Week (23.11.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1758,8 +1758,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-black-week-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Black Week (23.11.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:6 weeks before Black Week (23.11.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1771,8 +1771,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-black-week-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Black Week (23.11.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:1 weeks before Black Week (23.11.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1801,7 +1801,7 @@ UID:milestone-julehandel-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Julehandelen (23.11.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1814,7 +1814,7 @@ UID:milestone-julehandel-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Julehandelen (23.11.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1826,8 +1826,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-julehandel-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Julehandelen (23.11.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:6 weeks before Julehandelen (23.11.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1839,8 +1839,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-julehandel-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Julehandelen (23.11.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:1 weeks before Julehandelen (23.11.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1868,7 +1868,7 @@ UID:milestone-black-friday-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Black Friday (27.11.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1881,7 +1881,7 @@ UID:milestone-black-friday-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Black Friday (27.11.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1893,8 +1893,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-black-friday-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Black Friday (27.11.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:6 weeks before Black Friday (27.11.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1906,8 +1906,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-black-friday-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Black Friday (27.11.2026). Planned with SeasonS
- ignal lead times.
+DESCRIPTION:1 weeks before Black Friday (27.11.2026). Planned with Season 
+ Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1935,7 +1935,7 @@ UID:milestone-forste-advent-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before 1. søndag i advent (29.11.2026). Planned with
-  SeasonSignal lead times.
+  Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1948,7 +1948,7 @@ UID:milestone-forste-advent-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before 1. søndag i advent (29.11.2026). Planned with
-  SeasonSignal lead times.
+  Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1961,7 +1961,7 @@ UID:milestone-forste-advent-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before 1. søndag i advent (29.11.2026). Planned with 
- SeasonSignal lead times.
+ Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1974,7 +1974,7 @@ UID:milestone-forste-advent-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before 1. søndag i advent (29.11.2026). Planned with 
- SeasonSignal lead times.
+ Season Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2004,7 +2004,7 @@ UID:milestone-juleferie-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Juleferie (skole) (19.12.2026). Planned with S
- easonSignal lead times.
+ eason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2017,7 +2017,7 @@ UID:milestone-juleferie-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Juleferie (skole) (19.12.2026). Planned with S
- easonSignal lead times.
+ eason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2030,7 +2030,7 @@ UID:milestone-juleferie-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Juleferie (skole) (19.12.2026). Planned with Se
- asonSignal lead times.
+ ason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2043,7 +2043,7 @@ UID:milestone-juleferie-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Juleferie (skole) (19.12.2026). Planned with Se
- asonSignal lead times.
+ ason Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2071,8 +2071,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-julaften-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before Julaften (24.12.2026). Planned with SeasonSign
- al lead times.
+DESCRIPTION:16 weeks before Julaften (24.12.2026). Planned with Season Sig
+ nal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2084,8 +2084,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-julaften-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before Julaften (24.12.2026). Planned with SeasonSign
- al lead times.
+DESCRIPTION:10 weeks before Julaften (24.12.2026). Planned with Season Sig
+ nal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2097,8 +2097,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-julaften-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before Julaften (24.12.2026). Planned with SeasonSigna
- l lead times.
+DESCRIPTION:6 weeks before Julaften (24.12.2026). Planned with Season Sign
+ al lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2110,8 +2110,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-julaften-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before Julaften (24.12.2026). Planned with SeasonSigna
- l lead times.
+DESCRIPTION:1 weeks before Julaften (24.12.2026). Planned with Season Sign
+ al lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2137,8 +2137,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-forste-juledag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before 1. juledag (25.12.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:16 weeks before 1. juledag (25.12.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2150,8 +2150,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-forste-juledag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before 1. juledag (25.12.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:10 weeks before 1. juledag (25.12.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2163,8 +2163,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-forste-juledag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before 1. juledag (25.12.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:6 weeks before 1. juledag (25.12.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2176,8 +2176,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-forste-juledag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before 1. juledag (25.12.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:1 weeks before 1. juledag (25.12.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2203,8 +2203,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-juledag-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:16 weeks before 2. juledag (26.12.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:16 weeks before 2. juledag (26.12.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2216,8 +2216,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-juledag-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:10 weeks before 2. juledag (26.12.2026). Planned with SeasonSi
- gnal lead times.
+DESCRIPTION:10 weeks before 2. juledag (26.12.2026). Planned with Season S
+ ignal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2229,8 +2229,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-juledag-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:6 weeks before 2. juledag (26.12.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:6 weeks before 2. juledag (26.12.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2242,8 +2242,8 @@ DTSTAMP:20261001T080000Z
 UID:milestone-andre-juledag-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
-DESCRIPTION:1 weeks before 2. juledag (26.12.2026). Planned with SeasonSig
- nal lead times.
+DESCRIPTION:1 weeks before 2. juledag (26.12.2026). Planned with Season Si
+ gnal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2270,7 +2270,7 @@ UID:milestone-nyttarsaften-2026-all-food-concept@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:16 weeks before Nyttårsaften (31.12.2026). Planned with Seaso
- nSignal lead times.
+ n Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2283,7 +2283,7 @@ UID:milestone-nyttarsaften-2026-all-food-creative@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:10 weeks before Nyttårsaften (31.12.2026). Planned with Seaso
- nSignal lead times.
+ n Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2296,7 +2296,7 @@ UID:milestone-nyttarsaften-2026-all-food-media@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:6 weeks before Nyttårsaften (31.12.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -2309,7 +2309,7 @@ UID:milestone-nyttarsaften-2026-all-food-live@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Milestone
 DESCRIPTION:1 weeks before Nyttårsaften (31.12.2026). Planned with Season
- Signal lead times.
+  Signal lead times.
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 END:VEVENT

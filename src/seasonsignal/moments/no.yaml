@@ -1,4 +1,4 @@
-# SeasonSignal moments library — Norway
+# Season Signal moments library — Norway
 #
 # Every date is a rule (see src/seasonsignal/rules.py); nothing is hard-coded per year.
 #

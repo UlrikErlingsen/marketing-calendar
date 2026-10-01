@@ -1,4 +1,4 @@
-"""User-facing errors raised by SeasonSignal."""
+"""User-facing errors raised by Season Signal."""
 
 from __future__ import annotations
 
@@ -12,8 +12,8 @@ def friendly_message(exc: Exception) -> str:
     if isinstance(exc, PlanProblem):
         return str(exc)
     if isinstance(exc, ValueError):
-        return f"SeasonSignal could not complete that step: {exc}"
+        return f"Season Signal could not complete that step: {exc}"
     return (
-        "SeasonSignal could not complete that step. Check your inputs and try again. "
+        "Season Signal could not complete that step. Check your inputs and try again. "
         "Set SEASONSIGNAL_DEBUG=1 before launch if you need technical details."
     )

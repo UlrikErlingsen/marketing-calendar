@@ -71,7 +71,7 @@ def moment_items(planned: list[PlannedMoment], *, milestones: bool = True, categ
                         end=milestone.due,
                         description=(
                             f"{milestone.weeks_before} weeks before {moment.name_nb} ({occ.start:%d.%m.%Y}). "
-                            "Planned with SeasonSignal lead times."
+                            "Planned with Season Signal lead times."
                         ),
                         category="Milestone",
                     )
@@ -101,7 +101,7 @@ def campaign_items(plans: list[CampaignPlan]) -> list[CalendarItem]:
     return items
 
 
-def build_ics(items: list[CalendarItem], name: str = "SeasonSignal", *, stamp: datetime | None = None) -> bytes:
+def build_ics(items: list[CalendarItem], name: str = "Season Signal", *, stamp: datetime | None = None) -> bytes:
     """All-day events (DTEND exclusive, per RFC 5545), transparent so they never block busy time.
 
     Every event carries LAST-MODIFIED and a SEQUENCE that grows with the export time (minutes since 2025), so a
@@ -169,7 +169,7 @@ def build_xlsx(sheets: dict[str, pd.DataFrame]) -> bytes:
 def about_frame(year: int, region: str, category: str, generated: date | None = None) -> pd.DataFrame:
     generated = generated or date.today()
     rows = [
-        ("Tool", f"SeasonSignal {__version__} — part of the Signal suite"),
+        ("Tool", f"Season Signal {__version__} — part of the Signal suite"),
         ("Generated", generated.isoformat()),
         ("Year", year),
         ("Region", region),

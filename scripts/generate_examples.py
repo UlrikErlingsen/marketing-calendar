@@ -50,7 +50,7 @@ def build() -> dict[str, bytes]:
         ),
         # The demo: Food & drink moments, plan-back milestones and the fictional Fjellbrus campaigns.
         f"seasonsignal-{YEAR}-food-fjellbrus-demo.ics": build_ics(
-            moment_items(food, category="food") + campaign_items(plans), f"SeasonSignal {YEAR} — Food & drink (demo)",
+            moment_items(food, category="food") + campaign_items(plans), f"Season Signal {YEAR} — Food & drink (demo)",
             stamp=STAMP,
         ),
         f"seasonsignal-{YEAR}-food-fjellbrus-demo.xlsx": build_xlsx(

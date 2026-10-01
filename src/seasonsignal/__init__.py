@@ -1,4 +1,4 @@
-"""SeasonSignal: the Norwegian marketing year, computed.
+"""Season Signal: the Norwegian marketing year, computed.
 
 Public API — import from here, not from submodules, so a future Signal Hub can depend on a stable surface.
 The core never imports streamlit; only ``seasonsignal.ui`` (the synced Signal theme) does, and the app lives in
