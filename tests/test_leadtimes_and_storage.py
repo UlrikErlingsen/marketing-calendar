@@ -122,3 +122,16 @@ def test_campaign_validation_and_plan():
                          validate_lead_times(DEFAULT_LEAD_TIMES))
     assert plan.occurrence.start == date(2026, 11, 23)
     assert plan.milestones[0].due == date(2026, 8, 3)
+
+
+def test_planning_status_ladder():
+    from seasonsignal import plan_moments, planning_status
+
+    item = plan_moments(LIB, [LIB.resolve("black_week", 2026)], validate_lead_times(DEFAULT_LEAD_TIMES), "food")[0]
+    # Food: concept 3 Aug, live 16 Nov; Black Week 23–30 Nov 2026.
+    assert planning_status(item, date(2026, 6, 1)) == "on track"
+    assert planning_status(item, date(2026, 7, 27)) == "start soon"
+    assert planning_status(item, date(2026, 10, 1)) == "late start"
+    assert planning_status(item, date(2026, 11, 18)) == "missed go-live"
+    assert planning_status(item, date(2026, 11, 25)) == "happening now"
+    assert planning_status(item, date(2026, 12, 1)) == "passed"

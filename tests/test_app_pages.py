@@ -75,3 +75,21 @@ def test_deep_link_opens_planner_on_a_moment():
     assert not app.exception, [error.value for error in app.exception]
     assert app.sidebar.radio[0].value == "1 · Planner"
     assert any("Black Week" in str(item.value) for item in app.markdown if str(item.value).startswith("###"))
+
+
+def test_campaign_for_unknown_moment_does_not_break_pages(isolated_store):
+    import json
+
+    (isolated_store / "seasonsignal.json").write_text(json.dumps({
+        "version": 1,
+        "lead_times": {},
+        "campaigns": [{"id": "old", "name": "Renamed moment", "moment_id": "gone", "year": 2026, "category": "food"}],
+    }), encoding="utf-8")
+    for page in ("3 · My campaigns", "5 · Export"):
+        app = _app()
+        app.sidebar.radio[0].set_value(page).run()
+        assert not app.exception, [error.value for error in app.exception]
+        assert not app.error, [error.value for error in app.error]
+        if page == "3 · My campaigns":
+            assert any("Renamed moment" in str(w.value) for w in app.warning)
+            assert any(b.label == "Remove campaign" for b in app.button)  # it can still be removed

@@ -97,3 +97,8 @@ def test_circular_relative_rules_are_caught():
     library = parse_library(_with(loop))
     with pytest.raises(PlanProblem, match="Circular"):
         library.resolve("a", 2026)
+
+
+def test_window_includes_ranges_that_started_last_year():
+    found = {occ.moment.id for occ in LIB.window(date(2027, 1, 1), 6)}
+    assert "juleferie" in found  # 19.12.2026 – 03.01.2027

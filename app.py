@@ -60,7 +60,8 @@ KIND_COLORS = {
 STATUS_ICONS = {
     "on track": "🟢 on track",
     "start soon": "🟡 start soon",
-    "behind plan": "🔴 behind plan",
+    "late start": "🟠 late start",
+    "missed go-live": "🔴 missed go-live",
     "happening now": "🔵 happening now",
     "passed": "⚪ passed",
 }
@@ -258,10 +259,20 @@ def _planned(year: int, category: str, region: str, show_all: bool):
     return plan_moments(LIBRARY, occurrences, _store().lead_times, category)
 
 
-def _campaign_plans(year: int | None = None):
+def _campaign_plans(year: int | None = None, *, warn: bool = False):
+    """Plans for saved campaigns. A campaign that no longer fits the library (e.g. its moment was renamed) is
+    skipped — optionally with a warning — so it can still be removed on the My campaigns page."""
     store = _store()
-    campaigns = [c for c in store.campaigns if year is None or c.year == year]
-    return [plan_campaign(c, LIBRARY, store.lead_times) for c in campaigns]
+    plans = []
+    for campaign in store.campaigns:
+        if year is not None and campaign.year != year:
+            continue
+        try:
+            plans.append(plan_campaign(campaign, LIBRARY, store.lead_times))
+        except PlanProblem as exc:
+            if warn:
+                st.warning(f"“{campaign.name}” cannot be planned and is left out: {exc} Remove it below.")
+    return plans
 
 
 DATE_COLUMNS = {
@@ -407,7 +418,7 @@ def page_welcome() -> None:
     st.markdown(
         f"1. The sidebar is set to **{_default_year()}**, **Food & drink** and **Hele landet**.\n"
         "2. Open **Planner**, click a bar (try *Black Week* or *17. mai*) and read its plan-back milestones.\n"
-        "3. Open **Coming up** for the next 6–12 months and what is already behind plan.\n"
+        "3. Open **Coming up** for the next 6–12 months: on track, late start or missed go-live.\n"
         "4. Open **My campaigns** to see the fictional brand *Fjellbrus* and its three campaigns.\n"
         "5. Open **Export** and download the `.ics` file for your calendar."
     )
@@ -475,7 +486,8 @@ def page_coming_up() -> None:
         "Step 2",
         "Coming up — and when to start",
         "The next months from today, across the year boundary. For each moment: the concept deadline for your "
-        "category and whether you are on track, need to start soon, or are already behind plan.",
+        "category: on track, start soon, a late start (concept date passed, go-live still possible) or a missed "
+        "go-live.",
     )
     months = st.slider("Horizon (months from today)", 6, 12, 12)
     start = max(TODAY, date(MIN_YEAR, 1, 1))
@@ -489,12 +501,18 @@ def page_coming_up() -> None:
         st.info("Nothing in this window for the chosen category.")
         return
     statuses = frame["Status"].value_counts()
-    cols = st.columns(3)
-    cols[0].metric("Behind plan", int(statuses.get("behind plan", 0)), help="Concept deadline already passed")
+    cols = st.columns(4)
+    cols[0].metric("On track", int(statuses.get("on track", 0)), help="Concept deadline more than two weeks away")
     cols[1].metric("Start within 2 weeks", int(statuses.get("start soon", 0)))
-    cols[2].metric("On track", int(statuses.get("on track", 0)))
+    cols[2].metric("Late start", int(statuses.get("late start", 0)),
+                   help="Concept deadline passed, but go-live is still ahead — plan a compressed timeline")
+    cols[3].metric("Missed go-live", int(statuses.get("missed go-live", 0)),
+                   help="The go-live date has passed; only a reactive presence is realistic")
     view = frame[["Moment", "Start", "End", "Varies locally", "Concept & brief", "Media booking", "Campaign live", "Status"]].copy()
-    view["Days to concept"] = [(d - TODAY).days for d in frame["Concept & brief"]]
+    next_due = [next((m for m in item.milestones if m.due >= TODAY), None) for item in planned]
+    view["Next deadline"] = [
+        f"{m.label} · {m.due:%d.%m} ({(m.due - TODAY).days} d)" if m else "go-live date passed" for m in next_due
+    ]
     view["Status"] = view["Status"].map(STATUS_ICONS)
     st.dataframe(view, hide_index=True, use_container_width=True, column_config=DATE_COLUMNS)
     st.caption(f"Lead times for {LIBRARY.category_label(category)}: " + ", ".join(
@@ -514,7 +532,7 @@ def page_campaigns() -> None:
     if not store.saved:
         st.info("You are looking at the fictional Fjellbrus demo. Your first change saves it to a local file; "
                 "remove the demo campaigns whenever you like.")
-    plans = [plan_campaign(c, LIBRARY, store.lead_times) for c in store.campaigns]
+    plans = _campaign_plans(warn=True)
     frame = campaigns_frame(LIBRARY, plans, TODAY)
     if frame.empty:
         st.info("No campaigns yet — add one below.")
@@ -523,7 +541,9 @@ def page_campaigns() -> None:
         view["Moment start"] = [f"{d:%d.%m.%Y}" for d in view["Moment start"]]
         st.dataframe(view, hide_index=True, use_container_width=True)
         for plan in plans:
-            label = ("🧪 " if plan.campaign.fictional else "") + f"{plan.campaign.name} · {plan.occurrence.moment.name_nb} {plan.campaign.year}"
+            label = ("🧪 " if plan.campaign.fictional else "") + (
+                f"{plan.campaign.name} · {plan.occurrence.moment.name_nb} {plan.campaign.year}"
+            )
             with st.expander(label):
                 st.markdown(f"**Moment:** {_span(plan.occurrence.start, plan.occurrence.end)}")
                 if plan.campaign.notes:

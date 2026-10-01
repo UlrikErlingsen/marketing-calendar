@@ -129,7 +129,7 @@ class Library:
         """Occurrences overlapping [start, start + months), across a year boundary if needed."""
         stop = _add_months(start, months)
         found: list[Occurrence] = []
-        for year in range(start.year, stop.year + 1):
+        for year in range(start.year - 1, stop.year + 1):  # the previous year's ranges can run into this one
             if rules.MIN_YEAR <= year <= rules.MAX_YEAR:
                 found.extend(occ for occ in self.occurrences(year, region) if occ.end >= start and occ.start < stop)
         return sorted(found, key=lambda occ: (occ.start, occ.moment.id))

@@ -32,7 +32,7 @@ Everything runs locally with open-source Python packages. There is no account, t
 
 1. Start the app. It opens on the current year, category **Food & drink** and region **Hele landet**.
 2. Open **Planner** and click a bar or diamond — try *Black Week* or *17. mai* — to see concept, creative, media-booking and go-live dates.
-3. Open **Coming up** for the next 6–12 months, across New Year, with what is on track and what is already behind plan.
+3. Open **Coming up** for the next 6–12 months, across New Year: what is on track, what needs a late start (concept date passed, go-live still possible) and what has missed its go-live.
 4. Open **My campaigns** to see **Fjellbrus**, a fictional alcohol-free drinks brand, with three campaigns: påske, 17. mai and Black Week.
 5. Open **Export** and download the `.ics` file and the XLSX plan.
 
@@ -65,6 +65,8 @@ Categories: Retail, Food & drink, Fashion, Travel, B2B, Alcohol-free, Kids & fam
 ## Run locally
 
 You need Python 3.10 or newer and a local copy of this folder.
+
+**macOS:** double-click `run_app.command`.
 
 **Windows:** double-click `run_app.bat`.
 

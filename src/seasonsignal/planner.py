@@ -51,17 +51,28 @@ def plan_moments(
     return [PlannedMoment(occ, plan_back(occ.start, offsets, holidays, working_days=working_days)) for occ in occurrences]
 
 
+STATUSES = ("on track", "start soon", "late start", "missed go-live", "happening now", "passed")
+
+
 def planning_status(item: PlannedMoment, today: date) -> str:
-    """Where a moment stands for a team starting today."""
+    """Where a moment stands for a team starting today.
+
+    - on track / start soon: the concept deadline is ahead (start soon = within 14 days);
+    - late start: the concept deadline has passed but go-live is still ahead — a compressed plan is possible;
+    - missed go-live: the go-live date has passed but the moment has not started;
+    - happening now / passed: the moment itself is under way or over.
+    """
     occ = item.occurrence
-    concept = next(m for m in item.milestones if m.key == "concept")
+    due = {m.key: m.due for m in item.milestones}
     if occ.end < today:
         return "passed"
     if occ.start <= today:
         return "happening now"
-    if concept.due >= today:
-        return "start soon" if (concept.due - today).days <= 14 else "on track"
-    return "behind plan"
+    if due["concept"] >= today:
+        return "start soon" if (due["concept"] - today).days <= 14 else "on track"
+    if due["live"] >= today:
+        return "late start"
+    return "missed go-live"
 
 
 def moments_frame(library: Library, planned: list[PlannedMoment], today: date | None = None) -> pd.DataFrame:

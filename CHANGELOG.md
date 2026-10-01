@@ -19,9 +19,16 @@ First version of **SeasonSignal**, the Norwegian marketing calendar in the Signa
 - Exports: RFC 5545 `.ics` (all-day, transparent events with stable UIDs) and an XLSX plan with formula-injection-safe cells.
 - Fictional demo brand Fjellbrus (Food & drink) with påske, 17. mai and Black Week campaigns.
 
+### Planning status
+
+- Moments are graded on track / start soon / **late start** (concept date passed, go-live still possible) / **missed go-live** / happening now / passed, instead of one catch-all "behind plan". Coming up shows the next deadline with a day count.
+- The coming-up window includes ranges that began the previous year (e.g. the school Christmas break on 1 January).
+- A saved campaign whose moment no longer exists is skipped with a warning instead of breaking the page, so it can still be removed.
+
 ### Examples and docs
 
 - Committed example calendars in `examples/` (2026 moments; Fjellbrus demo with milestones) plus an XLSX plan, rebuilt by `scripts/generate_examples.py` and checked by a test. `.ics` files keep CRLF line endings via `.gitattributes`.
+- macOS launcher `run_app.command`; Docker image verified (builds, passes its health check, runs as a non-root user).
 - README screenshots captured with `scripts/take_screenshots.py`; deep links such as `?page=planner&moment=black_week`.
 - The example `.ics` files were cross-checked with a second parser (vobject).
 
