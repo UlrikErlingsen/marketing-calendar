@@ -338,15 +338,12 @@ def page_planner() -> None:
     cols[2].metric("Vary by kommune", int(frame["Varies locally"].eq("Yes — range").sum()))
     cols[3].metric("Next up", upcoming.iloc[0]["Moment"] if not upcoming.empty else "—")
 
-    event = st.plotly_chart(
-        timeline_figure(frame, year),
-        use_container_width=True,
-        on_select="rerun",
-        selection_mode="points",
-        key=f"timeline-{year}-{category}-{region}-{show_all}",
-    )
+    chart_key = f"timeline-{year}-{category}-{region}-{show_all}"
+    sig.chart(THEME, timeline_figure(frame, year), on_select="rerun", selection_mode="points", key=chart_key)
+    # sig.chart returns nothing; with on_select the click lives in session state under the chart key.
+    event = st.session_state.get(chart_key) or {}
     clicked = None
-    points = getattr(getattr(event, "selection", None), "points", None) or []
+    points = (event.get("selection") or {}).get("points") or []
     if points and points[0].get("customdata"):
         clicked = points[0]["customdata"][0]
     ids = list(dict.fromkeys(frame["id"]))  # a range crossing New Year can appear twice in one year

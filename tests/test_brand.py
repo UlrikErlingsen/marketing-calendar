@@ -16,6 +16,7 @@ def test_app_uses_the_shared_signal_theme_instead_of_pasted_styles():
     for call in ("sig.sidebar_brand(", "sig.masthead(", "sig.hero(", "sig.cards(", "sig.note(", "sig.footer("):
         assert call in app, call
     assert "<style>" not in app and "unsafe_allow_html" not in app
+    assert "sig.chart(THEME," in app and "st.plotly_chart" not in app  # Signal template + theme=None
     for colour in OLD_COLOURS:
         assert colour not in app.lower(), colour
     assert (UI / "__init__.py").exists()
