@@ -139,13 +139,17 @@ docker run --rm -p 8587:8587 seasonsignal
 
 Then open `http://127.0.0.1:8587`. The container runs as a non-root user and includes a health check.
 
+### Inside Signal Hub
+
+[Signal Hub](https://github.com/UlrikErlingsen/signal-hub) embeds Season Signal through `seasonsignal.ui.render()`. With `SIGNAL_HUB=1`, campaigns and lead times live in your browser session only, starting from the fictional Fjellbrus demo; no save file is read or written on the server, `?page=` deep links are off (the Hub owns the URL), and the `.ics` and XLSX exports are in-memory downloads as always. To keep campaigns between visits, export them or run Season Signal locally.
+
 ### Use it as a library
 
 The core package has no Streamlit dependency, so other Signal tools (or Signal Hub) can use it directly:
 
 ```bash
 python -m pip install .          # core: moments, plan-back, .ics, XLSX
-python -m pip install ".[app]"   # plus Streamlit and Plotly for the app
+python -m pip install ".[ui]"    # plus Streamlit and Plotly for the app
 ```
 
 ```python
@@ -159,7 +163,7 @@ open("black-week-2027.ics", "wb").write(build_ics(moment_items(planned)))
 
 ## Privacy
 
-Campaigns and lead times are saved to `data/seasonsignal.json` on your computer (git-ignored). Nothing is sent anywhere. Importing an `.ics` into a calendar provider shares its contents with that provider. See [PRIVACY.md](PRIVACY.md).
+Campaigns and lead times are saved to `data/seasonsignal.json` on your computer (git-ignored). Nothing is sent anywhere. Inside Signal Hub nothing is saved at all: plans last for your browser session. Importing an `.ics` into a calendar provider shares its contents with that provider. See [PRIVACY.md](PRIVACY.md).
 
 ## No install? Import the example calendars
 
@@ -176,7 +180,7 @@ python -m build
 
 `scripts/generate_examples.py` rebuilds the files in `examples/` (a test fails if the committed calendars are stale) and `scripts/take_screenshots.py` recaptures the README screenshots from a running app (needs `pip install playwright` and Microsoft Edge).
 
-The suite checks Easter-based holidays for several known years, morsdag and farsdag rules, Black Friday, Black Week and Advent, ISO-week ranges (including 53-week years), Oslo, Bergen and Trondheim's published school dates, the library contract (every moment sourced or explained), lead-time maths with weekend and holiday adjustment, local storage, `.ics` structure and validity, XLSX formula-injection safety, the rule that nothing under `src/` imports streamlit except the `seasonsignal.ui` theme, the shared Signal look, and every Streamlit page for several years and regions.
+The suite checks Easter-based holidays for several known years, morsdag and farsdag rules, Black Friday, Black Week and Advent, ISO-week ranges (including 53-week years), Oslo, Bergen and Trondheim's published school dates, the library contract (every moment sourced or explained), lead-time maths with weekend and holiday adjustment, local storage, `.ics` structure and validity, XLSX formula-injection safety, the rule that nothing under `src/` imports streamlit except `seasonsignal.ui`, the shared Signal look, every Streamlit page for several years and regions, and the Signal Hub contract: `render()` without page config, slug-namespaced keys, a render from the packaged files alone, and Hub mode with session-only plans, no files written or read and no network calls.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md).
 

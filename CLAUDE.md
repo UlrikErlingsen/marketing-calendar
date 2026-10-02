@@ -58,7 +58,11 @@ with three example campaigns (påske, 17. mai, Black Week). Mark as fictional.
   Morsdag/Farsdag rules, ISO-week ranges, ICS validity, lead-time maths.
 - README follows the Signal README template (Signal Hub `signal-theme/README.template.md`); CHANGELOG, SECURITY, PRIVACY, CONTRIBUTING.
 - **Architecture rule:** no Streamlit import anywhere under `src/seasonsignal/` except `src/seasonsignal/ui/`
-  (the synced Signal theme). `tests/test_architecture.py` enforces it.
+  (the Streamlit app in `ui/app.py` and the synced Signal theme). `tests/test_architecture.py` enforces it.
+- **Signal Hub contract:** `seasonsignal.ui` exposes `APP_INFO` and `render()` (no `st.set_page_config`, no
+  `st.navigation`, no `st.stop`); `app.py` is a thin wrapper. Every session-state and widget key goes through
+  `k()` (`season:` namespace). With `SIGNAL_HUB=1` campaigns live in the session only (fictional Fjellbrus demo),
+  no file is read or written, no network calls. `tests/test_hub_contract.py` enforces it.
 - **Brand (2026-10-01):** display name **Season Signal** (with a space) in user-facing text; technical identifiers
   stay `seasonsignal` / `SEASONSIGNAL_*`. The look comes from the synced Signal theme
   (`from seasonsignal.ui import signal_theme as sig`, theme key `season`, family Market). Never edit the synced
