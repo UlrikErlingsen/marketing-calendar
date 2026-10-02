@@ -10,10 +10,14 @@ other's campaigns with a stale copy.
 
 The file lives in ``data/seasonsignal.json`` next to the app (git-ignored), or in the folder named by the
 ``SEASONSIGNAL_DATA_DIR`` environment variable. Nothing is sent anywhere.
+
+Inside Signal Hub nothing may be written on the server, so the UI uses ``memory_store`` and ``change_in_memory``
+instead: a store with no file behind it, kept in the user's session.
 """
 
 from __future__ import annotations
 
+import copy
 import json
 import os
 import threading
@@ -42,7 +46,7 @@ def default_store_path() -> Path:
 class Store:
     campaigns: list[Campaign]
     lead_times: dict[str, dict[str, int]]
-    path: Path
+    path: Path | None
     saved: bool = False
 
     def to_json(self) -> str:
@@ -80,6 +84,8 @@ def load_store(path: Path | None = None, *, demo_year: int | None = None) -> Sto
 
 def save_store(store: Store) -> Path:
     """Write the store atomically (unique temp file + replace) so a crash never leaves half a file."""
+    if store.path is None:
+        raise PlanProblem("This plan lives in memory only (Signal Hub) and is never saved to a file.")
     store.lead_times = validate_lead_times(store.lead_times)
     store.path.parent.mkdir(parents=True, exist_ok=True)
     temp = store.path.with_name(f".{store.path.name}.{uuid.uuid4().hex}.tmp")
@@ -110,3 +116,18 @@ def update_store(change: Callable[[Store], None], path: Path | None = None, *, d
         change(store)
         save_store(store)
         return store
+
+
+def memory_store(*, demo_year: int | None = None) -> Store:
+    """A store with no file behind it (Signal Hub): default lead times and the fictional demo. Never touches disk."""
+    year = demo_year or date.today().year
+    return Store(demo_campaigns(year), validate_lead_times(DEFAULT_LEAD_TIMES), None, saved=False)
+
+
+def change_in_memory(store: Store, change: Callable[[Store], None]) -> Store:
+    """Apply ``change`` to a copy of an in-memory store and return the copy; ``store`` itself is left untouched,
+    so a change that raises (e.g. PlanProblem from validation) changes nothing."""
+    updated = copy.deepcopy(store)
+    change(updated)
+    updated.lead_times = validate_lead_times(updated.lead_times)
+    return updated

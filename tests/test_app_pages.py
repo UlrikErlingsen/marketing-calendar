@@ -21,6 +21,7 @@ PAGES = [
 @pytest.fixture(autouse=True)
 def isolated_store(tmp_path, monkeypatch):
     monkeypatch.setenv("SEASONSIGNAL_DATA_DIR", str(tmp_path))
+    monkeypatch.delenv("SIGNAL_HUB", raising=False)  # these tests cover the standalone app
     return tmp_path
 
 
@@ -44,9 +45,9 @@ def test_every_page_renders_with_fictional_demo(page):
 def test_year_selector_and_region(page, year, region):
     app = _app()
     app.sidebar.radio[0].set_value(page).run()
-    app.sidebar.selectbox(key="year").set_value(year).run()
-    app.sidebar.selectbox(key="region").set_value(region).run()
-    app.sidebar.checkbox(key="show_all").check().run()
+    app.sidebar.selectbox(key="season:year").set_value(year).run()
+    app.sidebar.selectbox(key="season:region").set_value(region).run()
+    app.sidebar.checkbox(key="season:show_all").check().run()
     assert not app.exception, [error.value for error in app.exception]
     assert not app.error, [error.value for error in app.error]
 
@@ -107,8 +108,8 @@ def test_planner_year_includes_christmas_break_tail_and_bad_files_are_reported(i
     app = AppTest.from_file(APP, default_timeout=120)
     app.query_params["page"] = "planner"
     app.run()
-    app.sidebar.selectbox(key="year").set_value(2027).run()
-    app.sidebar.checkbox(key="show_all").check().run()
+    app.sidebar.selectbox(key="season:year").set_value(2027).run()
+    app.sidebar.checkbox(key="season:show_all").check().run()
     assert not app.exception, [error.value for error in app.exception]
 
     (isolated_store / "seasonsignal.json").write_text('{"version": 1, "campaigns": [{"name": "x"}]}', encoding="utf-8")
@@ -124,7 +125,7 @@ def test_older_file_missing_a_milestone_still_loads(isolated_store):
     app = _app()
     app.sidebar.radio[0].set_value("4 · Lead times").run()
     assert not app.exception and not app.error
-    assert app.session_state["store"].lead_times["food"] == {"concept": 20, "creative": 10, "media": 6, "live": 1}
+    assert app.session_state["season:store"].lead_times["food"] == {"concept": 20, "creative": 10, "media": 6, "live": 1}
 
 
 def test_failed_campaign_form_keeps_page_and_input():
@@ -155,5 +156,5 @@ def test_reset_lead_times_resets_the_editor(isolated_store):
     app.sidebar.radio[0].set_value("4 · Lead times").run()
     next(b for b in app.button if b.label == "Reset to defaults").click().run()
     assert not app.exception
-    assert app.session_state["store"].lead_times["food"]["concept"] == 16
-    assert not app.session_state["lead-time-editor"]["edited_rows"]  # no stale edits re-applied
+    assert app.session_state["season:store"].lead_times["food"]["concept"] == 16
+    assert not app.session_state["season:lead-time-editor"]["edited_rows"]  # no stale edits re-applied

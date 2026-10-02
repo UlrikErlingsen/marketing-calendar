@@ -8,10 +8,11 @@ OLD_COLOURS = ("#173c3a", "#d95b40", "#83d2b4", "#f2c66d", "#17322e", "#102c2a",
 
 
 def test_app_uses_the_shared_signal_theme_instead_of_pasted_styles():
-    app = (ROOT / "app.py").read_text(encoding="utf-8")
+    entry = (ROOT / "app.py").read_text(encoding="utf-8")
+    assert 'st.set_page_config(**sig.page_config("season"' in entry and "render()" in entry
+    app = (UI / "app.py").read_text(encoding="utf-8")
     assert "from seasonsignal.ui import signal_theme as sig" in app
     assert 'THEME = "season"' in app
-    assert "st.set_page_config(**sig.page_config(THEME" in app
     assert "sig.apply(THEME)" in app and "sig.template(THEME)" in app
     for call in ("sig.sidebar_brand(", "sig.masthead(", "sig.hero(", "sig.cards(", "sig.note(", "sig.footer("):
         assert call in app, call

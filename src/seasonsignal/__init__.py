@@ -1,8 +1,8 @@
 """Season Signal: the Norwegian marketing year, computed.
 
 Public API — import from here, not from submodules, so a future Signal Hub can depend on a stable surface.
-The core never imports streamlit; only ``seasonsignal.ui`` (the synced Signal theme) does, and the app lives in
-``app.py``.
+The core never imports streamlit; only ``seasonsignal.ui`` does (the Streamlit app, its ``render()`` entry point for
+Signal Hub and the synced Signal theme). The standalone ``app.py`` is a thin wrapper around ``render()``.
 """
 
 __version__ = "1.0.0"
@@ -42,7 +42,15 @@ from .planner import (  # noqa: E402
     select_occurrences,
 )
 from .rules import easter_sunday, evaluate, iso_week_day, nth_weekday  # noqa: E402
-from .storage import Store, default_store_path, load_store, save_store, update_store  # noqa: E402
+from .storage import (  # noqa: E402
+    Store,
+    change_in_memory,
+    default_store_path,
+    load_store,
+    memory_store,
+    save_store,
+    update_store,
+)
 
 __all__ = [
     "__version__",
@@ -66,6 +74,7 @@ __all__ = [
     "build_xlsx",
     "campaign_items",
     "campaigns_frame",
+    "change_in_memory",
     "default_store_path",
     "demo_campaigns",
     "easter_sunday",
@@ -75,6 +84,7 @@ __all__ = [
     "lead_times_frame",
     "load_library",
     "load_store",
+    "memory_store",
     "milestones_frame",
     "moment_items",
     "moments_frame",

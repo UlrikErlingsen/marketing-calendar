@@ -37,7 +37,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-app = [
+ui = [
   "plotly>=5.18,<8",
   "streamlit>=1.38,<2",
 ]
