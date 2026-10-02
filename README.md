@@ -182,7 +182,7 @@ python -m build
 
 The suite checks Easter-based holidays for several known years, morsdag and farsdag rules, Black Friday, Black Week and Advent, ISO-week ranges (including 53-week years), Oslo, Bergen and Trondheim's published school dates, the library contract (every moment sourced or explained), lead-time maths with weekend and holiday adjustment, local storage, `.ics` structure and validity, XLSX formula-injection safety, the rule that nothing under `src/` imports streamlit except `seasonsignal.ui`, the shared Signal look, every Streamlit page for several years and regions, and the Signal Hub contract: `render()` without page config, slug-namespaced keys, a render from the packaged files alone, and Hub mode with session-only plans, no files written or read and no network calls.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [CHANGELOG.md](CHANGELOG.md) and [CITATION.cff](CITATION.cff).
 
 ## Where this fits in Signal
 

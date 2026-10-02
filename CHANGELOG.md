@@ -1,6 +1,18 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.0] - 2026-10-02
+
+First release of **Season Signal**, the Norwegian marketing calendar in the Signal suite.
+
+### Signal Hub
+
+- `seasonsignal.ui` exposes `APP_INFO` and `render()`, which draws the whole app (theme, sidebar with a namespaced page radio, masthead, page, footer) without `st.set_page_config`, `st.navigation` or `st.stop`. The app body moved from `app.py` to `seasonsignal.ui.app`; `app.py` is a thin standalone wrapper.
+- Every session-state, widget and form key is namespaced `season:` through one `k()` helper.
+- Hub mode (`SIGNAL_HUB=1`): campaigns and lead times live in the browser session only, seeded with the fictional Fjellbrus demo (`memory_store`, `change_in_memory`); the local save file is never read or written, `?page=` deep links are ignored because the Hub owns the URL, and the Welcome, My campaigns and Lead times pages say that saving is off. `.ics` and XLSX remain in-memory downloads.
+- "Today" is computed on every run, so a long-running process never keeps the day it started on.
+- Streamlit and Plotly are in the `ui` extra (previously `app`); `requirements.txt` still installs everything.
+- `tests/test_hub_contract.py`: the entry point, the Streamlit/Plotly import guard, a fresh-interpreter core import, no page config or navigation in `ui/`, a render from the packaged files alone, namespaced keys on every page, and Hub mode with no files written or read (temporary working, home and app-data folders stay empty; a planted save file is ignored and untouched) and no outbound network calls.
+- `CITATION.cff`.
 
 ### Signal brand refresh
 
@@ -13,10 +25,6 @@
 - `plotly` widened to `>=5.18,<8` so Season Signal installs next to the other Signal apps.
 - Figtree is embedded with the theme (`seasonsignal.ui.signal_font`, OFL licence included); the app no longer requests Google Fonts.
 - README screenshots re-taken in the Signal theme; `scripts/take_screenshots.py` waits for the new `.sg-foot` footer.
-
-## 1.0.0 — unreleased
-
-First version of **SeasonSignal**, the Norwegian marketing calendar in the Signal suite.
 
 ### Moments library
 
@@ -57,4 +65,4 @@ First version of **SeasonSignal**, the Norwegian marketing calendar in the Signa
 
 ### Architecture
 
-- UI-free, pip-installable package with a public API in `seasonsignal/__init__.py`; storage behind `storage.py`; a test fails if anything under `src/` imports streamlit.
+- UI-free, pip-installable package with a public API in `seasonsignal/__init__.py`; storage behind `storage.py`; a test fails if anything under `src/` outside `seasonsignal.ui` imports streamlit.

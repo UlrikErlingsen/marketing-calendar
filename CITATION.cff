@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using this metadata. Verify dates that matter to your budget against the linked sources."
+title: "Season Signal: an open Norwegian marketing calendar"
+type: software
+authors:
+  - family-names: Erlingsen
+    given-names: Ulrik
+version: 1.0.0
+date-released: 2026-10-02
+license: AGPL-3.0-or-later
+repository-code: "https://github.com/UlrikErlingsen/marketing-calendar"
+abstract: "An open, local-first Norwegian marketing calendar: the commercial moments of the Norwegian year computed from sourced date rules for 2025-2035, worked backwards into plan-back deadlines per category, with .ics and XLSX export."
+keywords:
+  - marketing calendar
+  - campaign planning
+  - Norway
+  - public holidays
+  - icalendar
