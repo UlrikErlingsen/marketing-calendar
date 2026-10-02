@@ -11,6 +11,8 @@
 - Bug-report and feature-request issue templates.
 - The architecture rule now reads "no Streamlit under `src/seasonsignal/` except `src/seasonsignal/ui/`"; the guard test allows only `ui/`. The marks ship as package data.
 - `plotly` widened to `>=5.18,<8` so Season Signal installs next to the other Signal apps.
+- Figtree is embedded with the theme (`seasonsignal.ui.signal_font`, OFL licence included); the app no longer requests Google Fonts.
+- README screenshots re-taken in the Signal theme; `scripts/take_screenshots.py` waits for the new `.sg-foot` footer.
 
 ## 1.0.0 — unreleased
 

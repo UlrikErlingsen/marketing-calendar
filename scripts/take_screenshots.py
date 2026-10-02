@@ -34,7 +34,7 @@ def main(base_url: str) -> None:
         page = browser.new_page(viewport={"width": 1440, "height": 1000}, device_scale_factor=1, color_scheme="light")
         for filename, query in SHOTS.items():
             page.goto(f"{base_url}/?{query}")
-            page.wait_for_selector(".ps-footer", timeout=60_000)
+            page.wait_for_selector(".sg-foot", timeout=60_000)
             if "planner" in query:
                 page.wait_for_selector(".js-plotly-plot .trace", timeout=60_000)
             page.wait_for_timeout(1500)  # let fonts, charts and toasts settle
