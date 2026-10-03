@@ -20,13 +20,13 @@ country: NO
 
 regions:
   - id: all
-    name: Hele landet
+    name: All of Norway
   - id: oslo
-    name: Oslo kommune
+    name: Oslo municipality (kommune)
   - id: bergen
-    name: Bergen kommune
+    name: Bergen municipality (kommune)
   - id: trondheim
-    name: Trondheim kommune
+    name: Trondheim municipality (kommune)
 
 categories:
   retail: {nb: Handel, en: Retail}
@@ -52,7 +52,7 @@ moments:
     tags: [retail, food, b2b]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag under helligdagsfredloven § 2. "New year, new me" — health, fitness and budgeting messages.
+    notes: Public holiday (helligdag) under the Public Holidays Act (helligdagsfredloven) § 2. "New year, new me" — health, fitness and budgeting messages.
 
   - id: skjaertorsdag
     name: {nb: Skjærtorsdag, en: Maundy Thursday}
@@ -61,7 +61,7 @@ moments:
     tags: [retail, food, travel, alcohol_free]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag; Easter Sunday − 3 days. Most shops closed — last grocery run is Wednesday.
+    notes: Public holiday (helligdag); Easter Sunday − 3 days. Most shops closed — last grocery run is Wednesday.
 
   - id: langfredag
     name: {nb: Langfredag, en: Good Friday}
@@ -70,7 +70,7 @@ moments:
     tags: [food, travel]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag; Easter Sunday − 2 days.
+    notes: Public holiday (helligdag); Easter Sunday − 2 days.
 
   - id: paskedag
     name: {nb: Påskedag, en: Easter Sunday}
@@ -81,7 +81,7 @@ moments:
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
     notes: >-
       Helligdag; Western Easter (first Sunday after the first full moon on or after 21 March, as defined in the
-      law). Påskeegg, påskekrim, cabin trips.
+      law). Easter eggs (påskeegg), Easter crime fiction (påskekrim), cabin trips.
 
   - id: andre_paskedag
     name: {nb: 2. påskedag, en: Easter Monday}
@@ -90,7 +90,7 @@ moments:
     tags: [travel]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag; Easter Sunday + 1 day. Return-traffic day from the cabin.
+    notes: Public holiday (helligdag); Easter Sunday + 1 day. Return-traffic day from the cabin.
 
   - id: forste_mai
     name: {nb: 1. mai — Arbeidernes dag, en: May Day}
@@ -99,7 +99,7 @@ moments:
     tags: [b2b]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1947-04-26-1
-    notes: Offentlig høytidsdag under lov om 1. og 17. mai som høgtidsdager.
+    notes: Official public holiday under the Act on 1 and 17 May as public holidays (lov om 1. og 17. mai som høgtidsdager).
 
   - id: syttende_mai
     name: {nb: 17. mai — Grunnlovsdagen, en: Constitution Day}
@@ -109,8 +109,7 @@ moments:
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1947-04-26-1
     notes: >-
-      Offentlig høytidsdag (lov om 1. og 17. mai som høgtidsdager). Norway's biggest food, ice-cream,
-      sausage, bunad and party-wear moment; also the end of russetid.
+      Official public holiday (Act on 1 and 17 May as public holidays, lov om 1. og 17. mai som høgtidsdager). Norway's biggest food, ice-cream, sausage, bunad (national costume) and party-wear moment; also the end of the russ season (russetid).
 
   - id: kristi_himmelfart
     name: {nb: Kristi himmelfartsdag, en: Ascension Day}
@@ -119,7 +118,7 @@ moments:
     tags: [travel, retail]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag; Easter Sunday + 39 days (always a Thursday). Many take Friday off — a long weekend.
+    notes: Public holiday (helligdag); Easter Sunday + 39 days (always a Thursday). Many take Friday off — a long weekend.
 
   - id: pinsedag
     name: {nb: Pinsedag, en: Whit Sunday}
@@ -128,7 +127,7 @@ moments:
     tags: [travel]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag; Easter Sunday + 49 days.
+    notes: Public holiday (helligdag); Easter Sunday + 49 days.
 
   - id: andre_pinsedag
     name: {nb: 2. pinsedag, en: Whit Monday}
@@ -137,7 +136,7 @@ moments:
     tags: [travel, retail]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag; Easter Sunday + 50 days. Long weekend; often the first garden/grill weekend.
+    notes: Public holiday (helligdag); Easter Sunday + 50 days. Long weekend; often the first garden/grill weekend.
 
   - id: forste_juledag
     name: {nb: 1. juledag, en: Christmas Day}
@@ -146,7 +145,7 @@ moments:
     tags: [food, kids]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag under helligdagsfredloven § 2.
+    notes: Public holiday (helligdag) under the Public Holidays Act (helligdagsfredloven) § 2.
 
   - id: andre_juledag
     name: {nb: 2. juledag, en: Boxing Day}
@@ -155,11 +154,11 @@ moments:
     tags: [food]
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
-    notes: Helligdag under helligdagsfredloven § 2.
+    notes: Public holiday (helligdag) under the Public Holidays Act (helligdagsfredloven) § 2.
 
   # ---------------------------------------------------------------- cultural moments
   - id: dry_january
-    name: {nb: Tørrlagt januar (Dry January), en: Dry January}
+    name: {nb: Tørrlagt januar, en: Dry January}
     kind: culture
     start: {rule: fixed, month: 1, day: 1}
     end: {rule: fixed, month: 1, day: 31}
@@ -168,7 +167,7 @@ moments:
     source: https://alcoholchange.org.uk/get-involved/campaigns/dry-january
     notes: >-
       International campaign month, widely picked up in Norway. No Norwegian owner. Remember that alcohol
-      advertising is banned in Norway (alkoholloven § 9-2); alcohol-free variants need care not to promote
+      advertising is banned in Norway (the Alcohol Act, alkoholloven § 9-2); alcohol-free variants need care not to promote
       the parent brand.
 
   - id: samefolkets_dag
@@ -181,7 +180,7 @@ moments:
     notes: Official flag day since 2003 (6 Feb). Mark respectfully — not a sales moment.
 
   - id: morsdag
-    name: {nb: Morsdag, en: Mother's Day (Norway)}
+    name: {nb: Morsdag, en: "Mother's Day, Norway"}
     kind: retail
     date: {rule: nth_weekday, month: 2, weekday: sun, n: 2}
     tags: [retail, food, fashion, kids]
@@ -198,7 +197,7 @@ moments:
     tags: [food, kids]
     basis: tradition
     source: https://snl.no/fastelavn
-    notes: Easter Sunday − 49 days (falls 1 Feb – 7 Mar). Fastelavnsboller with cream; fastelavnsris.
+    notes: Easter Sunday − 49 days (falls 1 Feb – 7 Mar). Shrovetide buns (fastelavnsboller) with cream; decorated birch twigs (fastelavnsris).
 
   - id: valentinsdag
     name: {nb: Valentinsdagen, en: Valentine's Day}
@@ -207,7 +206,7 @@ moments:
     tags: [retail, food, fashion]
     basis: convention
     source: https://snl.no/valentinsdag
-    notes: Imported convention; fixed date. Often within days of morsdag — plan the two together.
+    notes: Imported convention; fixed date. Often within days of Mother's Day (morsdag) — plan the two together.
 
   - id: sankthansaften
     name: {nb: Sankthansaften, en: Midsummer Eve}
@@ -228,7 +227,7 @@ moments:
     notes: Imported convention, now a significant sweets and costume moment. Fixed date.
 
   - id: farsdag
-    name: {nb: Farsdag, en: Father's Day (Norway)}
+    name: {nb: Farsdag, en: "Father's Day, Norway"}
     kind: retail
     date: {rule: nth_weekday, month: 11, weekday: sun, n: 2}
     tags: [retail, food, fashion, kids]
@@ -253,8 +252,7 @@ moments:
     basis: convention
     source: https://snl.no/julaften
     notes: >-
-      The main Norwegian Christmas celebration (ribbe/pinnekjøtt, presents in the evening). Not a helligdag
-      under helligdagsfredloven § 2, but shops close early.
+      The main Norwegian Christmas celebration (pork rib or cured lamb rib — ribbe or pinnekjøtt — and presents in the evening). Not a public holiday under helligdagsfredloven § 2, but shops close early.
 
   - id: nyttarsaften
     name: {nb: Nyttårsaften, en: New Year's Eve}
@@ -263,7 +261,7 @@ moments:
     tags: [food, fashion, alcohol_free]
     basis: convention
     source: https://snl.no/nytt%C3%A5rsaften
-    notes: Party food, fireworks, party wear. Not a helligdag.
+    notes: Party food, fireworks, party wear. Not a public holiday.
 
   # ---------------------------------------------------------------- retail moments
   - id: black_friday
@@ -316,8 +314,7 @@ moments:
     basis: convention
     source: https://www.virke.no/analyse/julehandel/
     notes: >-
-      Retail's peak season. Now effectively starts with Black Week and runs to julaften; Virke reports
-      November + December as the julehandel period.
+      Retail's peak season. Now effectively starts with Black Week and runs to Christmas Eve (julaften); Virke (the Federation of Norwegian Enterprise) reports November + December as the Christmas shopping (julehandel) period.
 
   - id: julebord
     name: {nb: Julebordsesongen, en: Christmas-party season}
@@ -340,7 +337,7 @@ moments:
     basis: convention
     source: https://snl.no/romjul
     notes: >-
-      Romjul is the days between Christmas and New Year. Mellomjulssalg (between-Christmas sale) starts
+      Romjul is the days between Christmas and New Year. The between-Christmas sale (mellomjulssalg) starts
       27 Dec; many retailers run it into January.
 
   - id: feriepenger
@@ -352,7 +349,7 @@ moments:
     basis: official
     source: https://lovdata.no/dokument/NL/lov/1988-04-29-21
     notes: >-
-      Ferieloven § 11: holiday pay is paid on the last regular payday before the holiday — for most
+      The Holidays Act (ferieloven) § 11: holiday pay is paid on the last regular payday before the holiday — for most
       employees the June salary, when the ordinary tax deduction is also skipped. Payday varies by employer,
       hence the month range.
 
@@ -367,8 +364,7 @@ moments:
     basis: observed
     source: https://lovdata.no/dokument/NL/lov/2023-06-09-30
     notes: >-
-      One school week in ISO week 8 OR 9, set locally (kommune for grunnskole, fylkeskommune for vgs) under
-      opplæringslova § 14-1. The national entry spans both weeks — check the local skolerute.
+      One school week in ISO week 8 OR 9, set locally (by the municipality, kommune, for primary and lower-secondary school; by the county, fylkeskommune, for upper-secondary school) under the Education Act (opplæringslova) § 14-1. The national entry spans both weeks — check the local school calendar (skolerute).
     variants:
       - region: oslo
         start: {rule: iso_week, week: 8, weekday: mon}
@@ -379,7 +375,7 @@ moments:
         start: {rule: iso_week, week: 9, weekday: mon}
         end: {rule: iso_week, week: 9, weekday: fri}
         source: https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager
-        verified: 2026/27, 2027/28 (veiledende skolerute)
+        verified: 2026/27, 2027/28 (indicative school calendar, veiledende skolerute)
       - region: trondheim
         start: {rule: iso_week, week: 8, weekday: mon}
         end: {rule: iso_week, week: 8, weekday: fri}
@@ -396,8 +392,7 @@ moments:
     basis: observed
     source: https://lovdata.no/dokument/NL/lov/2023-06-09-30
     notes: >-
-      Schools close from the Monday before skjærtorsdag through 2. påskedag; some kommuner add the Tuesday.
-      Range shown: Saturday before palmesøndag to Easter Tuesday. Peak cabin and mountain season.
+      Schools close from the Monday before Maundy Thursday through Easter Monday; some municipalities (kommuner) add the Tuesday. Range shown: Saturday before Palm Sunday to Easter Tuesday. Peak cabin and mountain season.
     variants:
       - region: oslo
         start: {rule: easter, offset: -6}
@@ -408,7 +403,7 @@ moments:
         start: {rule: easter, offset: -6}
         end: {rule: easter, offset: 1}
         source: https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager
-        verified: 2026/27, 2027/28 (veiledende skolerute)
+        verified: 2026/27, 2027/28 (indicative school calendar, veiledende skolerute)
       - region: trondheim
         start: {rule: easter, offset: -6}
         end: {rule: easter, offset: 1}
@@ -425,7 +420,7 @@ moments:
     source: https://www.regjeringen.no/no/aktuelt/regjeringen-skal-endre-russetiden/id3030864/
     notes: >-
       Traditionally ~20 April to 17. mai for final-year upper-secondary students (russ). No legal dates.
-      The Government aims to move the celebration after exams and from 2026 spreads vg3 written exams
+      The Government aims to move the celebration after exams and from 2026 spreads final-year (vg3) written exams
       either side of 17. mai — expect this window to shift; re-check each year. Marketing to russ involves
       minors: avoid alcohol and pressure tactics.
 
@@ -439,7 +434,7 @@ moments:
     basis: observed
     source: https://lovdata.no/dokument/NL/lov/2023-06-09-30
     notes: >-
-      Set in each kommune's skolerute (opplæringslova § 14-1); usually a weekday between ~17 and 24 June.
+      Set in each municipality's school calendar (skolerute; opplæringslova § 14-1); usually a weekday between ~17 and 24 June.
       Oslo's last day was Fri 18 June 2027 and is Thu 22 June 2028 — no stable weekday rule, so a range.
 
   - id: fellesferie
@@ -451,8 +446,8 @@ moments:
     basis: convention
     source: https://www.thelocal.no/20210702/fellesferie-everything-you-need-to-know-about-norways-collective-holiday-period
     notes: >-
-      Traditionally ISO weeks 28–30 in July, recommended by NHO and Fellesforbundet for industry (6–24 July
-      in 2026). Ferieloven § 5 lets employees claim 3 weeks' main holiday between 1 June and 30 September
+      Traditionally ISO weeks 28–30 in July, recommended by NHO (the Confederation of Norwegian Enterprise) and Fellesforbundet (the United Federation of Trade Unions) for industry (6–24 July
+      in 2026). The Holidays Act (ferieloven) § 5 lets employees claim 3 weeks' main holiday between 1 June and 30 September
       (https://lovdata.no/dokument/NL/lov/1988-04-29-21). B2B goes quiet; travel, grilling and cabin peak.
 
   - id: skolestart
@@ -466,8 +461,7 @@ moments:
     source: https://lovdata.no/dokument/NL/lov/2023-06-09-30
     notes: >-
       First school day is set locally, usually mid-August (ISO week 33 or 34) — Bergen even varies the weekday
-      (Fri 14 Aug 2026, Mon 16 Aug 2027), so it keeps the national range. Back-to-school is also
-      "høstoppstart" for B2B: offices fill up again after fellesferie.
+      (Fri 14 Aug 2026, Mon 16 Aug 2027), so it keeps the national range. Back-to-school is also the autumn restart ("høstoppstart") for B2B: offices fill up again after the collective summer holiday (fellesferie).
     variants:
       - region: oslo
         date: {rule: nth_weekday, month: 8, weekday: mon, n: 3}
@@ -500,7 +494,7 @@ moments:
         start: {rule: iso_week, week: 41, weekday: mon}
         end: {rule: iso_week, week: 41, weekday: fri}
         source: https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager
-        verified: 2026/27, 2027/28 (veiledende skolerute)
+        verified: 2026/27, 2027/28 (indicative school calendar, veiledende skolerute)
       - region: trondheim
         start: {rule: iso_week, week: 41, weekday: mon}
         end: {rule: iso_week, week: 41, weekday: fri}
@@ -508,7 +502,7 @@ moments:
         verified: 2026/27, 2027/28
 
   - id: juleferie
-    name: {nb: Juleferie (skole), en: Christmas school break}
+    name: {nb: Juleferie, en: Christmas school break}
     kind: season
     start: {rule: fixed, month: 12, day: 19}
     end: {rule: fixed, month: 1, day: 3, year_offset: 1}

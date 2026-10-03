@@ -285,16 +285,17 @@ def moment_details(moment_id: str, year: int, category: str, region: str) -> Non
     item = plan_moments(LIBRARY, [occ], _store().lead_times, category)[0]
     moment = occ.moment
     with st.container(border=True):
-        st.markdown(f"### {moment.name_nb}")
-        st.caption(moment.name_en)
+        st.markdown(f"### {moment.name_en}")
+        if moment.name_nb != moment.name_en:
+            st.caption(f"Norwegian name: {moment.name_nb}")
         left, right = st.columns([1.1, 1])
         with left:
             st.markdown(f"**When:** {_span(occ.start, occ.end)}")
             if occ.varies_here:
                 sig.note(
                     "warn",
-                    "Set locally by each kommune/fylkeskommune — this is the national **range**, not a date. "
-                    "Pick a region with a verified rule or check the local skolerute.",
+                    "Set locally by each municipality or county (kommune/fylkeskommune) — this is the national **range**, "
+                    "not a date. Pick a region with a verified rule or check the local school calendar (skolerute).",
                 )
             elif occ.regional:
                 st.caption(f"Regional rule for {LIBRARY.regions[region]} (verified against the source below).")
@@ -341,8 +342,9 @@ def page_welcome() -> None:
          "Easter, the 2nd Sunday in February, ISO week 28, the Friday after the 4th Thursday of November. Nothing is "
          "typed in per year, so the calendar is right for 2025 and for 2035."),
         ("02 · CITE", "Sources, or an honest “convention”",
-         "Holidays cite Lovdata; traditions cite SNL; school breaks that vary by kommune are shown as a range, not a "
-         "guess. Black Week and julebord are labelled as conventions."),
+         "Holidays cite Lovdata (the official legal database); traditions cite SNL (Store norske leksikon, the "
+         "Norwegian encyclopedia); school breaks that vary by municipality are shown as a range, not a guess. Black "
+         "Week and Christmas parties (julebord) are labelled as conventions."),
         ("03 · PLAN BACK", "Deadlines you can import",
          "Lead times per category turn each moment into concept, creative, media-booking and go-live dates, then "
          "export to Google, Outlook or Apple Calendar."),
@@ -358,7 +360,8 @@ def page_welcome() -> None:
     sig.note(
         "boundary",
         "**Demo data:** Fjellbrus is a fictional alcohol-free drinks brand invented for this example. It represents "
-        "no real company, and its campaigns are illustrations.",
+        "no real company, and its campaigns are illustrations. The demo and the moments keep their Norwegian names "
+        "because the tool is built for the Norwegian market.",
     )
     if in_hub():
         sig.note("info", HUB_SAVE_NOTE)
@@ -372,7 +375,7 @@ def page_planner() -> None:
         f"The {year} marketing year",
         f"Moments for {LIBRARY.category_label(category)} in {LIBRARY.regions[region]}"
         " (public holidays always shown for context). Click a bar or diamond to see its plan-back milestones. "
-        "⇢ marks a range that varies by kommune.",
+        "⇢ marks a range that varies by municipality (kommune).",
     )
     planned = _planned(year, category, region, show_all, spillover=True)
     frame = moments_frame(LIBRARY, planned, today)
@@ -380,7 +383,7 @@ def page_planner() -> None:
     cols = st.columns(4)
     cols[0].metric("Moments shown", len(frame))
     cols[1].metric("Public holidays", int(frame["Kind"].eq("Public holiday").sum()))
-    cols[2].metric("Vary by kommune", int(frame["Varies locally"].eq("Yes — range").sum()))
+    cols[2].metric("Vary by municipality", int(frame["Varies locally"].eq("Yes — range").sum()))
     cols[3].metric("Next up", upcoming.iloc[0]["Moment"] if not upcoming.empty else "—")
 
     chart = f"timeline-{year}-{category}-{region}-{show_all}"
@@ -483,7 +486,7 @@ def page_campaigns() -> None:
         st.dataframe(view, hide_index=True, use_container_width=True)
         for plan in plans:
             label = ("🧪 " if plan.campaign.fictional else "") + (
-                f"{plan.campaign.name} · {plan.occurrence.moment.name_nb} {plan.campaign.year}"
+                f"{plan.campaign.name} · {plan.occurrence.moment.display_name} {plan.campaign.year}"
             )
             with st.expander(label):
                 st.markdown(f"**Moment:** {_span(plan.occurrence.start, plan.occurrence.end)}")
@@ -498,7 +501,7 @@ def page_campaigns() -> None:
         c1, c2 = st.columns(2)
         name = c1.text_input("Campaign name", key=k(f"{form}-name"))
         brand = c2.text_input("Brand", key=k(f"{form}-brand"))
-        moment_id = c1.selectbox("Moment", moment_ids, format_func=lambda m: LIBRARY.moments[m].name_nb,
+        moment_id = c1.selectbox("Moment", moment_ids, format_func=lambda m: LIBRARY.moments[m].display_name,
                                  index=moment_ids.index("syttende_mai"), key=k(f"{form}-moment"))
         camp_year = c2.selectbox("Year", list(range(MIN_YEAR, MAX_YEAR + 1)), index=year - MIN_YEAR,
                                  key=k(f"{form}-year"))
@@ -579,7 +582,7 @@ def page_lead_times() -> None:
     sig.note(
         "boundary",
         "**Rules:** whole weeks from 0 to 52, in order concept ≥ creative ≥ media booking ≥ live. Plan-back runs "
-        "from the first day of a moment; for ranges that vary by kommune that is the earliest local start.",
+        "from the first day of a moment; for ranges that vary by municipality that is the earliest local start.",
     )
 
 
@@ -645,10 +648,10 @@ def page_sources() -> None:
     for moment in LIBRARY.moments.values():
         occ = LIBRARY.resolve(moment.id, year)
         rows.append({
-            "Moment": moment.name_nb,
+            "Moment": moment.display_name,
             "Basis": moment.basis,
             f"{year}": _span(occ.start, occ.end),
-            "Varies": moment.varies,
+            "Varies": {"kommune": "by municipality (kommune)", "fylke": "by county (fylke)"}.get(moment.varies, moment.varies),
             "Regional rules": ", ".join(LIBRARY.regions[v.region] for v in moment.variants),
             "Source": moment.source,
         })
@@ -661,12 +664,15 @@ def page_sources() -> None:
                  column_config={"Source": st.column_config.LinkColumn("Source")})
     st.markdown("### Basis")
     st.markdown(
-        "- **official** — set by law or by the owning body (Lovdata for helligdager and høytidsdager).\n"
+        "- **official** — set by law or by the owning body (Lovdata for public holidays — helligdager and "
+        "høytidsdager).\n"
         "- **tradition** — a long-established Norwegian date rule documented by Store norske leksikon "
-        "(morsdag = 2nd Sunday of February, farsdag = 2nd Sunday of November, advent, fastelavn, sankthans).\n"
+        "(Mother's Day, morsdag = 2nd Sunday of February; Father's Day, farsdag = 2nd Sunday of November; advent; "
+        "Shrovetide, fastelavn; Midsummer, sankthans).\n"
         "- **observed** — set locally (school breaks). The national entry is a range; regional rules reproduce a "
-        "kommune's published skolerute and say which school years were checked.\n"
-        "- **convention** — commercial or cultural habits without an owner (Black Week, julebord, russetid). The "
+        "municipality's published school calendar (skolerute) and say which school years were checked.\n"
+        "- **convention** — commercial or cultural habits without an owner (Black Week, Christmas parties, the russ "
+        "season). The "
         "note explains why and the source is the best available description."
     )
     st.markdown("### Method")

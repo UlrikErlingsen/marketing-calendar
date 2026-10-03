@@ -46,14 +46,14 @@ def moment_items(planned: list[PlannedMoment], *, milestones: bool = True, categ
     items = []
     for item in planned:
         occ, moment = item.occurrence, item.occurrence.moment
-        detail = [moment.name_en, moment.notes]
+        detail = [moment.display_name, moment.notes]
         if occ.varies_here:
-            detail.insert(0, "Dates vary by kommune — this is the national range. Check the local skolerute.")
+            detail.insert(0, "Dates vary by municipality (kommune) — this is the national range. Check the local school calendar (skolerute).")
         detail.append(f"Source: {occ.source}")
         items.append(
             CalendarItem(
                 uid=_uid("moment", moment.id, occ.year, occ.region),
-                summary=moment.name_nb + (" (varierer lokalt)" if occ.varies_here else ""),
+                summary=moment.display_name + (" (varies locally)" if occ.varies_here else ""),
                 start=occ.start,
                 end=occ.end,
                 description="\n\n".join(part for part in detail if part),
@@ -66,11 +66,11 @@ def moment_items(planned: list[PlannedMoment], *, milestones: bool = True, categ
                 items.append(
                     CalendarItem(
                         uid=_uid("milestone", moment.id, occ.year, occ.region, category or "plan", milestone.key),
-                        summary=f"{milestone.label}: {moment.name_nb}",
+                        summary=f"{milestone.label}: {moment.display_name}",
                         start=milestone.due,
                         end=milestone.due,
                         description=(
-                            f"{milestone.weeks_before} weeks before {moment.name_nb} ({occ.start:%d.%m.%Y}). "
+                            f"{milestone.weeks_before} weeks before {moment.display_name} ({occ.start:%d.%m.%Y}). "
                             "Planned with Season Signal lead times."
                         ),
                         category="Milestone",
@@ -92,7 +92,7 @@ def campaign_items(plans: list[CampaignPlan]) -> list[CalendarItem]:
                     start=milestone.due,
                     end=milestone.due,
                     description=(
-                        f"Campaign for {occ.moment.name_nb} ({occ.start:%d.%m.%Y}), {milestone.weeks_before} weeks "
+                        f"Campaign for {occ.moment.display_name} ({occ.start:%d.%m.%Y}), {milestone.weeks_before} weeks "
                         f"before.\n\n{campaign.notes}"
                     ).strip(),
                     category="Campaign",
@@ -177,8 +177,8 @@ def about_frame(year: int, region: str, category: str, generated: date | None = 
         (
             "Read this",
             "Dates are computed from rules in the moments library. Moments marked 'varies locally' show a national "
-            "range — check the kommune's skolerute. Lead times are editable planning conventions, not research.",
+            "range — check the municipality's school calendar (skolerute). Lead times are editable planning conventions, not research.",
         ),
-        ("Demo data", "Fjellbrus and its campaigns are fictional."),
+        ("Demo data", "Fjellbrus and its campaigns are fictional; the demo is Norwegian because the tool is built for the Norwegian market."),
     ]
     return pd.DataFrame(rows, columns=["Field", "Value"])

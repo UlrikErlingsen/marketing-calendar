@@ -1,13 +1,13 @@
-"""Season Signal is in the suite's small-input tier: one 50 MB upload cap, the same everywhere it is set."""
+"""Season Signal has no built-in data limits; the suite's 10,000 MB Streamlit upload cap is the same everywhere."""
 
 from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-CAP_MB = 50
+CAP_MB = 10_000
 
 
-def test_streamlit_config_sets_the_small_input_cap() -> None:
+def test_streamlit_config_sets_the_suite_upload_cap() -> None:
     config = (ROOT / ".streamlit" / "config.toml").read_text(encoding="utf-8")
     assert re.search(r"^maxUploadSize = (\d+)$", config, re.MULTILINE).group(1) == str(CAP_MB)
 
@@ -27,7 +27,8 @@ def test_docker_sets_the_cap_by_environment_only() -> None:
 
 
 def test_no_in_code_upload_path_needs_its_own_limit() -> None:
-    # The plan is typed in, not uploaded; if an uploader is ever added it needs limits consistent with CAP_MB.
+    # The plan is typed in, not uploaded, so no demo caps are needed (Signal Hub APP_CONTRACT section 9). If an uploader
+    # is ever added, give it a limits module: unbounded locally, capped only with SIGNAL_PUBLIC=1.
     sources = [path for path in (ROOT / "src" / "seasonsignal").rglob("*.py") if path.name != "signal_theme.py"]
     assert sources
     assert not [path.name for path in sources if "file_uploader" in path.read_text(encoding="utf-8")]

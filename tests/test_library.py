@@ -37,7 +37,7 @@ def test_locally_set_moments_are_ranges_with_notes():
     for moment in LIB.moments.values():
         if moment.varies:
             assert moment.is_range, moment.id
-            assert "kommune" in moment.notes or "locally" in moment.notes, moment.id
+            assert "municipalit" in moment.notes or "locally" in moment.notes, moment.id
 
 
 def test_every_moment_resolves_for_every_year_and_region():
@@ -102,3 +102,13 @@ def test_circular_relative_rules_are_caught():
 def test_window_includes_ranges_that_started_last_year():
     found = {occ.moment.id for occ in LIB.window(date(2027, 1, 1), 6)}
     assert "juleferie" in found  # 19.12.2026 – 03.01.2027
+
+
+def test_app_text_is_english_with_norwegian_names_in_brackets() -> None:
+    library = load_library()
+    assert library.moments["syttende_mai"].display_name == "Constitution Day (17. mai — Grunnlovsdagen)"
+    assert library.moments["black_week"].display_name == "Black Week"
+    assert library.resolve("vinterferie", 2027).label() == "Winter school break (Vinterferie)"
+    assert library.regions["all"] == "All of Norway"
+    assert all(name.isascii() for name in library.regions.values())
+    assert all(library.category_label(key).isascii() for key in library.categories)

@@ -48,6 +48,11 @@ class Moment:
     def is_range(self) -> bool:
         return self.start != self.end
 
+    @property
+    def display_name(self) -> str:
+        """The English name, with the Norwegian name in brackets when it differs: what the app shows and exports."""
+        return self.name_en if self.name_en == self.name_nb else f"{self.name_en} ({self.name_nb})"
+
 
 @dataclass(frozen=True)
 class Occurrence:
@@ -70,8 +75,11 @@ class Occurrence:
     def days(self) -> int:
         return (self.end - self.start).days + 1
 
-    def label(self, lang: str = "nb") -> str:
-        return self.moment.name_nb if lang == "nb" else self.moment.name_en
+    def label(self, lang: str = "display") -> str:
+        """``display`` (default): English with the Norwegian name in brackets; ``nb`` or ``en``: that name only."""
+        if lang == "nb":
+            return self.moment.name_nb
+        return self.moment.name_en if lang == "en" else self.moment.display_name
 
 
 @dataclass

@@ -21,8 +21,8 @@ Everything runs locally with open-source Python packages. There is no account, t
 ## Read this first
 
 - **Every date is computed from a rule** — Easter, "2nd Sunday of February", ISO week 28 — for any year from 2025 to 2035. Nothing is typed in per year.
-- **Every rule is sourced or honestly labelled.** Holidays cite Lovdata; traditions such as morsdag and farsdag cite Store norske leksikon; Black Week, julebord and russetid are marked as *conventions* with a note explaining why.
-- **School breaks vary by kommune**, so the national entry is a **range** (vinterferie = ISO week 8 *or* 9), never a guessed date. Regional rules for **Oslo, Bergen and Trondheim** reproduce each kommune's published skolerute and say which school years were checked (Oslo vinterferie is week 8, Bergen week 9 — exactly why a national date would be wrong).
+- **Every rule is sourced or honestly labelled.** Holidays cite Lovdata (the official legal database); traditions such as Mother's Day (morsdag) and Father's Day (farsdag) cite Store norske leksikon (the Norwegian encyclopedia, SNL); Black Week, Christmas parties (julebord) and the russ season (russetid) are marked as *conventions* with a note explaining why.
+- **School breaks vary by municipality (kommune)**, so the national entry is a **range** (winter school break, vinterferie = ISO week 8 *or* 9), never a guessed date. Regional rules for **Oslo, Bergen and Trondheim** reproduce each municipality's published school calendar (skolerute) and say which school years were checked (Oslo's winter break is week 8, Bergen's week 9 — exactly why a national date would be wrong).
 - **Lead times are planning conventions**, not research. The defaults (e.g. food: concept −16 weeks, creative −10, media booking −6, live −1) are a starting point; edit them.
 - Russetid is changing (vg3 exams are spread around 17. mai from 2026) and school routes change every year. Re-check before you commit budget.
 
@@ -38,12 +38,12 @@ Everything runs locally with open-source Python packages. There is no account, t
 
   | Group | Moments |
   | --- | --- |
-  | Public holidays (computed) | nyttårsdag, skjærtorsdag, langfredag, påskedag, 2. påskedag, 1. mai, 17. mai, Kristi himmelfartsdag, pinsedag, 2. pinsedag, 1. and 2. juledag |
+  | Public holidays (computed) | New Year's Day, Maundy Thursday, Good Friday, Easter Sunday and Monday, May Day (1. mai), Constitution Day (17. mai), Ascension Day, Whit Sunday and Monday, Christmas Day and Boxing Day |
   | Retail | morsdag (2nd Sunday of **February**), Valentine's, Black Friday, Black Week (Monday → Cyber Monday), Cyber Monday, Singles' Day, Halloween, farsdag (2nd Sunday of **November**), julehandel, romjul/mellomjulssalg, feriepenger in June |
-  | Seasons | vinterferie, påskeferie, russetid, skoleslutt, fellesferie (ISO weeks 28–30), skolestart, høstferie, juleferie, julebord season |
-  | Cultural | Dry January, Samefolkets dag, fastelavn, sankthansaften, first Sunday of Advent, julaften, nyttårsaften |
+  | Seasons | winter, Easter, autumn and Christmas school breaks; the russ season (russetid); last day of school; the collective summer holiday (fellesferie, ISO weeks 28–30); back to school; the Christmas-party (julebord) season |
+  | Cultural | Dry January, Sámi National Day (Samefolkets dag), Shrovetide (fastelavn), Midsummer Eve (sankthansaften), first Sunday of Advent, Christmas Eve (julaften), New Year's Eve |
 
-- Categories: Retail, Food & drink, Fashion, Travel, B2B, Alcohol-free, Kids & family. Regions: Hele landet, Oslo, Bergen and Trondheim kommune.
+- Categories: Retail, Food & drink, Fashion, Travel, B2B, Alcohol-free, Kids & family. Regions: All of Norway and the municipalities (kommuner) of Oslo, Bergen and Trondheim.
 - A 12-month planner, a "coming up" view across New Year, your own campaigns linked to a moment, editable lead times, and `.ics` and XLSX exports.
 
 The full list with rules, bases and links is on the app's **Sources & method** page and in [`no.yaml`](src/seasonsignal/moments/no.yaml).
@@ -55,7 +55,7 @@ The full list with rules, bases and links is on the app's **Sources & method** p
 1. Start the app. It opens on the current year, category **Food & drink** and region **Hele landet**.
 2. Open **Planner** and click a bar or diamond — try *Black Week* or *17. mai* — to see concept, creative, media-booking and go-live dates.
 3. Open **Coming up** for the next 6–12 months, across New Year: what is on track, what needs a late start (concept date passed, go-live still possible) and what has missed its go-live.
-4. Open **My campaigns** to see **Fjellbrus**, a fictional alcohol-free drinks brand, with three campaigns: påske, 17. mai and Black Week.
+4. Open **My campaigns** to see **Fjellbrus**, a fictional alcohol-free drinks brand, with three campaigns: Easter (påske), Constitution Day (17. mai) and Black Week. The demo and the moments keep their Norwegian names because the tool is built for the Norwegian market; every label, message and export field of the app is in English, and each moment shows its English name with the Norwegian one in brackets.
 5. Open **Export** and download the `.ics` file and the XLSX plan.
 
 Fjellbrus is invented for this example and represents no real company.
@@ -70,26 +70,26 @@ Fjellbrus is invented for this example and represents no real company.
 
 Season Signal has two inputs, both plain files:
 
-- **The moments library**, [`src/seasonsignal/moments/no.yaml`](src/seasonsignal/moments/no.yaml), ships with the app. Each moment has an id, a name in Norwegian and English, a kind, a date rule (one day, or a start and end for an inclusive range), category tags, a basis, a source URL and notes. Moments set by kommune or fylke carry `varies` and a national range; regional `variants` add a verified rule per region with the school years that were checked.
+- **The moments library**, [`src/seasonsignal/moments/no.yaml`](src/seasonsignal/moments/no.yaml), ships with the app. Each moment has an id, an English and a Norwegian name, a kind, a date rule (one day, or a start and end for an inclusive range), category tags, a basis, a source URL and notes. Moments set by municipality or county (kommune or fylke) carry `varies` and a national range; regional `variants` add a verified rule per region with the school years that were checked.
 - **Your saved plans**, `data/seasonsignal.json` (or the folder in `SEASONSIGNAL_DATA_DIR`), hold your campaigns and lead times. A file from another version, or one with a malformed campaign, is reported with its path instead of being overwritten; an older file missing a milestone gets the default for that milestone.
 
 | Basis | Meaning | Example |
 |---|---|---|
 | official | set by law or by the owning body | 17. mai, Kristi himmelfartsdag (Lovdata) |
-| tradition | a long-established date rule documented by an authoritative reference | morsdag, farsdag (SNL) |
-| observed | set locally; national range plus verified regional rules | vinterferie, høstferie |
+| tradition | a long-established date rule documented by an authoritative reference | Mother's Day, Father's Day (SNL) |
+| observed | set locally; national range plus verified regional rules | winter and autumn school breaks |
 | convention | a commercial or cultural habit without an owner; the note says why | Black Week, julebord, russetid |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add or change a moment.
 
-**Limits.** Season Signal is in the Signal suite's small-input tier: a marketing calendar is typed in, not uploaded, so it has no file upload and no row limits of its own. The server upload cap is 50 MB everywhere it is set (`.streamlit/config.toml`, the launchers, Docker), so the data-heavy Signal apps' 1000 MB cap never applies here.
+**Data limits.** Season Signal has no built-in data limits: a marketing calendar is typed in, not uploaded, so there is no file upload, and the number of campaigns is limited only by your computer (the year range 2025–2035 is a design choice of the date rules, not a data limit). Streamlit's upload cap is set to the suite's 10,000 MB like every Signal app (`.streamlit/config.toml`, the launchers, Docker). A public demo (`SIGNAL_PUBLIC=1`) needs no extra caps, because there is no upload or heavy computation to protect.
 
 ## Methods
 
-1. **Date rules.** Every date comes from a rule: `fixed`, `easter`, `nth_weekday`, `weekday_on_or_after`, `iso_week` or `relative`, each with an optional day offset. Easter follows the Western (Gregorian) computus (`dateutil.easter`), matching helligdagsfredloven. Week numbers are ISO 8601, as used in Norway, including 53-week years.
+1. **Date rules.** Every date comes from a rule: `fixed`, `easter`, `nth_weekday`, `weekday_on_or_after`, `iso_week` or `relative`, each with an optional day offset. Easter follows the Western (Gregorian) computus (`dateutil.easter`), matching the Public Holidays Act (helligdagsfredloven). Week numbers are ISO 8601, as used in Norway, including 53-week years.
 2. **Region.** For a region with a verified rule the regional date replaces the national range; otherwise the national range is shown and labelled "varies locally".
 3. **Lead times.** Each category has default offsets in whole weeks for concept & brief, creative, media booking and campaign live (0–52 weeks, concept ≥ creative ≥ media ≥ live). They are editable and saved locally.
-4. **Plan-back.** Milestones are whole weeks before a moment's first day — for ranges that vary by kommune, the earliest local start — and move back to the previous working day when they land on a weekend or public holiday.
+4. **Plan-back.** Milestones are whole weeks before a moment's first day — for ranges that vary by municipality, the earliest local start — and move back to the previous working day when they land on a weekend or public holiday.
 
 The library was last reviewed on 1 October 2026.
 
@@ -130,7 +130,7 @@ python -m streamlit run app.py
 
 Pages can be linked directly, e.g. `http://127.0.0.1:8587/?page=planner&moment=black_week` (pages: `planner`, `coming-up`, `campaigns`, `lead-times`, `export`, `sources`).
 
-Season Signal uses local port `8587` (Track Signal uses 8586). Set `SEASONSIGNAL_PORT` to choose another, `SEASONSIGNAL_MAX_UPLOAD_MB` to change the upload cap (default 50, passed to `--server.maxUploadSize`), `SEASONSIGNAL_DATA_DIR` to store campaigns elsewhere, or `SEASONSIGNAL_DEBUG=1` to reveal technical error details.
+Season Signal uses local port `8587` (Track Signal uses 8586). Set `SEASONSIGNAL_PORT` to choose another, `SEASONSIGNAL_MAX_UPLOAD_MB` to change the upload cap (default 10000, passed to `--server.maxUploadSize`), `SEASONSIGNAL_DATA_DIR` to store campaigns elsewhere, or `SEASONSIGNAL_DEBUG=1` to reveal technical error details.
 
 ### Docker
 
@@ -139,7 +139,7 @@ docker build -t seasonsignal .
 docker run --rm -p 8587:8587 seasonsignal
 ```
 
-Then open `http://127.0.0.1:8587`. The container runs as a non-root user and includes a health check. The upload cap is set with `STREAMLIT_SERVER_MAX_UPLOAD_SIZE=50` in the image (override with `docker run -e STREAMLIT_SERVER_MAX_UPLOAD_SIZE=<MB> …`).
+Then open `http://127.0.0.1:8587`. The container runs as a non-root user and includes a health check. The upload cap is set with `STREAMLIT_SERVER_MAX_UPLOAD_SIZE=10000` in the image (override with `docker run -e STREAMLIT_SERVER_MAX_UPLOAD_SIZE=<MB> …`).
 
 ### Inside Signal Hub
 
@@ -225,15 +225,15 @@ All 24 apps run side by side in [Signal Hub](https://github.com/UlrikErlingsen/s
 
 Date rules are verified against these sources; each moment's own link is in the library.
 
-- [Lovdata](https://lovdata.no/): helligdagsfredloven, the law on 1 and 17 May, ferieloven, opplæringslova.
-- [Store norske leksikon](https://snl.no/): traditions such as morsdag, farsdag, advent, fastelavn and sankthans.
-- Skolerute of [Oslo](https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/), [Bergen](https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager) and [Trondheim](https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/) kommune.
+- [Lovdata](https://lovdata.no/) (the official legal database): the Public Holidays Act (helligdagsfredloven), the Act on 1 and 17 May as public holidays, the Holidays Act (ferieloven) and the Education Act (opplæringslova).
+- [Store norske leksikon](https://snl.no/): traditions such as Mother's Day, Father's Day, Advent, Shrovetide (fastelavn) and Midsummer (sankthans).
+- School calendars (skolerute) of [Oslo](https://www.oslo.kommune.no/skole-og-utdanning/ferie-og-fridager/), [Bergen](https://www.bergen.kommune.no/omkommunen/avdelinger/etat-for-skole/ferie-og-fridager) and [Trondheim](https://www.trondheim.kommune.no/tema/skole/trondheimsskolen/overganger/ferie-og-fridager/) municipalities.
 - [Virke](https://www.virke.no/analyse/julehandel/): julehandel.
 - [regjeringen.no](https://www.regjeringen.no/no/aktuelt/regjeringen-skal-endre-russetiden/id3030864/): the change to russetid.
 
 ## Originality and license
 
-Season Signal is an independent implementation built from public sources (Norwegian law, reference works and kommune school calendars, listed above) and original fictional examples.
+Season Signal is an independent implementation built from public sources (Norwegian law, reference works and municipal school calendars, listed above) and original fictional examples.
 
 The software and documentation are free under **AGPL-3.0-or-later**. See [LICENSE](LICENSE).
 

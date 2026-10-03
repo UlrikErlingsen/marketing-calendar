@@ -67,7 +67,7 @@ def test_ics_ranges_and_milestones():
     concept = by_uid["milestone-black-week-2026-all-food-concept@seasonsignal.local"]
     assert concept.decoded("DTSTART") == date(2026, 8, 3)
     vinter = by_uid["moment-vinterferie-2026-all@seasonsignal.local"]
-    assert "varierer lokalt" in str(vinter["SUMMARY"])
+    assert "varies locally" in str(vinter["SUMMARY"])
     assert any(str(uid).startswith("campaign-demo-blackweek") for uid in by_uid)
 
 

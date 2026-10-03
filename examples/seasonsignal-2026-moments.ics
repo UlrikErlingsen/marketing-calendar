@@ -6,389 +6,403 @@ METHOD:PUBLISH
 X-WR-CALNAME:Norwegian marketing year 2026
 X-WR-TIMEZONE:Europe/Oslo
 BEGIN:VEVENT
-SUMMARY:Nyttårsdag
+SUMMARY:New Year's Day (Nyttårsdag)
 DTSTART;VALUE=DATE:20260101
 DTEND;VALUE=DATE:20260102
 DTSTAMP:20261001T080000Z
 UID:moment-nyttarsdag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:New Year's Day\n\nHelligdag under helligdagsfredloven § 2. "N
- ew year\, new me" — health\, fitness and budgeting messages.\n\nSource: 
- https://lovdata.no/dokument/NL/lov/1995-02-24-12
+DESCRIPTION:New Year's Day (Nyttårsdag)\n\nPublic holiday (helligdag) und
+ er the Public Holidays Act (helligdagsfredloven) § 2. "New year\, new me"
+  — health\, fitness and budgeting messages.\n\nSource: https://lovdata.n
+ o/dokument/NL/lov/1995-02-24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Tørrlagt januar (Dry January)
+SUMMARY:Dry January (Tørrlagt januar)
 DTSTART;VALUE=DATE:20260101
 DTEND;VALUE=DATE:20260201
 DTSTAMP:20261001T080000Z
 UID:moment-dry-january-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Dry January\n\nInternational campaign month\, widely picked up
-  in Norway. No Norwegian owner. Remember that alcohol advertising is banne
- d in Norway (alkoholloven § 9-2)\; alcohol-free variants need care not to
-  promote the parent brand.\n\nSource: https://alcoholchange.org.uk/get-inv
- olved/campaigns/dry-january
+DESCRIPTION:Dry January (Tørrlagt januar)\n\nInternational campaign month
+ \, widely picked up in Norway. No Norwegian owner. Remember that alcohol a
+ dvertising is banned in Norway (the Alcohol Act\, alkoholloven § 9-2)\; a
+ lcohol-free variants need care not to promote the parent brand.\n\nSource:
+  https://alcoholchange.org.uk/get-involved/campaigns/dry-january
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://alcoholchange.org.uk/get-involved/campaigns/dry-january
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Samefolkets dag
+SUMMARY:Sámi National Day (Samefolkets dag)
 DTSTART;VALUE=DATE:20260206
 DTEND;VALUE=DATE:20260207
 DTSTAMP:20261001T080000Z
 UID:moment-samefolkets-dag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Sámi National Day\n\nOfficial flag day since 2003 (6 Feb). Ma
- rk respectfully — not a sales moment.\n\nSource: https://no.wikipedia.or
- g/wiki/Samefolkets_dag
+DESCRIPTION:Sámi National Day (Samefolkets dag)\n\nOfficial flag day sinc
+ e 2003 (6 Feb). Mark respectfully — not a sales moment.\n\nSource: https
+ ://no.wikipedia.org/wiki/Samefolkets_dag
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://no.wikipedia.org/wiki/Samefolkets_dag
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Morsdag
+SUMMARY:Mother's Day\, Norway (Morsdag)
 DTSTART;VALUE=DATE:20260208
 DTEND;VALUE=DATE:20260209
 DTSTAMP:20261001T080000Z
 UID:moment-morsdag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Mother's Day (Norway)\n\nSecond Sunday in FEBRUARY in Norway (
- not May as in the US/most of Europe). Flowers\, chocolate\, breakfast-in-b
- ed. International brands regularly get this wrong.\n\nSource: https://snl.
- no/morsdag
+DESCRIPTION:Mother's Day\, Norway (Morsdag)\n\nSecond Sunday in FEBRUARY i
+ n Norway (not May as in the US/most of Europe). Flowers\, chocolate\, brea
+ kfast-in-bed. International brands regularly get this wrong.\n\nSource: ht
+ tps://snl.no/morsdag
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/morsdag
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Valentinsdagen
+SUMMARY:Valentine's Day (Valentinsdagen)
 DTSTART;VALUE=DATE:20260214
 DTEND;VALUE=DATE:20260215
 DTSTAMP:20261001T080000Z
 UID:moment-valentinsdag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Valentine's Day\n\nImported convention\; fixed date. Often wit
- hin days of morsdag — plan the two together.\n\nSource: https://snl.no/v
- alentinsdag
+DESCRIPTION:Valentine's Day (Valentinsdagen)\n\nImported convention\; fixe
+ d date. Often within days of Mother's Day (morsdag) — plan the two toget
+ her.\n\nSource: https://snl.no/valentinsdag
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/valentinsdag
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Fastelavnssøndag
+SUMMARY:Shrovetide Sunday (Fastelavnssøndag)
 DTSTART;VALUE=DATE:20260215
 DTEND;VALUE=DATE:20260216
 DTSTAMP:20261001T080000Z
 UID:moment-fastelavn-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Shrovetide Sunday\n\nEaster Sunday − 49 days (falls 1 Feb 
- – 7 Mar). Fastelavnsboller with cream\; fastelavnsris.\n\nSource: https:
- //snl.no/fastelavn
+DESCRIPTION:Shrovetide Sunday (Fastelavnssøndag)\n\nEaster Sunday − 49 
+ days (falls 1 Feb – 7 Mar). Shrovetide buns (fastelavnsboller) with crea
+ m\; decorated birch twigs (fastelavnsris).\n\nSource: https://snl.no/faste
+ lavn
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/fastelavn
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vinterferie (varierer lokalt)
+SUMMARY:Winter school break (Vinterferie) (varies locally)
 DTSTART;VALUE=DATE:20260216
 DTEND;VALUE=DATE:20260228
 DTSTAMP:20261001T080000Z
 UID:moment-vinterferie-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Dates vary by kommune — this is the national range. Check th
- e local skolerute.\n\nWinter school break\n\nOne school week in ISO week 8
-  OR 9\, set locally (kommune for grunnskole\, fylkeskommune for vgs) under
-  opplæringslova § 14-1. The national entry spans both weeks — check th
- e local skolerute.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06-0
- 9-30
+DESCRIPTION:Dates vary by municipality (kommune) — this is the national 
+ range. Check the local school calendar (skolerute).\n\nWinter school break
+  (Vinterferie)\n\nOne school week in ISO week 8 OR 9\, set locally (by the
+  municipality\, kommune\, for primary and lower-secondary school\; by the 
+ county\, fylkeskommune\, for upper-secondary school) under the Education A
+ ct (opplæringslova) § 14-1. The national entry spans both weeks — chec
+ k the local school calendar (skolerute).\n\nSource: https://lovdata.no/dok
+ ument/NL/lov/2023-06-09-30
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Påskeferie (varierer lokalt)
+SUMMARY:Easter school break (Påskeferie) (varies locally)
 DTSTART;VALUE=DATE:20260328
 DTEND;VALUE=DATE:20260408
 DTSTAMP:20261001T080000Z
 UID:moment-paskeferie-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Dates vary by kommune — this is the national range. Check th
- e local skolerute.\n\nEaster school break\n\nSchools close from the Monday
-  before skjærtorsdag through 2. påskedag\; some kommuner add the Tuesday
- . Range shown: Saturday before palmesøndag to Easter Tuesday. Peak cabin 
- and mountain season.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06
- -09-30
+DESCRIPTION:Dates vary by municipality (kommune) — this is the national 
+ range. Check the local school calendar (skolerute).\n\nEaster school break
+  (Påskeferie)\n\nSchools close from the Monday before Maundy Thursday thr
+ ough Easter Monday\; some municipalities (kommuner) add the Tuesday. Range
+  shown: Saturday before Palm Sunday to Easter Tuesday. Peak cabin and moun
+ tain season.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06-09-30
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Skjærtorsdag
+SUMMARY:Maundy Thursday (Skjærtorsdag)
 DTSTART;VALUE=DATE:20260402
 DTEND;VALUE=DATE:20260403
 DTSTAMP:20261001T080000Z
 UID:moment-skjaertorsdag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Maundy Thursday\n\nHelligdag\; Easter Sunday − 3 days. Most 
- shops closed — last grocery run is Wednesday.\n\nSource: https://lovdata
- .no/dokument/NL/lov/1995-02-24-12
+DESCRIPTION:Maundy Thursday (Skjærtorsdag)\n\nPublic holiday (helligdag)\
+ ; Easter Sunday − 3 days. Most shops closed — last grocery run is Wedn
+ esday.\n\nSource: https://lovdata.no/dokument/NL/lov/1995-02-24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Langfredag
+SUMMARY:Good Friday (Langfredag)
 DTSTART;VALUE=DATE:20260403
 DTEND;VALUE=DATE:20260404
 DTSTAMP:20261001T080000Z
 UID:moment-langfredag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Good Friday\n\nHelligdag\; Easter Sunday − 2 days.\n\nSource
- : https://lovdata.no/dokument/NL/lov/1995-02-24-12
+DESCRIPTION:Good Friday (Langfredag)\n\nPublic holiday (helligdag)\; Easte
+ r Sunday − 2 days.\n\nSource: https://lovdata.no/dokument/NL/lov/1995-02
+ -24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Påskedag
+SUMMARY:Easter Sunday (Påskedag)
 DTSTART;VALUE=DATE:20260405
 DTEND;VALUE=DATE:20260406
 DTSTAMP:20261001T080000Z
 UID:moment-paskedag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Easter Sunday\n\nHelligdag\; Western Easter (first Sunday afte
- r the first full moon on or after 21 March\, as defined in the law). Påsk
- eegg\, påskekrim\, cabin trips.\n\nSource: https://lovdata.no/dokument/NL
- /lov/1995-02-24-12
+DESCRIPTION:Easter Sunday (Påskedag)\n\nHelligdag\; Western Easter (first
+  Sunday after the first full moon on or after 21 March\, as defined in the
+  law). Easter eggs (påskeegg)\, Easter crime fiction (påskekrim)\, cabin
+  trips.\n\nSource: https://lovdata.no/dokument/NL/lov/1995-02-24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:2. påskedag
+SUMMARY:Easter Monday (2. påskedag)
 DTSTART;VALUE=DATE:20260406
 DTEND;VALUE=DATE:20260407
 DTSTAMP:20261001T080000Z
 UID:moment-andre-paskedag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Easter Monday\n\nHelligdag\; Easter Sunday + 1 day. Return-tra
- ffic day from the cabin.\n\nSource: https://lovdata.no/dokument/NL/lov/199
- 5-02-24-12
+DESCRIPTION:Easter Monday (2. påskedag)\n\nPublic holiday (helligdag)\; E
+ aster Sunday + 1 day. Return-traffic day from the cabin.\n\nSource: https:
+ //lovdata.no/dokument/NL/lov/1995-02-24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Russetiden
+SUMMARY:Russ celebration season (Russetiden)
 DTSTART;VALUE=DATE:20260420
 DTEND;VALUE=DATE:20260518
 DTSTAMP:20261001T080000Z
 UID:moment-russetid-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Russ celebration season\n\nTraditionally ~20 April to 17. mai 
- for final-year upper-secondary students (russ). No legal dates. The Govern
- ment aims to move the celebration after exams and from 2026 spreads vg3 wr
- itten exams either side of 17. mai — expect this window to shift\; re-ch
- eck each year. Marketing to russ involves minors: avoid alcohol and pressu
- re tactics.\n\nSource: https://www.regjeringen.no/no/aktuelt/regjeringen-s
- kal-endre-russetiden/id3030864/
+DESCRIPTION:Russ celebration season (Russetiden)\n\nTraditionally ~20 Apri
+ l to 17. mai for final-year upper-secondary students (russ). No legal date
+ s. The Government aims to move the celebration after exams and from 2026 s
+ preads final-year (vg3) written exams either side of 17. mai — expect th
+ is window to shift\; re-check each year. Marketing to russ involves minors
+ : avoid alcohol and pressure tactics.\n\nSource: https://www.regjeringen.n
+ o/no/aktuelt/regjeringen-skal-endre-russetiden/id3030864/
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://www.regjeringen.no/no/aktuelt/regjeringen-skal-endre-russetide
  n/id3030864/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:1. mai — Arbeidernes dag
+SUMMARY:May Day (1. mai — Arbeidernes dag)
 DTSTART;VALUE=DATE:20260501
 DTEND;VALUE=DATE:20260502
 DTSTAMP:20261001T080000Z
 UID:moment-forste-mai-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:May Day\n\nOffentlig høytidsdag under lov om 1. og 17. mai so
- m høgtidsdager.\n\nSource: https://lovdata.no/dokument/NL/lov/1947-04-26-
- 1
+DESCRIPTION:May Day (1. mai — Arbeidernes dag)\n\nOfficial public holida
+ y under the Act on 1 and 17 May as public holidays (lov om 1. og 17. mai s
+ om høgtidsdager).\n\nSource: https://lovdata.no/dokument/NL/lov/1947-04-2
+ 6-1
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1947-04-26-1
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Kristi himmelfartsdag
+SUMMARY:Ascension Day (Kristi himmelfartsdag)
 DTSTART;VALUE=DATE:20260514
 DTEND;VALUE=DATE:20260515
 DTSTAMP:20261001T080000Z
 UID:moment-kristi-himmelfart-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Ascension Day\n\nHelligdag\; Easter Sunday + 39 days (always a
-  Thursday). Many take Friday off — a long weekend.\n\nSource: https://lo
- vdata.no/dokument/NL/lov/1995-02-24-12
+DESCRIPTION:Ascension Day (Kristi himmelfartsdag)\n\nPublic holiday (helli
+ gdag)\; Easter Sunday + 39 days (always a Thursday). Many take Friday off 
+ — a long weekend.\n\nSource: https://lovdata.no/dokument/NL/lov/1995-02-
+ 24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:17. mai — Grunnlovsdagen
+SUMMARY:Constitution Day (17. mai — Grunnlovsdagen)
 DTSTART;VALUE=DATE:20260517
 DTEND;VALUE=DATE:20260518
 DTSTAMP:20261001T080000Z
 UID:moment-syttende-mai-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Constitution Day\n\nOffentlig høytidsdag (lov om 1. og 17. ma
- i som høgtidsdager). Norway's biggest food\, ice-cream\, sausage\, bunad 
- and party-wear moment\; also the end of russetid.\n\nSource: https://lovda
- ta.no/dokument/NL/lov/1947-04-26-1
+DESCRIPTION:Constitution Day (17. mai — Grunnlovsdagen)\n\nOfficial publ
+ ic holiday (Act on 1 and 17 May as public holidays\, lov om 1. og 17. mai 
+ som høgtidsdager). Norway's biggest food\, ice-cream\, sausage\, bunad (n
+ ational costume) and party-wear moment\; also the end of the russ season (
+ russetid).\n\nSource: https://lovdata.no/dokument/NL/lov/1947-04-26-1
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1947-04-26-1
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Pinsedag
+SUMMARY:Whit Sunday (Pinsedag)
 DTSTART;VALUE=DATE:20260524
 DTEND;VALUE=DATE:20260525
 DTSTAMP:20261001T080000Z
 UID:moment-pinsedag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Whit Sunday\n\nHelligdag\; Easter Sunday + 49 days.\n\nSource:
-  https://lovdata.no/dokument/NL/lov/1995-02-24-12
+DESCRIPTION:Whit Sunday (Pinsedag)\n\nPublic holiday (helligdag)\; Easter 
+ Sunday + 49 days.\n\nSource: https://lovdata.no/dokument/NL/lov/1995-02-24
+ -12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:2. pinsedag
+SUMMARY:Whit Monday (2. pinsedag)
 DTSTART;VALUE=DATE:20260525
 DTEND;VALUE=DATE:20260526
 DTSTAMP:20261001T080000Z
 UID:moment-andre-pinsedag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Whit Monday\n\nHelligdag\; Easter Sunday + 50 days. Long weeke
- nd\; often the first garden/grill weekend.\n\nSource: https://lovdata.no/d
- okument/NL/lov/1995-02-24-12
+DESCRIPTION:Whit Monday (2. pinsedag)\n\nPublic holiday (helligdag)\; East
+ er Sunday + 50 days. Long weekend\; often the first garden/grill weekend.\
+ n\nSource: https://lovdata.no/dokument/NL/lov/1995-02-24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Feriepenger utbetales
+SUMMARY:Holiday pay lands (Feriepenger utbetales)
 DTSTART;VALUE=DATE:20260601
 DTEND;VALUE=DATE:20260701
 DTSTAMP:20261001T080000Z
 UID:moment-feriepenger-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Holiday pay lands\n\nFerieloven § 11: holiday pay is paid on 
- the last regular payday before the holiday — for most employees the June
-  salary\, when the ordinary tax deduction is also skipped. Payday varies b
- y employer\, hence the month range.\n\nSource: https://lovdata.no/dokument
- /NL/lov/1988-04-29-21
+DESCRIPTION:Holiday pay lands (Feriepenger utbetales)\n\nThe Holidays Act 
+ (ferieloven) § 11: holiday pay is paid on the last regular payday before 
+ the holiday — for most employees the June salary\, when the ordinary tax
+  deduction is also skipped. Payday varies by employer\, hence the month ra
+ nge.\n\nSource: https://lovdata.no/dokument/NL/lov/1988-04-29-21
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1988-04-29-21
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Skoleslutt (varierer lokalt)
+SUMMARY:Last day of school (Skoleslutt) (varies locally)
 DTSTART;VALUE=DATE:20260617
 DTEND;VALUE=DATE:20260625
 DTSTAMP:20261001T080000Z
 UID:moment-skoleslutt-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Dates vary by kommune — this is the national range. Check th
- e local skolerute.\n\nLast day of school\n\nSet in each kommune's skolerut
- e (opplæringslova § 14-1)\; usually a weekday between ~17 and 24 June. O
- slo's last day was Fri 18 June 2027 and is Thu 22 June 2028 — no stable 
- weekday rule\, so a range.\n\nSource: https://lovdata.no/dokument/NL/lov/2
- 023-06-09-30
+DESCRIPTION:Dates vary by municipality (kommune) — this is the national 
+ range. Check the local school calendar (skolerute).\n\nLast day of school 
+ (Skoleslutt)\n\nSet in each municipality's school calendar (skolerute\; op
+ plæringslova § 14-1)\; usually a weekday between ~17 and 24 June. Oslo's
+  last day was Fri 18 June 2027 and is Thu 22 June 2028 — no stable weekd
+ ay rule\, so a range.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-0
+ 6-09-30
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Sankthansaften
+SUMMARY:Midsummer Eve (Sankthansaften)
 DTSTART;VALUE=DATE:20260623
 DTEND;VALUE=DATE:20260624
 DTSTAMP:20261001T080000Z
 UID:moment-sankthansaften-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Midsummer Eve\n\nBonfires and grilling on 23 June\; not a publ
- ic holiday (SNL).\n\nSource: https://snl.no/sankthans
+DESCRIPTION:Midsummer Eve (Sankthansaften)\n\nBonfires and grilling on 23 
+ June\; not a public holiday (SNL).\n\nSource: https://snl.no/sankthans
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/sankthans
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Fellesferie
+SUMMARY:Collective summer holiday (Fellesferie)
 DTSTART;VALUE=DATE:20260706
 DTEND;VALUE=DATE:20260725
 DTSTAMP:20261001T080000Z
 UID:moment-fellesferie-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Collective summer holiday\n\nTraditionally ISO weeks 28–30 i
- n July\, recommended by NHO and Fellesforbundet for industry (6–24 July 
- in 2026). Ferieloven § 5 lets employees claim 3 weeks' main holiday betwe
- en 1 June and 30 September (https://lovdata.no/dokument/NL/lov/1988-04-29-
- 21). B2B goes quiet\; travel\, grilling and cabin peak.\n\nSource: https:/
- /www.thelocal.no/20210702/fellesferie-everything-you-need-to-know-about-no
- rways-collective-holiday-period
+DESCRIPTION:Collective summer holiday (Fellesferie)\n\nTraditionally ISO w
+ eeks 28–30 in July\, recommended by NHO (the Confederation of Norwegian 
+ Enterprise) and Fellesforbundet (the United Federation of Trade Unions) fo
+ r industry (6–24 July in 2026). The Holidays Act (ferieloven) § 5 lets 
+ employees claim 3 weeks' main holiday between 1 June and 30 September (htt
+ ps://lovdata.no/dokument/NL/lov/1988-04-29-21). B2B goes quiet\; travel\, 
+ grilling and cabin peak.\n\nSource: https://www.thelocal.no/20210702/felle
+ sferie-everything-you-need-to-know-about-norways-collective-holiday-period
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://www.thelocal.no/20210702/fellesferie-everything-you-need-to-kn
  ow-about-norways-collective-holiday-period
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Skolestart (varierer lokalt)
+SUMMARY:Back to school (Skolestart) (varies locally)
 DTSTART;VALUE=DATE:20260810
 DTEND;VALUE=DATE:20260822
 DTSTAMP:20261001T080000Z
 UID:moment-skolestart-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Dates vary by kommune — this is the national range. Check th
- e local skolerute.\n\nBack to school\n\nFirst school day is set locally\, 
- usually mid-August (ISO week 33 or 34) — Bergen even varies the weekday 
- (Fri 14 Aug 2026\, Mon 16 Aug 2027)\, so it keeps the national range. Back
- -to-school is also "høstoppstart" for B2B: offices fill up again after fe
- llesferie.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06-09-30
+DESCRIPTION:Dates vary by municipality (kommune) — this is the national 
+ range. Check the local school calendar (skolerute).\n\nBack to school (Sko
+ lestart)\n\nFirst school day is set locally\, usually mid-August (ISO week
+  33 or 34) — Bergen even varies the weekday (Fri 14 Aug 2026\, Mon 16 Au
+ g 2027)\, so it keeps the national range. Back-to-school is also the autum
+ n restart ("høstoppstart") for B2B: offices fill up again after the colle
+ ctive summer holiday (fellesferie).\n\nSource: https://lovdata.no/dokument
+ /NL/lov/2023-06-09-30
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Høstferie (varierer lokalt)
+SUMMARY:Autumn school break (Høstferie) (varies locally)
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20261010
 DTSTAMP:20261001T080000Z
 UID:moment-hostferie-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Dates vary by kommune — this is the national range. Check th
- e local skolerute.\n\nAutumn school break\n\nOne school week in ISO week 4
- 0 or 41\, set locally (e.g. Oslo and Bærum week 40\; Trondheim\, Haugesun
- d and Nord-Aurdal week 41 in 2026). The national entry spans both weeks.\n
- \nSource: https://lovdata.no/dokument/NL/lov/2023-06-09-30
+DESCRIPTION:Dates vary by municipality (kommune) — this is the national 
+ range. Check the local school calendar (skolerute).\n\nAutumn school break
+  (Høstferie)\n\nOne school week in ISO week 40 or 41\, set locally (e.g. 
+ Oslo and Bærum week 40\; Trondheim\, Haugesund and Nord-Aurdal week 41 in
+  2026). The national entry spans both weeks.\n\nSource: https://lovdata.no
+ /dokument/NL/lov/2023-06-09-30
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
@@ -408,16 +422,16 @@ TRANSP:TRANSPARENT
 URL:https://snl.no/halloween
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Farsdag
+SUMMARY:Father's Day\, Norway (Farsdag)
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
 DTSTAMP:20261001T080000Z
 UID:moment-farsdag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Father's Day (Norway)\n\nSecond Sunday in NOVEMBER in Norway (
- not June as in the US/UK). Lands just before Black Week.\n\nSource: https:
- //snl.no/farsdag
+DESCRIPTION:Father's Day\, Norway (Farsdag)\n\nSecond Sunday in NOVEMBER i
+ n Norway (not June as in the US/UK). Lands just before Black Week.\n\nSour
+ ce: https://snl.no/farsdag
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/farsdag
@@ -438,17 +452,17 @@ TRANSP:TRANSPARENT
 URL:https://en.wikipedia.org/wiki/Singles%27_Day
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Julebordsesongen
+SUMMARY:Christmas-party season (Julebordsesongen)
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261220
 DTSTAMP:20261001T080000Z
 UID:moment-julebord-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Christmas-party season\n\nWorkplace Christmas parties cluster 
- on Friday/Saturday evenings from mid-November to mid-December. No official
-  dates\; the range is a planning convention. Venues book up by early autum
- n.\n\nSource: https://snl.no/julebord
+DESCRIPTION:Christmas-party season (Julebordsesongen)\n\nWorkplace Christm
+ as parties cluster on Friday/Saturday evenings from mid-November to mid-De
+ cember. No official dates\; the range is a planning convention. Venues boo
+ k up by early autumn.\n\nSource: https://snl.no/julebord
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/julebord
@@ -472,17 +486,18 @@ URL:https://www.bi.no/forskning/business-review/articles/2021/11/gi-norske
  -forbrukere-en-gronnere-black-friday/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Julehandelen
+SUMMARY:Christmas shopping season (Julehandelen)
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261225
 DTSTAMP:20261001T080000Z
 UID:moment-julehandel-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Christmas shopping season\n\nRetail's peak season. Now effecti
- vely starts with Black Week and runs to julaften\; Virke reports November 
- + December as the julehandel period.\n\nSource: https://www.virke.no/analy
- se/julehandel/
+DESCRIPTION:Christmas shopping season (Julehandelen)\n\nRetail's peak seas
+ on. Now effectively starts with Black Week and runs to Christmas Eve (jula
+ ften)\; Virke (the Federation of Norwegian Enterprise) reports November + 
+ December as the Christmas shopping (julehandel) period.\n\nSource: https:/
+ /www.virke.no/analyse/julehandel/
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://www.virke.no/analyse/julehandel/
@@ -503,16 +518,16 @@ TRANSP:TRANSPARENT
 URL:https://snl.no/Black_Friday
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:1. søndag i advent
+SUMMARY:First Sunday of Advent (1. søndag i advent)
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
 DTSTAMP:20261001T080000Z
 UID:moment-forste-advent-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:First Sunday of Advent\n\nFour Sundays before Christmas Day\; 
- always 27 Nov – 3 Dec. Advent calendars must be in store before.\n\nSour
- ce: https://snl.no/advent
+DESCRIPTION:First Sunday of Advent (1. søndag i advent)\n\nFour Sundays b
+ efore Christmas Day\; always 27 Nov – 3 Dec. Advent calendars must be in
+  store before.\n\nSource: https://snl.no/advent
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/advent
@@ -532,92 +547,95 @@ TRANSP:TRANSPARENT
 URL:https://snl.no/Black_Friday
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Juleferie (skole) (varierer lokalt)
+SUMMARY:Christmas school break (Juleferie) (varies locally)
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20270104
 DTSTAMP:20261001T080000Z
 UID:moment-juleferie-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Dates vary by kommune — this is the national range. Check th
- e local skolerute.\n\nChristmas school break\n\nSet locally\; typically fr
- om the weekend before Christmas to the first working days of January (Oslo
- : 21 Dec 2026 – 1 Jan 2027\; 20 Dec 2027 – 3 Jan 2028). Shown as ~19 D
- ec – ~3 Jan.\n\nSource: https://lovdata.no/dokument/NL/lov/2023-06-09-30
+DESCRIPTION:Dates vary by municipality (kommune) — this is the national 
+ range. Check the local school calendar (skolerute).\n\nChristmas school br
+ eak (Juleferie)\n\nSet locally\; typically from the weekend before Christm
+ as to the first working days of January (Oslo: 21 Dec 2026 – 1 Jan 2027\
+ ; 20 Dec 2027 – 3 Jan 2028). Shown as ~19 Dec – ~3 Jan.\n\nSource: htt
+ ps://lovdata.no/dokument/NL/lov/2023-06-09-30
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/2023-06-09-30
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Julaften
+SUMMARY:Christmas Eve (Julaften)
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
 DTSTAMP:20261001T080000Z
 UID:moment-julaften-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Christmas Eve\n\nThe main Norwegian Christmas celebration (rib
- be/pinnekjøtt\, presents in the evening). Not a helligdag under helligdag
- sfredloven § 2\, but shops close early.\n\nSource: https://snl.no/julafte
- n
+DESCRIPTION:Christmas Eve (Julaften)\n\nThe main Norwegian Christmas celeb
+ ration (pork rib or cured lamb rib — ribbe or pinnekjøtt — and presen
+ ts in the evening). Not a public holiday under helligdagsfredloven § 2\, 
+ but shops close early.\n\nSource: https://snl.no/julaften
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/julaften
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:1. juledag
+SUMMARY:Christmas Day (1. juledag)
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
 DTSTAMP:20261001T080000Z
 UID:moment-forste-juledag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Christmas Day\n\nHelligdag under helligdagsfredloven § 2.\n\n
- Source: https://lovdata.no/dokument/NL/lov/1995-02-24-12
+DESCRIPTION:Christmas Day (1. juledag)\n\nPublic holiday (helligdag) under
+  the Public Holidays Act (helligdagsfredloven) § 2.\n\nSource: https://lo
+ vdata.no/dokument/NL/lov/1995-02-24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:2. juledag
+SUMMARY:Boxing Day (2. juledag)
 DTSTART;VALUE=DATE:20261226
 DTEND;VALUE=DATE:20261227
 DTSTAMP:20261001T080000Z
 UID:moment-andre-juledag-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Boxing Day\n\nHelligdag under helligdagsfredloven § 2.\n\nSou
- rce: https://lovdata.no/dokument/NL/lov/1995-02-24-12
+DESCRIPTION:Boxing Day (2. juledag)\n\nPublic holiday (helligdag) under th
+ e Public Holidays Act (helligdagsfredloven) § 2.\n\nSource: https://lovda
+ ta.no/dokument/NL/lov/1995-02-24-12
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://lovdata.no/dokument/NL/lov/1995-02-24-12
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Romjul / mellomjulssalg
+SUMMARY:Romjul & between-Christmas sales (Romjul / mellomjulssalg)
 DTSTART;VALUE=DATE:20261227
 DTEND;VALUE=DATE:20261231
 DTSTAMP:20261001T080000Z
 UID:moment-romjul-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:Romjul & between-Christmas sales\n\nRomjul is the days between
-  Christmas and New Year. Mellomjulssalg (between-Christmas sale) starts 27
-  Dec\; many retailers run it into January.\n\nSource: https://snl.no/romju
- l
+DESCRIPTION:Romjul & between-Christmas sales (Romjul / mellomjulssalg)\n\n
+ Romjul is the days between Christmas and New Year. The between-Christmas s
+ ale (mellomjulssalg) starts 27 Dec\; many retailers run it into January.\n
+ \nSource: https://snl.no/romjul
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/romjul
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Nyttårsaften
+SUMMARY:New Year's Eve (Nyttårsaften)
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 DTSTAMP:20261001T080000Z
 UID:moment-nyttarsaften-2026-all@seasonsignal.local
 SEQUENCE:919200
 CATEGORIES:Moment
-DESCRIPTION:New Year's Eve\n\nParty food\, fireworks\, party wear. Not a h
- elligdag.\n\nSource: https://snl.no/nytt%C3%A5rsaften
+DESCRIPTION:New Year's Eve (Nyttårsaften)\n\nParty food\, fireworks\, par
+ ty wear. Not a public holiday.\n\nSource: https://snl.no/nytt%C3%A5rsaften
 LAST-MODIFIED:20261001T080000Z
 TRANSP:TRANSPARENT
 URL:https://snl.no/nytt%C3%A5rsaften

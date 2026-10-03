@@ -82,8 +82,7 @@ def moments_frame(library: Library, planned: list[PlannedMoment], today: date | 
         occ, moment = item.occurrence, item.occurrence.moment
         rows.append(
             {
-                "Moment": moment.name_nb,
-                "Moment (en)": moment.name_en,
+                "Moment": moment.display_name,
                 "Kind": library.kinds.get(moment.kind, {}).get("en", moment.kind),
                 "Start": occ.start,
                 "End": occ.end,
@@ -107,7 +106,7 @@ def milestones_frame(planned: list[PlannedMoment], today: date | None = None) ->
     today = today or date.today()
     rows = [
         {
-            "Moment": item.occurrence.moment.name_nb,
+            "Moment": item.occurrence.moment.display_name,
             "Moment start": item.occurrence.start,
             "Milestone": milestone.label,
             "Weeks before": milestone.weeks_before,
@@ -131,7 +130,7 @@ def campaigns_frame(library: Library, plans: list[CampaignPlan], today: date | N
             {
                 "Campaign": campaign.name,
                 "Brand": campaign.brand,
-                "Moment": occ.moment.name_nb,
+                "Moment": occ.moment.display_name,
                 "Year": campaign.year,
                 "Region": library.regions.get(campaign.region, campaign.region),
                 "Category": library.category_label(campaign.category),
