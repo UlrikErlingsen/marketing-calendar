@@ -4,7 +4,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1 \
     ARROW_DEFAULT_MEMORY_POOL=system \
-    SEASONSIGNAL_DATA_DIR=/home/seasonsignal/data
+    SEASONSIGNAL_DATA_DIR=/home/seasonsignal/data \
+    STREAMLIT_SERVER_MAX_UPLOAD_SIZE=50
 
 WORKDIR /app
 COPY requirements.txt .

@@ -21,7 +21,8 @@ if errorlevel 1 (
   )
 )
 if "%SEASONSIGNAL_PORT%"=="" set SEASONSIGNAL_PORT=8587
+if "%SEASONSIGNAL_MAX_UPLOAD_MB%"=="" set SEASONSIGNAL_MAX_UPLOAD_MB=50
 echo Starting Season Signal at http://127.0.0.1:%SEASONSIGNAL_PORT% ...
 start "" "http://127.0.0.1:%SEASONSIGNAL_PORT%"
-".venv\Scripts\python.exe" -m streamlit run app.py --server.headless=true --server.address=127.0.0.1 --server.port=%SEASONSIGNAL_PORT% --server.fileWatcherType=none --browser.gatherUsageStats=false
+".venv\Scripts\python.exe" -m streamlit run app.py --server.headless=true --server.address=127.0.0.1 --server.port=%SEASONSIGNAL_PORT% --server.maxUploadSize=%SEASONSIGNAL_MAX_UPLOAD_MB% --server.fileWatcherType=none --browser.gatherUsageStats=false
 if errorlevel 1 pause

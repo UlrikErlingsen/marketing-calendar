@@ -69,7 +69,7 @@ def test_shell_demo_and_boundaries():
 def test_adding_a_campaign_saves_locally(isolated_store):
     app = _app()
     app.sidebar.radio[0].set_value("3 · My campaigns").run()
-    app.text_input[0].input("Russ-safe summer").run()
+    app.text_input[0].input("Russ-safe summer")  # type and submit in one run (Streamlit 1.65 forms)
     next(b for b in app.button if b.label == "Add campaign").click().run()
     assert not app.exception, [error.value for error in app.exception]
     saved = (isolated_store / "seasonsignal.json").read_text(encoding="utf-8")
@@ -140,7 +140,7 @@ def test_two_sessions_do_not_overwrite_each_other(isolated_store):
     first, second = _app(), _app()
     for app, name in ((first, "From tab one"), (second, "From tab two")):
         app.sidebar.radio[0].set_value("3 · My campaigns").run()
-        app.text_input[0].input(name).run()
+        app.text_input[0].input(name)  # type and submit in one run (Streamlit 1.65 forms)
         next(b for b in app.button if b.label == "Add campaign").click().run()
         assert not app.exception, [error.value for error in app.exception]
     saved = (isolated_store / "seasonsignal.json").read_text(encoding="utf-8")

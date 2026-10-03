@@ -74,6 +74,7 @@ python -m streamlit run app.py \
   --server.headless=true \
   --server.address=127.0.0.1 \
   --server.port="$PORT" \
+  --server.maxUploadSize="${SEASONSIGNAL_MAX_UPLOAD_MB:-50}" \
   --server.fileWatcherType=none \
   --browser.gatherUsageStats=false &
 APP_PID=$!

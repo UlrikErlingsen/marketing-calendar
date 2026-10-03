@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0] - 2026-10-03
+
+### Larger datasets
+
+- Larger datasets: Season Signal stays in the suite's small-input tier with a 50 MB upload cap, now set the same way everywhere. The plan is typed in, so there is no upload path and no in-code limit to raise; a new test keeps it that way (an uploader added later must bring limits consistent with 50 MB).
+- Launchers accept `SEASONSIGNAL_MAX_UPLOAD_MB` (default 50) for `--server.maxUploadSize`; before, they passed no cap and relied on the config file. The Dockerfile sets `STREAMLIT_SERVER_MAX_UPLOAD_SIZE=50`. Signal Hub mode is unchanged.
+- New `tests/test_upload_cap.py`: config, launchers and Docker agree on 50 MB, Docker sets it by environment only, and the package has no file uploader.
+- The example calendars in `examples/` are regenerated for the new version (`PRODID` carries it).
+- Tests: the add-campaign UI tests type the name and submit the form in one AppTest run; Streamlit 1.65 drops uncommitted form values on a rerun without submit, which made them fail intermittently.
+
+### Suite
+
+- Suite: Rival, Reach, Learn and Blueprint Signal added to the suite table; the synced Signal config sets `maxUploadSize = 50`.
+
 ## [1.0.0] - 2026-10-02
 
 First release of **Season Signal**, the Norwegian marketing calendar in the Signal suite.

@@ -343,7 +343,8 @@ def test_hub_mode_renders_every_page_without_files_or_network(hub, no_network, p
 def test_hub_mode_keeps_campaigns_and_lead_times_in_the_session_only(hub, no_network) -> None:
     app = _render()
     app.sidebar.radio[0].set_value("3 · My campaigns").run()
-    app.text_input(key="season:add-campaign-0-name").input("Hub-only summer push").run()
+    # Type and submit in one run: Streamlit 1.65 drops uncommitted form values on a rerun without submit.
+    app.text_input(key="season:add-campaign-0-name").input("Hub-only summer push")
     next(b for b in app.button if b.label == "Add campaign").click().run()
     _clean(app)
     names = [c.name for c in app.session_state["season:store"].campaigns]

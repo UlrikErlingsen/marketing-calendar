@@ -5,7 +5,7 @@ The core never imports streamlit; only ``seasonsignal.ui`` does (the Streamlit a
 Signal Hub and the synced Signal theme). The standalone ``app.py`` is a thin wrapper around ``render()``.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 MIN_YEAR = 2025
 MAX_YEAR = 2035

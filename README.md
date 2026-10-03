@@ -82,6 +82,8 @@ Season Signal has two inputs, both plain files:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add or change a moment.
 
+**Limits.** Season Signal is in the Signal suite's small-input tier: a marketing calendar is typed in, not uploaded, so it has no file upload and no row limits of its own. The server upload cap is 50 MB everywhere it is set (`.streamlit/config.toml`, the launchers, Docker), so the data-heavy Signal apps' 1000 MB cap never applies here.
+
 ## Methods
 
 1. **Date rules.** Every date comes from a rule: `fixed`, `easter`, `nth_weekday`, `weekday_on_or_after`, `iso_week` or `relative`, each with an optional day offset. Easter follows the Western (Gregorian) computus (`dateutil.easter`), matching helligdagsfredloven. Week numbers are ISO 8601, as used in Norway, including 53-week years.
@@ -128,7 +130,7 @@ python -m streamlit run app.py
 
 Pages can be linked directly, e.g. `http://127.0.0.1:8587/?page=planner&moment=black_week` (pages: `planner`, `coming-up`, `campaigns`, `lead-times`, `export`, `sources`).
 
-Season Signal uses local port `8587` (Track Signal uses 8586). Set `SEASONSIGNAL_PORT` to choose another, `SEASONSIGNAL_DATA_DIR` to store campaigns elsewhere, or `SEASONSIGNAL_DEBUG=1` to reveal technical error details.
+Season Signal uses local port `8587` (Track Signal uses 8586). Set `SEASONSIGNAL_PORT` to choose another, `SEASONSIGNAL_MAX_UPLOAD_MB` to change the upload cap (default 50, passed to `--server.maxUploadSize`), `SEASONSIGNAL_DATA_DIR` to store campaigns elsewhere, or `SEASONSIGNAL_DEBUG=1` to reveal technical error details.
 
 ### Docker
 
@@ -137,7 +139,7 @@ docker build -t seasonsignal .
 docker run --rm -p 8587:8587 seasonsignal
 ```
 
-Then open `http://127.0.0.1:8587`. The container runs as a non-root user and includes a health check.
+Then open `http://127.0.0.1:8587`. The container runs as a non-root user and includes a health check. The upload cap is set with `STREAMLIT_SERVER_MAX_UPLOAD_SIZE=50` in the image (override with `docker run -e STREAMLIT_SERVER_MAX_UPLOAD_SIZE=<MB> …`).
 
 ### Inside Signal Hub
 
